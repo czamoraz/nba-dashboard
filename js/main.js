@@ -25,6 +25,13 @@
     if (h1) h1.textContent = window.TEAM_CONFIG.name;
     if (p)  p.textContent  = window.TEAM_CONFIG.subtitleText;
     document.title = `${window.TEAM_CONFIG.name} · Dashboard`;
+
+    /* Fuente de datos dinámica */
+    const link = document.getElementById("brefLink");
+    if (link) {
+      link.href        = `https://www.basketball-reference.com/teams/${window.TEAM_CONFIG.abbr}/`;
+      link.textContent = `Basketball-Reference — ${window.TEAM_CONFIG.name}`;
+    }
   }
 
   /* ── Renderizar todo para una temporada ──────────────────────── */
