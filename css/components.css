@@ -1,0 +1,386 @@
+/* ================================================================
+   components.css — Cards, leaders, availability, tooltip, panel,
+                    streak highlights, legend, chart wrappers
+   ================================================================ */
+
+/* ── Metric cards ────────────────────────────────────────────── */
+.metric {
+  background: var(--surface);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  padding: 1rem 1.1rem;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  transition: border-color 0.2s, transform 0.15s;
+}
+
+.metric:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+}
+
+/* Accent stripe on top */
+.metric::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--team-primary);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.metric:hover::before { opacity: 1; }
+
+.metric-val {
+  font-family: var(--font-display);
+  font-size: 2.1rem;
+  line-height: 1;
+  color: var(--text);
+}
+
+.metric-val span {
+  font-size: 1.2rem;
+  color: var(--team-primary);
+}
+
+.metric-lab {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 5px;
+}
+
+.metric-sub {
+  font-size: 11px;
+  color: var(--text-hint);
+  margin-top: 2px;
+}
+
+/* ── Chart cards (shared wrapper) ───────────────────────────── */
+.chart-card,
+.full-chart {
+  background: var(--surface);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 1.25rem;
+}
+
+.full-chart { margin-bottom: 1.5rem; }
+
+.chart-title {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+/* ── Game chart legend ───────────────────────────────────────── */
+.game-legend {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: .75rem;
+  flex-wrap: wrap;
+}
+
+.leg-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.leg-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.leg-streak {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+.leg-streak-box {
+  width: 16px;
+  height: 9px;
+  border-radius: 2px;
+  background: var(--streak-win);
+  border: 1px solid var(--team-primary);
+  opacity: 0.7;
+}
+
+/* ── Leader cards ────────────────────────────────────────────── */
+.leaders-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.leader-card {
+  background: var(--surface);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  padding: .85rem .75rem;
+  text-align: center;
+  cursor: default;
+  transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+
+.leader-card:hover {
+  border-color: var(--team-primary);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.leader-cat {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.leader-val {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--team-primary);
+  line-height: 1;
+}
+
+.leader-name {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text);
+  margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 680px) {
+  .leaders-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ── Availability bars ───────────────────────────────────────── */
+.avail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.abar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.abar-name {
+  font-size: 12px;
+  color: var(--text);
+  width: 115px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.abar-track {
+  flex: 1;
+  height: 8px;
+  background: var(--surface2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.abar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.6s cubic-bezier(.4,0,.2,1);
+}
+
+.abar-val {
+  font-size: 11px;
+  color: var(--text-muted);
+  width: 48px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* ── Tooltip ─────────────────────────────────────────────────── */
+#tooltip {
+  position: fixed;
+  padding: 9px 13px;
+  border-radius: 7px;
+  font-size: 11px;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 9999;
+  white-space: nowrap;
+  border-left: 3px solid var(--team-primary);
+  line-height: 1.7;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  border-top: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  transition: opacity 0.1s;
+  max-width: 220px;
+}
+
+/* ── Detail panel (slide-in on game click) ───────────────────── */
+.detail-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background: var(--panel-bg);
+  border-left: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(.4,0,.2,1);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.detail-panel.open {
+  transform: translateX(0);
+}
+
+.panel-header {
+  padding: 1.25rem 1.25rem 1rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  position: sticky;
+  top: 0;
+  background: var(--panel-bg);
+  z-index: 1;
+}
+
+.panel-close {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: color 0.15s, background 0.15s;
+  flex-shrink: 0;
+}
+.panel-close:hover {
+  color: var(--text);
+  background: var(--surface2);
+}
+
+.panel-result-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.panel-result-badge.win {
+  background: rgba(200, 16, 46, 0.12);
+  color: var(--team-primary);
+  border: 1px solid rgba(200, 16, 46, 0.25);
+}
+
+.panel-result-badge.loss {
+  background: var(--surface2);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+.panel-score {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  line-height: 1;
+  color: var(--text);
+  letter-spacing: 2px;
+}
+
+.panel-body {
+  padding: 1.25rem;
+  flex: 1;
+}
+
+.panel-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 12px;
+}
+
+.panel-row:last-child { border-bottom: none; }
+
+.panel-row-label { color: var(--text-muted); }
+.panel-row-val   { color: var(--text); font-weight: 500; }
+
+.panel-streak-info {
+  margin-top: 1rem;
+  padding: .75rem;
+  background: var(--surface2);
+  border-radius: 8px;
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Overlay for panel */
+.panel-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.panel-overlay.open {
+  display: block;
+  opacity: 1;
+}
+
+/* ── Particle canvas ─────────────────────────────────────────── */
+#particle-canvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 500;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+/* ── Streak annotation bars (drawn over chart) ───────────────── */
+.streak-annotation {
+  position: absolute;
+  top: 0; bottom: 0;
+  pointer-events: none;
+  border-radius: 2px;
+  transition: opacity 0.3s;
+}

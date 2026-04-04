@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NBA Team Dashboard</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #08080f;
+      --bg-card:   #111118;
+      --bg-hover:  #1a1a26;
+      --border:    rgba(255,255,255,.07);
+      --text:      #e8e8f0;
+      --muted:     #666680;
+      --east:      #1a6bbd;
+      --west:      #b8291a;
+      --radius:    12px;
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Header ─────────────────────────────────────────────────── */
+    .header {
+      text-align: center;
+      padding: 3rem 1.5rem 2rem;
+      position: relative;
+    }
+    .header::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--east), var(--west));
+      margin: 1.25rem auto 0;
+      border-radius: 2px;
+    }
+    .header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -.03em;
+      background: linear-gradient(135deg, #fff 40%, #aaa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .header p {
+      margin-top: .5rem;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    /* ── Layout principal ────────────────────────────────────────── */
+    .conferences {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
+    }
+    @media (max-width: 768px) {
+      .conferences { grid-template-columns: 1fr; }
+    }
+
+    /* ── Conferencia ─────────────────────────────────────────────── */
+    .conference-block { display: flex; flex-direction: column; gap: 1.5rem; }
+
+    .conf-title {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: .45rem 1rem;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      width: fit-content;
+    }
+    .conf-title.east { background: rgba(26,107,189,.18); color: #5ba3e8; border: 1px solid rgba(26,107,189,.3); }
+    .conf-title.west { background: rgba(184,41,26,.18);  color: #e87060; border: 1px solid rgba(184,41,26,.3); }
+
+    /* ── División ────────────────────────────────────────────────── */
+    .division { display: flex; flex-direction: column; gap: .5rem; }
+
+    .division-name {
+      font-size: .65rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding-left: .25rem;
+      margin-bottom: .2rem;
+    }
+
+    /* ── Team card ───────────────────────────────────────────────── */
+    .team-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: .75rem 1rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      transition: transform .15s, border-color .15s, background .15s, box-shadow .15s;
+      position: relative;
+      overflow: hidden;
+    }
+    .team-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: var(--c1, #333);
+      opacity: 0;
+      transition: opacity .15s;
+    }
+    .team-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.4); }
+    .team-card:hover::before { opacity: .08; }
+    .team-card:hover { border-color: var(--c1, #555); }
+
+    /* Color swatch */
+    .team-swatch {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: var(--c1, #333);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .65rem;
+      font-weight: 800;
+      letter-spacing: .04em;
+      color: rgba(255,255,255,.9);
+      text-shadow: 0 1px 3px rgba(0,0,0,.4);
+      border: 2px solid var(--c2, transparent);
+      box-shadow: 0 2px 8px rgba(0,0,0,.3);
+      position: relative;
+      z-index: 1;
+    }
+
+    .team-info { position: relative; z-index: 1; flex: 1; min-width: 0; }
+    .team-abbr { font-size: .8rem; font-weight: 700; letter-spacing: .04em; color: #ccc; }
+    .team-name { font-size: .95rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    .team-arrow {
+      position: relative;
+      z-index: 1;
+      font-size: .75rem;
+      color: var(--muted);
+      opacity: 0;
+      transform: translateX(-4px);
+      transition: opacity .15s, transform .15s;
+    }
+    .team-card:hover .team-arrow { opacity: 1; transform: translateX(0); }
+
+    /* Badge "sin datos" */
+    .badge-no-data {
+      font-size: .6rem;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: .15rem .45rem;
+      border-radius: 4px;
+      background: rgba(255,255,255,.06);
+      color: var(--muted);
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── Footer ──────────────────────────────────────────────────── */
+    .footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: var(--muted);
+      font-size: .8rem;
+      border-top: 1px solid var(--border);
+    }
+    .footer code {
+      background: rgba(255,255,255,.06);
+      padding: .15rem .4rem;
+      border-radius: 4px;
+      font-size: .75rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>🏀 NBA Team Dashboard</h1>
+    <p>Selecciona un equipo para explorar su dashboard de rendimiento</p>
+  </header>
+
+  <main class="conferences" id="root"></main>
+
+  <footer class="footer">
+    Para agregar datos de un equipo: <code>python scraper.py --team ABBR</code>
+    &nbsp;→&nbsp; <code>python csv_to_data_js.py --team ABBR</code>
+  </footer>
+
+  <script>
+    /* ── Datos de los 30 equipos ───────────────────────────────── */
+    const CONFERENCES = [
+      {
+        name: "Eastern Conference",
+        cls: "east",
+        divisions: [
+          {
+            name: "Atlantic",
+            teams: [
+              { abbr: "BOS", name: "Boston Celtics",        c1: "#007A33", c2: "#BA9653" },
+              { abbr: "BKN", name: "Brooklyn Nets",          c1: "#000000", c2: "#FFFFFF" },
+              { abbr: "NYK", name: "New York Knicks",        c1: "#006BB6", c2: "#F58426" },
+              { abbr: "PHI", name: "Philadelphia 76ers",     c1: "#006BB6", c2: "#ED174C" },
+              { abbr: "TOR", name: "Toronto Raptors",        c1: "#CE1141", c2: "#000000" },
+            ]
+          },
+          {
+            name: "Central",
+            teams: [
+              { abbr: "CHI", name: "Chicago Bulls",          c1: "#CE1141", c2: "#000000" },
+              { abbr: "CLE", name: "Cleveland Cavaliers",    c1: "#860038", c2: "#FDBB30" },
+              { abbr: "DET", name: "Detroit Pistons",        c1: "#C8102E", c2: "#1D42BA" },
+              { abbr: "IND", name: "Indiana Pacers",         c1: "#002D62", c2: "#FDBB30" },
+              { abbr: "MIL", name: "Milwaukee Bucks",        c1: "#00471B", c2: "#EEE1C6" },
+            ]
+          },
+          {
+            name: "Southeast",
+            teams: [
+              { abbr: "ATL", name: "Atlanta Hawks",          c1: "#C8102E", c2: "#FDB927" },
+              { abbr: "CHA", name: "Charlotte Hornets",      c1: "#1D1160", c2: "#00788C" },
+              { abbr: "MIA", name: "Miami Heat",             c1: "#98002E", c2: "#F9A01B" },
+              { abbr: "ORL", name: "Orlando Magic",          c1: "#0077C0", c2: "#C4CED4" },
+              { abbr: "WAS", name: "Washington Wizards",     c1: "#002B5C", c2: "#E31837" },
+            ]
+          },
+        ]
+      },
+      {
+        name: "Western Conference",
+        cls: "west",
+        divisions: [
+          {
+            name: "Northwest",
+            teams: [
+              { abbr: "DEN", name: "Denver Nuggets",         c1: "#0E2240", c2: "#FEC524" },
+              { abbr: "MIN", name: "Minnesota Timberwolves", c1: "#0C2340", c2: "#236192" },
+              { abbr: "OKC", name: "Oklahoma City Thunder",  c1: "#007AC1", c2: "#EF3B24" },
+              { abbr: "POR", name: "Portland Trail Blazers", c1: "#E03A3E", c2: "#000000" },
+              { abbr: "UTA", name: "Utah Jazz",              c1: "#002B5C", c2: "#00471B" },
+            ]
+          },
+          {
+            name: "Pacific",
+            teams: [
+              { abbr: "GSW", name: "Golden State Warriors",  c1: "#1D428A", c2: "#FFC72C" },
+              { abbr: "LAC", name: "Los Angeles Clippers",   c1: "#C8102E", c2: "#1D428A" },
+              { abbr: "LAL", name: "Los Angeles Lakers",     c1: "#552583", c2: "#FDB927" },
+              { abbr: "PHX", name: "Phoenix Suns",           c1: "#1D1160", c2: "#E56020" },
+              { abbr: "SAC", name: "Sacramento Kings",       c1: "#5A2D81", c2: "#63727A" },
+            ]
+          },
+          {
+            name: "Southwest",
+            teams: [
+              { abbr: "DAL", name: "Dallas Mavericks",       c1: "#00538C", c2: "#002B5E" },
+              { abbr: "HOU", name: "Houston Rockets",        c1: "#CE1141", c2: "#000000" },
+              { abbr: "MEM", name: "Memphis Grizzlies",      c1: "#5D76A9", c2: "#12173F" },
+              { abbr: "NOP", name: "New Orleans Pelicans",   c1: "#0C2340", c2: "#C8102E" },
+              { abbr: "SAS", name: "San Antonio Spurs",      c1: "#C4CED4", c2: "#000000" },
+            ]
+          },
+        ]
+      }
+    ];
+
+    /* ── Detectar qué equipos tienen datos ──────────────────────── */
+    // Intenta cargar el script de datos de cada equipo para saber si existe.
+    // Como JS no puede leer el FS directamente, usamos una lista estática
+    // que se actualiza desde Python (o puedes editar TEAMS_WITH_DATA manualmente).
+    // Para auto-detección real, el servidor necesita un endpoint.
+    const TEAMS_WITH_DATA = window.__TEAMS_WITH_DATA__ || [];  // inyectado por csv_to_data_js.py
+
+    /* ── Render ─────────────────────────────────────────────────── */
+    function cardHTML(team) {
+      const hasData = TEAMS_WITH_DATA.length === 0 || TEAMS_WITH_DATA.includes(team.abbr);
+      const href    = `index.html?team=${team.abbr}`;
+
+      // Contraste del texto del swatch
+      const textColor = team.c1 === "#000000" ? "#fff" : "#fff";
+
+      return `
+        <a class="team-card" href="${href}"
+           style="--c1:${team.c1};--c2:${team.c2}">
+          <div class="team-swatch" style="background:${team.c1};border-color:${team.c2}">
+            ${team.abbr}
+          </div>
+          <div class="team-info">
+            <div class="team-abbr">${team.abbr}</div>
+            <div class="team-name">${team.name}</div>
+          </div>
+          <span class="team-arrow">→</span>
+        </a>`;
+    }
+
+    function render() {
+      const root = document.getElementById("root");
+      root.innerHTML = CONFERENCES.map(conf => `
+        <div class="conference-block">
+          <span class="conf-title ${conf.cls}">${conf.name}</span>
+          ${conf.divisions.map(div => `
+            <div class="division">
+              <div class="division-name">${div.name} Division</div>
+              ${div.teams.map(cardHTML).join("")}
+            </div>
+          `).join("")}
+        </div>
+      `).join("");
+    }
+
+    render();
+  </script>
+</body>
+</html>

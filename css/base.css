@@ -1,0 +1,99 @@
+/* ================================================================
+   base.css — Variables globales, reset y tipografía
+   Para usar con otro equipo: cambia solo el bloque :root[data-team]
+   ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+/* ── Team tokens (override per team) ────────────────────────── */
+:root {
+  --team-primary:   #C8102E;   /* Hawks red   → cambia por equipo */
+  --team-secondary: #FDB927;   /* Hawks gold  → cambia por equipo */
+  --team-name:      "Atlanta Hawks";
+  --font-display:   'Bebas Neue', sans-serif;
+  --font-body:      'DM Sans', sans-serif;
+}
+
+/* ── Dark mode palette (default) ────────────────────────────── */
+:root,
+:root[data-theme="dark"] {
+  --bg:           #0f0f0f;
+  --surface:      #1a1a1a;
+  --surface2:     #242424;
+  --surface3:     #2e2e2e;
+  --border:       rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.18);
+  --text:         #f0f0f0;
+  --text-muted:   #888888;
+  --text-hint:    #555555;
+  --shadow:       0 4px 24px rgba(0, 0, 0, 0.5);
+  --shadow-sm:    0 2px 8px  rgba(0, 0, 0, 0.4);
+  --streak-win:   rgba(200, 16,  46,  0.15);
+  --streak-lose:  rgba(120, 120, 120, 0.10);
+  --panel-bg:     #161616;
+}
+
+/* ── Light mode palette ──────────────────────────────────────── */
+:root[data-theme="light"] {
+  --bg:           #f4f4f4;
+  --surface:      #ffffff;
+  --surface2:     #f0f0f0;
+  --surface3:     #e4e4e4;
+  --border:       rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(0, 0, 0, 0.20);
+  --text:         #111111;
+  --text-muted:   #666666;
+  --text-hint:    #aaaaaa;
+  --shadow:       0 4px 24px rgba(0, 0, 0, 0.10);
+  --shadow-sm:    0 2px 8px  rgba(0, 0, 0, 0.07);
+  --streak-win:   rgba(200, 16,  46,  0.08);
+  --streak-lose:  rgba(80,  80,  80,  0.07);
+  --panel-bg:     #fafafa;
+}
+
+/* ── Reset ───────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+/* ── Typography scale ────────────────────────────────────────── */
+.type-display {
+  font-family: var(--font-display);
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.type-label {
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.type-mono {
+  font-family: 'DM Mono', 'Courier New', monospace;
+  font-size: 11px;
+}
+
+/* ── Utility classes ─────────────────────────────────────────── */
+.hidden    { display: none !important; }
+.sr-only   { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+.accent    { color: var(--team-primary); }
+.truncate  { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

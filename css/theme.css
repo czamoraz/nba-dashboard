@@ -1,0 +1,86 @@
+/* ================================================================
+   theme.css — Theme toggle button y transiciones globales
+   ================================================================ */
+
+/* ── Transición global al cambiar tema ──────────────────────── */
+body,
+.chart-card,
+.full-chart,
+.metric,
+.leader-card,
+.detail-panel,
+.top-bar {
+  transition:
+    background-color 0.3s ease,
+    border-color     0.3s ease,
+    color            0.2s ease;
+}
+
+/* ── Theme toggle button ─────────────────────────────────────── */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px 12px 5px 8px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--text-muted);
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+  white-space: nowrap;
+}
+
+.theme-toggle:hover {
+  border-color: var(--border-hover);
+  color: var(--text);
+}
+
+/* Track */
+.toggle-track {
+  position: relative;
+  width: 28px;
+  height: 16px;
+  background: var(--surface3);
+  border-radius: 999px;
+  border: 1px solid var(--border-hover);
+  transition: background 0.25s;
+  flex-shrink: 0;
+}
+
+:root[data-theme="light"] .toggle-track {
+  background: var(--team-primary);
+}
+
+/* Thumb */
+.toggle-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  transition: transform 0.25s cubic-bezier(.4,0,.2,1), background 0.25s;
+}
+
+:root[data-theme="light"] .toggle-thumb {
+  transform: translateX(12px);
+  background: #fff;
+}
+
+/* Icon */
+.toggle-icon {
+  font-size: 13px;
+  line-height: 1;
+  transition: transform 0.35s cubic-bezier(.4,0,.2,1);
+}
+
+:root[data-theme="light"] .toggle-icon {
+  transform: rotate(360deg);
+}
+
+/* ── Page flash prevention ───────────────────────────────────── */
+/* Inline script in <head> sets data-theme before render */

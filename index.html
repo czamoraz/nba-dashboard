@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlanta Hawks · Dashboard</title>
+
+  <!--
+    Prevenir flash de tema incorrecto: leer localStorage antes de pintar.
+    Este script DEBE ser el primero en <head>.
+  -->
+  <script>
+    (function () {
+      var t = localStorage.getItem("dashboard-theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+
+  <!-- Estilos — orden importante -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+  <!-- ── Partículas (fixed, encima de todo) ────────────────────── -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ── Panel lateral de detalle de partido ───────────────────── -->
+  <div class="panel-overlay" id="panelOverlay"></div>
+  <aside class="detail-panel" id="detailPanel" aria-label="Detalle del partido">
+    <div class="panel-header">
+      <!-- Rellenado por events.js -->
+    </div>
+    <div class="panel-body">
+      <!-- Rellenado por events.js -->
+    </div>
+  </aside>
+
+  <!-- ── Tooltip global ────────────────────────────────────────── -->
+  <div id="tooltip" role="tooltip" aria-live="polite"></div>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       CONTENIDO PRINCIPAL
+       ══════════════════════════════════════════════════════════════ -->
+  <div class="dash">
+
+    <!-- Top bar -->
+    <header class="top-bar">
+      <div class="logo">
+        <h1>Atlanta Hawks</h1>
+        <p>Performance Dashboard · 2020–21 → 2024–25</p>
+      </div>
+
+      <div class="top-bar-right">
+        <!-- Tabs de temporada -->
+        <div class="season-tabs" id="seasonTabs">
+          <!-- Generado por render.js -->
+        </div>
+
+        <!-- Toggle de tema -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <div class="toggle-track">
+            <div class="toggle-thumb"></div>
+          </div>
+          <span class="toggle-label">Modo oscuro</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Métricas de temporada -->
+    <section class="section" aria-label="Métricas">
+      <p class="type-label" style="margin-bottom:.75rem">Resumen de temporada</p>
+      <div class="metrics" id="metricsRow">
+        <!-- Generado por render.js -->
+      </div>
+    </section>
+
+    <!-- Scatter: resultado por partido -->
+    <section class="section" aria-label="Partidos">
+      <p class="type-label" style="margin-bottom:.75rem">
+        Resultado por partido · hover para detalles · click para panel
+      </p>
+      <div class="full-chart">
+        <div class="game-legend">
+          <span class="leg-item">
+            <span class="leg-dot" style="background:var(--team-primary)"></span>Victoria
+          </span>
+          <span class="leg-item">
+            <span class="leg-dot" style="background:#666"></span>Derrota
+          </span>
+          <span class="leg-item leg-streak">
+            <span class="leg-streak-box"></span>Racha destacada (≥4)
+          </span>
+          <span id="streakLegendInfo"
+                style="font-size:10px;color:var(--text-muted);margin-left:auto;display:none">
+          </span>
+        </div>
+        <div style="position:relative; height:230px;">
+          <canvas id="gamesChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Líderes estadísticos -->
+    <section class="section" aria-label="Líderes">
+      <p class="type-label" style="margin-bottom:.75rem">Líderes estadísticos (por partido)</p>
+      <div class="leaders-grid" id="leadersGrid">
+        <!-- Generado por render.js -->
+      </div>
+    </section>
+
+    <!-- Win % + Disponibilidad -->
+    <section class="section" aria-label="Tendencia y disponibilidad">
+      <div class="bottom-row">
+
+        <div class="chart-card">
+          <div class="chart-title">Win % — evolución histórica</div>
+          <div style="position:relative; height:190px;">
+            <canvas id="winPctChart"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-title">Disponibilidad de jugadores</div>
+          <div class="avail-list" id="availBars">
+            <!-- Generado por render.js -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Nota de datos -->
+    <p class="data-note">
+      ⚠️ Datos de ejemplo. Para reemplazarlos con datos reales, corre
+      <strong>hawks_scraper.py</strong> y actualiza <code>js/data.js</code>.<br>
+      Fuente oficial:
+      <a href="https://www.basketball-reference.com/teams/ATL/" target="_blank" rel="noopener">
+        Basketball-Reference — Atlanta Hawks
+      </a>
+    </p>
+
+  </div><!-- /.dash -->
+
+  <!-- ── Carga dinámica según ?team= ───────────────────────────── -->
+  <script>
+  (function () {
+    var team = new URLSearchParams(location.search).get("team") || "ATL";
+    team = team.toUpperCase();
+
+    /* Pantalla de "sin datos" */
+    function showNoData(t) {
+      document.querySelector(".dash").innerHTML = [
+        '<div style="display:flex;flex-direction:column;align-items:center;',
+        'justify-content:center;height:60vh;gap:1.5rem;text-align:center;padding:2rem">',
+        '<div style="font-size:3rem">🏀</div>',
+        '<h2 style="font-size:1.4rem;font-weight:700">Sin datos para ' + t + '</h2>',
+        '<p style="color:var(--text-muted);max-width:420px">',
+        'Corre el scraper para generar los datos de este equipo:</p>',
+        '<code style="background:rgba(255,255,255,.07);padding:.6rem 1.2rem;',
+        'border-radius:8px;font-size:.9rem">python scraper.py --team ' + t + '</code>',
+        '<code style="background:rgba(255,255,255,.07);padding:.6rem 1.2rem;',
+        'border-radius:8px;font-size:.9rem">python csv_to_data_js.py --team ' + t + '</code>',
+        '<a href="landing.html" style="margin-top:.5rem;color:var(--team-primary,#888);',
+        'text-decoration:none;font-weight:600">← Volver al selector</a>',
+        '</div>'
+      ].join("");
+    }
+
+    /* Carga encadenada de scripts en orden */
+    function loadScript(src, onload, onerror) {
+      var s = document.createElement("script");
+      s.src = src;
+      s.onload  = onload  || null;
+      s.onerror = onerror || null;
+      document.body.appendChild(s);
+    }
+
+    function loadAppScripts() {
+      loadScript("js/charts.js", function () {
+        loadScript("js/render.js", function () {
+          loadScript("js/events.js", function () {
+            loadScript("js/main.js");
+          });
+        });
+      });
+    }
+
+    /* Chart.js → datos del equipo → app */
+    loadScript(
+      "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js",
+      function () {
+        loadScript(
+          "js/data/" + team + ".js",
+          function () {
+            if (!window.SEASON_DATA) { showNoData(team); return; }
+            loadAppScripts();
+          },
+          function () { showNoData(team); }
+        );
+      }
+    );
+  })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+# ── Python ────────────────────────────────────────────────────
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.python-version
+
+# ── macOS ─────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ── Editores ──────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── CSVs intermedios ──────────────────────────────────────────
+# Son archivos temporales generados por scraper.py.
+# Los datos finales ya están en js/data/*.js
+*.csv
+
+# ── IMPORTANTE: NO ignorar js/data/ ──────────────────────────
+# Los archivos js/data/ATL.js, js/data/GSW.js, etc. SÍ deben
+# commitearse — son los datos que GitHub Pages necesita para
+# servir el dashboard sin ningún servidor.
+# !js/data/
