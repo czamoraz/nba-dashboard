@@ -1,19 +1,20 @@
 """
 NBA Teams Stats Scraper — Basketball-Reference
 ====================================================
-Extrae datos de temporadas y genera 3 archivos CSV:
+Extrae datos de temporadas y genera 4 archivos CSV:
 
   {TEAM}_games.csv        → Resultado de cada partido
   {TEAM}_leaders.csv      → Líderes estadísticos por temporada
   {TEAM}_availability.csv → Partidos jugados/perdidos por jugador
+  {TEAM}_conf_ranks.csv   → Posición en conferencia por temporada
 
 Dependencias:
   pip install requests beautifulsoup4 pandas lxml
 
 Uso:
   python scraper.py --team ATL
-  python scraper.py --team GSW --seasons 2023 2024 2025
-  python scraper.py --team LAL --seasons 2021 2022 2023 2024 2025
+  python scraper.py --team GSW --seasons 2023 2024 2025 2026
+  python scraper.py --team LAL --seasons 2021 2022 2023 2024 2025 2026
 
 Abreviaturas comunes:
   ATL BOS BKN CHA CHI CLE DAL DEN DET GSW
@@ -184,6 +185,37 @@ def scrape_availability(team: str, season: int, total_games: int, delay: float) 
     return df[["team", "season", "player", "games", "games_missed", "avail_pct"]].dropna()
 
 
+# ─── 4. Posición en conferencia ───────────────────────────────────────────────
+
+def scrape_conf_rank(team: str, season: int, delay: float) -> int:
+    """
+    Obtiene la posición del equipo en su conferencia al final de la temporada.
+    URL: /leagues/NBA_{season}.html
+    Retorna 0 si no se encuentra el equipo.
+    """
+    url = f"https://www.basketball-reference.com/leagues/NBA_{season}.html"
+    soup = fetch(url, delay)
+
+    for table_id in ["confs_standings_E", "confs_standings_W"]:
+        table = soup.find("table", {"id": table_id})
+        if table is None:
+            continue
+        tbody = table.find("tbody")
+        if tbody is None:
+            continue
+        rank = 1
+        for row in tbody.find_all("tr"):
+            # Saltar filas de encabezado interno (division headers)
+            if "thead" in row.get("class", []):
+                continue
+            link = row.find("a", href=True)
+            if link and f"/teams/{team}/" in link.get("href", ""):
+                return rank
+            rank += 1
+
+    return 0
+
+
 # ─── Argparse ─────────────────────────────────────────────────────────────────
 
 def parse_args():
@@ -193,8 +225,8 @@ def parse_args():
         epilog="""
 Ejemplos:
   python scraper.py --team ATL
-  python scraper.py --team GSW --seasons 2023 2024 2025
-  python scraper.py --team LAL --seasons 2021 2022 2023 2024 2025 --delay 6
+  python scraper.py --team GSW --seasons 2023 2024 2025 2026
+  python scraper.py --team LAL --seasons 2021 2022 2023 2024 2025 2026 --delay 6
         """
     )
     parser.add_argument(
@@ -208,9 +240,9 @@ Ejemplos:
         "--seasons", "-s",
         type=int,
         nargs="+",
-        default=[2021, 2022, 2023, 2024, 2025],
+        default=[2021, 2022, 2023, 2024, 2025, 2026],
         metavar="AÑO",
-        help="Año(s) en que TERMINA la temporada (default: 2021 2022 2023 2024 2025)"
+        help="Año(s) en que TERMINA la temporada (default: 2021 2022 2023 2024 2025 2026)"
     )
     parser.add_argument(
         "--delay", "-d",
@@ -245,6 +277,7 @@ def main():
     all_games        = []
     all_leaders      = []
     all_availability = []
+    all_conf_ranks   = {}
 
     for season in seasons:
         label = f"{season-1}-{str(season)[-2:]}"
@@ -252,18 +285,19 @@ def main():
         print(f"  Temporada {label}")
         print(f"{'─'*50}")
 
-        total_games = 82 if season < 2026 else 77
+        total_games = 82
 
         try:
-            print("  [1/3] Partidos...")
+            print("  [1/4] Partidos...")
             games = scrape_games(team, season, delay)
             all_games.append(games)
-            print(f"        ✓ {len(games)} partidos encontrados")
+            total_games = len(games)
+            print(f"        ✓ {total_games} partidos encontrados")
         except Exception as e:
             print(f"        ✗ ERROR: {e}")
 
         try:
-            print("  [2/3] Líderes estadísticos...")
+            print("  [2/4] Líderes estadísticos...")
             leaders = scrape_leaders(team, season, delay)
             all_leaders.append(leaders)
             print(f"        ✓ {len(leaders)} jugadores encontrados")
@@ -271,10 +305,21 @@ def main():
             print(f"        ✗ ERROR: {e}")
 
         try:
-            print("  [3/3] Disponibilidad...")
+            print("  [3/4] Disponibilidad...")
             avail = scrape_availability(team, season, total_games, delay)
             all_availability.append(avail)
             print(f"        ✓ {len(avail)} jugadores procesados")
+        except Exception as e:
+            print(f"        ✗ ERROR: {e}")
+
+        try:
+            print("  [4/4] Posición en conferencia...")
+            rank = scrape_conf_rank(team, season, delay)
+            if rank > 0:
+                all_conf_ranks[label] = rank
+                print(f"        ✓ Posición #{rank} en conferencia")
+            else:
+                print(f"        ⚠ Equipo no encontrado en tabla de standings")
         except Exception as e:
             print(f"        ✗ ERROR: {e}")
 
@@ -294,6 +339,13 @@ def main():
     if all_availability:
         path = f"{team}_availability.csv"
         pd.concat(all_availability, ignore_index=True).to_csv(path, index=False)
+        print(f"  ✓ {path}")
+
+    if all_conf_ranks:
+        path = f"{team}_conf_ranks.csv"
+        pd.DataFrame(
+            list(all_conf_ranks.items()), columns=["season", "rank"]
+        ).to_csv(path, index=False)
         print(f"  ✓ {path}")
 
     print(f"\n✅ ¡Listo! Ahora corre:")
