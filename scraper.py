@@ -60,6 +60,7 @@ def fetch(url: str, delay: float) -> BeautifulSoup:
     print(f"  → Descargando: {url}")
     r = requests.get(url, headers=HEADERS, timeout=15)
     r.raise_for_status()
+    r.encoding = "utf-8"
     time.sleep(delay + random.uniform(0, 2))
     return BeautifulSoup(r.text, "lxml")
 
