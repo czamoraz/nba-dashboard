@@ -5,14 +5,15 @@ Corre el scraper Y el converter en secuencia.
 
 Uso:
   python setup_team.py --team ATL
-  python setup_team.py --team GSW --seasons 2021 2022 2023 2024 2025
-  python setup_team.py --team LAL --ranks 2020-21:4 2021-22:11 2022-23:4 2023-24:8 2024-25:3
-  python setup_team.py --team BOS --delay 6 --ranks 2020-21:3 2021-22:2
+  python setup_team.py --team GSW --seasons 2021 2022 2023 2024 2025 2026
+  python setup_team.py --team LAL --ranks 2020-21:4 2021-22:11  # override manual
+  python setup_team.py --team BOS --delay 6
 
 Flags:
   --team      Abreviatura del equipo (obligatorio)
-  --seasons   Años en que TERMINA cada temporada (default: 2021 2022 2023 2024 2025)
-  --ranks     Posición final en conferencia por temporada (ej: 2020-21:5 2021-22:8)
+  --seasons   Años en que TERMINA cada temporada (default: 2021 2022 2023 2024 2025 2026)
+  --ranks     Override manual de posición en conferencia (ej: 2020-21:5 2021-22:8)
+              Normalmente no es necesario; el scraper lo obtiene automáticamente.
   --delay     Segundos entre requests al scraper (default: 4, sube a 8+ si te bloquean)
   --skip-scrape  Omite el scraping y solo regenera data.js (útil si ya tienes los CSVs)
 """
@@ -47,14 +48,14 @@ def parse_args():
         epilog="""
 Ejemplos:
   python setup_team.py --team ATL
-  python setup_team.py --team GSW --seasons 2023 2024 2025
-  python setup_team.py --team LAL --ranks 2020-21:4 2021-22:11 --delay 6
-  python setup_team.py --team ATL --skip-scrape --ranks 2020-21:5 2021-22:8
+  python setup_team.py --team GSW --seasons 2023 2024 2025 2026
+  python setup_team.py --team LAL --delay 6
+  python setup_team.py --team ATL --skip-scrape
         """
     )
     parser.add_argument("--team",        "-t", type=str.upper, required=True,  metavar="ABBR")
     parser.add_argument("--seasons",     "-s", type=int, nargs="+",
-                        default=[2021, 2022, 2023, 2024, 2025], metavar="AÑO")
+                        default=[2021, 2022, 2023, 2024, 2025, 2026], metavar="AÑO")
     parser.add_argument("--ranks",             type=str, nargs="*", default=[], metavar="SEASON:RANK")
     parser.add_argument("--delay",       "-d", type=float, default=4.0,        metavar="SEGS")
     parser.add_argument("--skip-scrape",       action="store_true",

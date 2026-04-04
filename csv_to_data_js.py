@@ -370,6 +370,19 @@ if __name__ == "__main__":
 
     # ── Resolver conf_ranks ───────────────────────────────────────
     conf_ranks = {}
+
+    # Primero: cargar desde CSV generado por scraper.py (si existe)
+    conf_ranks_file = f"{team}_conf_ranks.csv"
+    if os.path.exists(conf_ranks_file):
+        try:
+            ranks_df = pd.read_csv(conf_ranks_file)
+            for _, row in ranks_df.iterrows():
+                conf_ranks[str(row["season"])] = int(row["rank"])
+            print(f"  Posiciones en conferencia cargadas desde {conf_ranks_file}")
+        except Exception as e:
+            print(f"  ⚠️  No se pudo leer {conf_ranks_file}: {e}")
+
+    # Luego: aplicar overrides manuales con --ranks (mayor prioridad)
     for item in args.ranks:
         try:
             season, rank = item.split(":")
