@@ -11,7 +11,7 @@ window.TEAM_CONFIG = {
   conference:    "East",
   primaryColor:  "#C8102E",
   secondaryColor:"#FDB927",
-  subtitleText:  "Performance Dashboard · 2020-21 → 2024-25",
+  subtitleText:  "Performance Dashboard · 2020-21 → 2025-26",
 };
 
 /* ── Helper interno ──────────────────────────────────────────── */
@@ -130,7 +130,7 @@ window.SEASON_DATA = {
       blk: { name: "Clint Capela", val: 1.5 },
     },
     avail: [
-      { name: "Bogdan BogdanoviÄ", g: 79 },
+      { name: "Bogdan Bogdanović", g: 79 },
       { name: "Dejounte Murray", g: 78 },
       { name: "Clint Capela", g: 73 },
       { name: "Garrison Mathews", g: 66 },
@@ -161,7 +161,34 @@ window.SEASON_DATA = {
       { name: "Dyson Daniels", g: 76 },
       { name: "Zaccharie Risacher", g: 75 },
       { name: "Onyeka Okongwu", g: 74 },
-      { name: "VÃ­t KrejÄÃ­", g: 57 },
+      { name: "Vít Krejčí", g: 57 },
+    ]
+  },
+
+  "2025-26": {
+    w: 44, l: 33,
+    topW:   { pts: 146, opp: 107, against: "Memphis Grizzlies" },
+    worstL: { pts: 97, opp: 128, against: "Miami Heat" },
+    conf_rank: 5,
+    games: buildGames(
+      "LWLLWWLWLWWWWWLLWWLWWLLLWLWLLLLLLLWWLLWWWLLLLWWWWLLWWLLLWLWWWWWWWWWWWLWWWLWWWLLLLL",
+      ["Toronto Raptors", "Orlando Magic", "Oklahoma City Thunder", "Chicago Bulls", "Brooklyn Nets", "Indiana Pacers", "Cleveland Cavaliers", "Orlando Magic", "Toronto Raptors", "Los Angeles Lakers", "Los Angeles Clippers", "Sacramento Kings", "Utah Jazz", "Phoenix Suns", "Detroit Pistons", "San Antonio Spurs", "New Orleans Pelicans", "Charlotte Hornets", "Washington Wizards", "Cleveland Cavaliers", "Philadelphia 76ers", "Detroit Pistons", "Los Angeles Clippers", "Denver Nuggets", "Washington Wizards", "Detroit Pistons", "Philadelphia 76ers", "Charlotte Hornets", "San Antonio Spurs", "Chicago Bulls", "Chicago Bulls", "Miami Heat", "New York Knicks", "Oklahoma City Thunder", "Minnesota Timberwolves", "New York Knicks", "Toronto Raptors", "Toronto Raptors", "New Orleans Pelicans", "Denver Nuggets", "Golden State Warriors", "Los Angeles Lakers", "Portland Trail Blazers", "Boston Celtics", "Milwaukee Bucks", "Memphis Grizzlies", "Phoenix Suns", "Indiana Pacers", "Boston Celtics", "Houston Rockets", "Indiana Pacers", "Miami Heat", "Utah Jazz", "Charlotte Hornets", "Minnesota Timberwolves", "Charlotte Hornets", "Philadelphia 76ers", "Miami Heat", "Brooklyn Nets", "Washington Wizards", "Washington Wizards", "Portland Trail Blazers", "Milwaukee Bucks", "Philadelphia 76ers", "Dallas Mavericks", "Brooklyn Nets", "Milwaukee Bucks", "Orlando Magic", "Dallas Mavericks", "Houston Rockets", "Golden State Warriors", "Memphis Grizzlies", "Detroit Pistons", "Boston Celtics", "Sacramento Kings", "Boston Celtics", "Orlando Magic", "Brooklyn Nets", "New York Knicks", "Cleveland Cavaliers", "Cleveland Cavaliers", "Miami Heat"],
+      [118, 111, 100, 123, 117, 128, 109, 127, 97, 122, 105, 133, 132, 124, 112, 126, 115, 113, 113, 130, 142, 98, 92, 133, 131, 115, 120, 126, 98, 150, 123, 111, 125, 129, 126, 111, 117, 100, 117, 110, 124, 116, 101, 106, 110, 124, 110, 132, 117, 86, 124, 127, 121, 119, 116, 107, 117, 97, 115, 119, 126, 135, 131, 125, 124, 108, 122, 124, 135, 95, 126, 146, 130, 102, 123, 112, 130, 100, 100, 100, 100, 100],
+      [-20, 4, -17, -5, 5, 20, -8, 15, -12, 20, 3, 33, 10, 2, -8, -9, 17, 3, -19, 7, 8, -1, -23, -1, 15, -27, 3, -7, -28, -2, -3, -15, -3, -11, 24, 12, -17, -18, 17, 23, 13, -25, -16, -26, -2, 2, 7, 16, 11, -18, -5, 12, 2, -7, -22, -3, 10, -31, 11, 21, 30, 34, 18, 9, 12, 11, 23, 12, 15, -22, 16, 39, 1, -7, 10, 10, 29, 0, 0, 0, 0, 0]
+    ),
+    leaders: {
+      pts: { name: "Jalen Johnson", val: 22.8 },
+      reb: { name: "Jalen Johnson", val: 10.3 },
+      ast: { name: "Trae Young", val: 8.9 },
+      stl: { name: "Dyson Daniels", val: 1.9 },
+      blk: { name: "Kristaps Porziņģis", val: 1.3 },
+    },
+    avail: [
+      { name: "Nickeil Alexander-Walker", g: 74 },
+      { name: "Mouhamed Gueye", g: 73 },
+      { name: "Dyson Daniels", g: 72 },
+      { name: "Onyeka Okongwu", g: 70 },
+      { name: "Jalen Johnson", g: 68 },
     ]
   },
 

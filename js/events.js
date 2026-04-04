@@ -48,9 +48,10 @@ window.Events = (() => {
       if (el.opacity === 0) { window.__hideTooltip && window.__hideTooltip(); return; }
       const dp = el.dataPoints && el.dataPoints[0];
       if (!dp || !dp.raw || !dp.raw.raw) return;
+      const rect = ctx.chart.canvas.getBoundingClientRect();
       window.__showTooltip && window.__showTooltip(
-        el.caretX + window.scrollX,
-        el.caretY + window.scrollY,
+        rect.left + el.caretX,
+        rect.top  + el.caretY,
         dp.raw.raw
       );
     };

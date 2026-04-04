@@ -236,7 +236,6 @@
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   transition: opacity 0.1s;
-  max-width: 220px;
 }
 
 /* ── Detail panel (slide-in on game click) ───────────────────── */
