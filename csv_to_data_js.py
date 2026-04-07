@@ -143,7 +143,14 @@ def build_season_games(season_games: pd.DataFrame) -> dict:
     """
     sg = season_games.sort_values("game_num").copy()
 
-    result_str = "".join(sg["result_clean"].fillna("L").astype(str).tolist())
+    # Excluir partidos no jugados (sin resultado)
+    sg = sg[sg["result_clean"].notna()].copy()
+
+    # Excluir partidos Play-In
+    if "notes" in sg.columns:
+        sg = sg[sg["notes"].fillna("").str.strip() != "Play-In Game"].copy()
+
+    result_str = "".join(sg["result_clean"].astype(str).tolist())
     opponents  = sg["opponent"].fillna("OPP").tolist()
     pts_for    = sg["pts_for"].fillna(100).astype(int).tolist()
     margins    = (sg["pts_for"] - sg["pts_against"]).fillna(0).astype(int).tolist()

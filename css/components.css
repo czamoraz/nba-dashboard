@@ -67,7 +67,7 @@
   padding: 1.25rem;
 }
 
-.full-chart { margin-bottom: 1.5rem; }
+.full-chart { margin-bottom: 1.5rem; overflow-x: auto; }
 
 .chart-title {
   font-size: 9px;

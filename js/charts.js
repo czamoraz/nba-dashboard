@@ -93,8 +93,16 @@ window.Charts = (() => {
     const primary = window.TEAM_CONFIG.primaryColor;
     const streaks = detectStreaks(games);
 
-    const winData  = games.filter(g => g.r === "W").map(g => ({ x: g.n, y: g.m, raw: g }));
-    const lossData = games.filter(g => g.r === "L").map(g => ({ x: g.n, y: g.m, raw: g }));
+    // Excluir partidos no jugados (margin === 0 es imposible en la NBA real)
+    const playedGames = games.filter(g => g.m !== 0);
+
+    const winData  = playedGames.filter(g => g.r === "W").map(g => ({ x: g.n, y: g.m, raw: g }));
+    const lossData = playedGames.filter(g => g.r === "L").map(g => ({ x: g.n, y: g.m, raw: g }));
+
+    const maxGame = playedGames.length > 0 ? Math.max(...playedGames.map(g => g.n)) : 1;
+
+    const PX_PER_GAME = 16;
+    ctx.parentElement.style.minWidth = (maxGame * PX_PER_GAME) + "px";
 
     gamesInst = new Chart(ctx, {
       type: "scatter",
@@ -133,8 +141,13 @@ window.Charts = (() => {
         },
         scales: {
           x: {
+            min: -0.5,
+            max: maxGame + 1.5,
             title: { display: true, text: "N° de partido", color: tickColor(), font: { size: 10 } },
-            ticks: { color: tickColor(), font: { size: 10 }, maxTicksLimit: 15 },
+            ticks: {
+              color: tickColor(), font: { size: 10 }, maxTicksLimit: 15,
+              callback: v => Number.isInteger(v) && v >= 1 ? v : null,
+            },
             grid:  { color: gridColor() },
           },
           y: {

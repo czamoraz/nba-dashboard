@@ -98,6 +98,7 @@ def scrape_games(team: str, season: int, delay: float) -> pd.DataFrame:
         "W"          : "wins",
         "L"          : "losses",
         "Streak"     : "streak",
+        "Notes"      : "notes"
     })
 
     df = df[pd.to_numeric(df["game_num"], errors="coerce").notna()].copy()
@@ -116,7 +117,7 @@ def scrape_games(team: str, season: int, delay: float) -> pd.DataFrame:
     cols = [
         "team", "season", "game_num", "date", "home_away", "opponent",
         "result_clean", "pts_for", "pts_against", "margin",
-        "wins", "losses", "win_pct", "streak"
+        "wins", "losses", "win_pct", "streak", "notes"
     ]
     return df[[c for c in cols if c in df.columns]]
 
