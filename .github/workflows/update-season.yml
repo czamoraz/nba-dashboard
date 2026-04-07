@@ -18,7 +18,7 @@ on:
 # ── Equipos que se actualizan en el schedule diario ──────────────────────────
 # Agrega aquí cada equipo a medida que lo añadas al dashboard.
 env:
-  DEFAULT_TEAMS: "ATL"
+  DEFAULT_TEAMS: "ATL BOS"
 
 # ── Permisos para hacer push al repo ─────────────────────────────────────────
 permissions:
