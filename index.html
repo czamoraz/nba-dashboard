@@ -178,10 +178,14 @@
     }
 
     function loadAppScripts() {
-      loadScript("js/charts.js", function () {
-        loadScript("js/render.js", function () {
-          loadScript("js/events.js", function () {
-            loadScript("js/main.js");
+      loadScript("js/state.js", function () {
+        loadScript("js/api.js", function () {
+          loadScript("js/charts.js", function () {
+            loadScript("js/render.js", function () {
+              loadScript("js/events.js", function () {
+                loadScript("js/main.js");
+              });
+            });
           });
         });
       });

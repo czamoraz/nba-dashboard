@@ -1,0 +1,73 @@
+name: Update current season data
+
+# ── Cuándo corre ──────────────────────────────────────────────────────────────
+on:
+  schedule:
+    # Todos los días a las 9am UTC (durante la temporada NBA: oct–jun)
+    # En off-season el script termina sin cambios; no hay costo real.
+    - cron: "0 9 * * *"
+
+  # También permite correrlo manualmente desde GitHub UI (Actions → Run workflow)
+  workflow_dispatch:
+    inputs:
+      teams:
+        description: 'Equipos a actualizar (separados por espacio, ej: "ATL BOS LAL")'
+        required: false
+        default: ""
+
+# ── Equipos que se actualizan en el schedule diario ──────────────────────────
+# Agrega aquí cada equipo a medida que lo añadas al dashboard.
+env:
+  DEFAULT_TEAMS: "ATL"
+
+# ── Permisos para hacer push al repo ─────────────────────────────────────────
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update current season data
+        run: |
+          # Usa equipos del input manual si existe, si no usa DEFAULT_TEAMS
+          TEAMS="${{ github.event.inputs.teams }}"
+          TEAMS="${TEAMS:-$DEFAULT_TEAMS}"
+
+          echo "Equipos a actualizar: $TEAMS"
+          echo "──────────────────────────────────────"
+
+          for team in $TEAMS; do
+            echo ""
+            echo "▶ Actualizando $team..."
+            python update_current_season.py --team "$team" || \
+              echo "⚠️  Falló para $team (nba_api puede estar caído), continuando..."
+          done
+
+      - name: Commit y push si hubo cambios
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add js/data/
+
+          if git diff --staged --quiet; then
+            echo "Sin cambios. El dashboard ya está al día."
+          else
+            git commit -m "chore: update current season data [skip ci]"
+            git push
+            echo "✅ Dashboard actualizado en GitHub Pages."
+          fi
