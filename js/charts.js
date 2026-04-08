@@ -30,6 +30,13 @@ window.Charts = (() => {
   function tickColor()  { return isDark() ? TICK_COLOR_DARK  : TICK_COLOR_LIGHT; }
   function bgColor()    { return isDark() ? "#1a1a1a" : "#ffffff"; }
 
+  function hexToRgba(hex, alpha) {
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
+    return `rgba(${r},${g},${b},${alpha})`;
+  }
+
   /* ── Detectar rachas (≥ N del mismo resultado) ───────────────── */
   function detectStreaks(games, minLen = 4) {
     const streaks = [];
@@ -56,8 +63,8 @@ window.Charts = (() => {
 
       const primary  = window.TEAM_CONFIG.primaryColor;
       const winFill  = isDark()
-        ? "rgba(200,16,46,0.10)"
-        : "rgba(200,16,46,0.07)";
+        ? hexToRgba(primary, 0.10)
+        : hexToRgba(primary, 0.07);
       const loseFill = isDark()
         ? "rgba(120,120,120,0.10)"
         : "rgba(80,80,80,0.06)";
@@ -194,6 +201,11 @@ window.Charts = (() => {
     const pointBorders = labels.map(l => l === currentSeason ? "#fff" : "transparent");
     const pointSizes   = labels.map(l => l === currentSeason ? 8 : 4);
 
+    const minVal = Math.min(...vals);
+    const maxVal = Math.max(...vals);
+    const yMin = Math.max(0,   Math.floor((minVal - 8) / 5) * 5);
+    const yMax = Math.min(100, Math.ceil( (maxVal + 8) / 5) * 5);
+
     winPctInst = new Chart(ctx, {
       type: "line",
       data: {
@@ -203,8 +215,8 @@ window.Charts = (() => {
           data: vals,
           borderColor: primary,
           backgroundColor: isDark()
-            ? "rgba(200,16,46,0.07)"
-            : "rgba(200,16,46,0.05)",
+            ? hexToRgba(primary, 0.07)
+            : hexToRgba(primary, 0.05),
           fill: true,
           tension: 0.4,
           pointBackgroundColor: pointColors,
@@ -224,7 +236,7 @@ window.Charts = (() => {
             grid:  { display: false },
           },
           y: {
-            min: 35, max: 65,
+            min: yMin, max: yMax,
             ticks: { color: tickColor(), font: { size: 10 }, callback: v => v + "%" },
             grid:  { color: gridColor() },
           }
