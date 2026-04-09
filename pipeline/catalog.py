@@ -3,7 +3,7 @@ catalog.py — Abreviaturas y configuración de los 30 equipos NBA.
 """
 
 NBA_TEAMS = {
-    "ATL", "BOS", "BKN", "CHA", "CHI", "CLE", "DAL", "DEN", "DET", "GSW",
+    "ATL", "BOS", "BRK", "CHA", "CHI", "CLE", "DAL", "DEN", "DET", "GSW",
     "HOU", "IND", "LAC", "LAL", "MEM", "MIA", "MIL", "MIN", "NOP", "NYK",
     "OKC", "ORL", "PHI", "PHX", "POR", "SAC", "SAS", "TOR", "UTA", "WAS",
     # Nombres históricos también aceptados
@@ -13,7 +13,7 @@ NBA_TEAMS = {
 TEAM_CATALOG = {
     "ATL": {"name": "Atlanta Hawks",          "conf": "East", "c1": "#C8102E", "c2": "#FDB927"},
     "BOS": {"name": "Boston Celtics",          "conf": "East", "c1": "#007A33", "c2": "#BA9653"},
-    "BKN": {"name": "Brooklyn Nets",           "conf": "East", "c1": "#000000", "c2": "#FFFFFF"},
+    "BRK": {"name": "Brooklyn Nets",           "conf": "East", "c1": "#000000", "c2": "#FFFFFF"},
     "CHA": {"name": "Charlotte Hornets",       "conf": "East", "c1": "#1D1160", "c2": "#00788C"},
     "CHI": {"name": "Chicago Bulls",           "conf": "East", "c1": "#CE1141", "c2": "#000000"},
     "CLE": {"name": "Cleveland Cavaliers",     "conf": "East", "c1": "#860038", "c2": "#FDBB30"},

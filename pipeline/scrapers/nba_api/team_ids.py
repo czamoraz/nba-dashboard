@@ -7,7 +7,7 @@ Los IDs son estables; solo cambian si una franquicia se muda o se crea una nueva
 TEAM_IDS = {
     "ATL": 1610612737,
     "BOS": 1610612738,
-    "BKN": 1610612751,
+    "BRK": 1610612751,
     "CHA": 1610612766,
     "CHI": 1610612741,
     "CLE": 1610612739,
