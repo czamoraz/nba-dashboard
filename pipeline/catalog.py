@@ -5,7 +5,7 @@ catalog.py — Abreviaturas y configuración de los 30 equipos NBA.
 NBA_TEAMS = {
     "ATL", "BOS", "BRK", "CHO", "CHI", "CLE", "DAL", "DEN", "DET", "GSW",
     "HOU", "IND", "LAC", "LAL", "MEM", "MIA", "MIL", "MIN", "NOP", "NYK",
-    "OKC", "ORL", "PHI", "PHX", "POR", "SAC", "SAS", "TOR", "UTA", "WAS",
+    "OKC", "ORL", "PHI", "PHO", "POR", "SAC", "SAS", "TOR", "UTA", "WAS",
     # Nombres históricos también aceptados
     "NJN", "NOH", "NOK", "SEA", "VAN",
 }
@@ -34,7 +34,7 @@ TEAM_CATALOG = {
     "OKC": {"name": "Oklahoma City Thunder",   "conf": "West", "c1": "#007AC1", "c2": "#EF3B24"},
     "ORL": {"name": "Orlando Magic",           "conf": "East", "c1": "#0077C0", "c2": "#C4CED4"},
     "PHI": {"name": "Philadelphia 76ers",      "conf": "East", "c1": "#006BB6", "c2": "#ED174C"},
-    "PHX": {"name": "Phoenix Suns",            "conf": "West", "c1": "#1D1160", "c2": "#E56020"},
+    "PHO": {"name": "Phoenix Suns",            "conf": "West", "c1": "#1D1160", "c2": "#E56020"},
     "POR": {"name": "Portland Trail Blazers",  "conf": "West", "c1": "#E03A3E", "c2": "#000000"},
     "SAC": {"name": "Sacramento Kings",        "conf": "West", "c1": "#5A2D81", "c2": "#63727A"},
     "SAS": {"name": "San Antonio Spurs",       "conf": "West", "c1": "#C4CED4", "c2": "#000000"},

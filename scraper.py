@@ -19,7 +19,7 @@ Uso:
 Abreviaturas comunes:
   ATL BOS BRK CHO CHI CLE DAL DEN DET GSW
   HOU IND LAC LAL MEM MIA MIL MIN NOP NYK
-  OKC ORL PHI PHX POR SAC SAS TOR UTA WAS
+  OKC ORL PHI PHO POR SAC SAS TOR UTA WAS
 
 Nota sobre rate-limiting de Basketball-Reference:
   El script incluye delays entre requests (3-5 seg).

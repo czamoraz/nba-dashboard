@@ -195,7 +195,7 @@ El sitio estar√° disponible en `https://TU_USUARIO.github.io/NOMBRE_REPO` en 1‚Ä
 | Indiana Pacers | IND | Minnesota Timberwolves | MIN |
 | Miami Heat | MIA | New Orleans Pelicans | NOP |
 | Milwaukee Bucks | MIL | Oklahoma City Thunder | OKC |
-| New York Knicks | NYK | Phoenix Suns | PHX |
+| New York Knicks | NYK | Phoenix Suns | PHO |
 | Orlando Magic | ORL | Portland Trail Blazers | POR |
 | Philadelphia 76ers | PHI | Sacramento Kings | SAC |
 | Toronto Raptors | TOR | San Antonio Spurs | SAS |
