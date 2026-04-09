@@ -89,6 +89,7 @@
 
     Events.initTooltip();
     Events.initDetailPanel();
+    Events.initAvailPopup();
     Events.initParticles();
 
     Events.initThemeToggle(() => {

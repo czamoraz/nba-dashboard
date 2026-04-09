@@ -28,7 +28,7 @@
   <!-- ── Partículas (fixed, encima de todo) ────────────────────── -->
   <canvas id="particle-canvas"></canvas>
 
-  <!-- ── Panel lateral de detalle de partido ───────────────────── -->
+  <!-- ── Panel lateral de detalle de partido / líderes ─────────── -->
   <div class="panel-overlay" id="panelOverlay"></div>
   <aside class="detail-panel" id="detailPanel" aria-label="Detalle del partido">
     <div class="panel-header">
@@ -38,6 +38,21 @@
       <!-- Rellenado por events.js -->
     </div>
   </aside>
+
+  <!-- ── Modal popup de disponibilidad ─────────────────────────── -->
+  <div class="avail-overlay" id="availOverlay"></div>
+  <div class="avail-modal" id="availModal" role="dialog" aria-label="Disponibilidad de jugadores">
+    <div class="avail-modal-header">
+      <div>
+        <div class="avail-modal-season" id="availModalSeason"></div>
+        <div class="avail-modal-title">Disponibilidad de jugadores</div>
+      </div>
+      <button class="panel-close" id="availModalClose" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="avail-modal-body" id="availModalBody">
+      <!-- Rellenado por events.js -->
+    </div>
+  </div>
 
   <!-- ── Tooltip global ────────────────────────────────────────── -->
   <div id="tooltip" role="tooltip" aria-live="polite"></div>
@@ -123,7 +138,7 @@
           </div>
         </div>
 
-        <div class="chart-card">
+        <div class="chart-card chart-card--clickable" id="availCard">
           <div class="chart-title">Disponibilidad de jugadores</div>
           <div class="avail-list" id="availBars">
             <!-- Generado por render.js -->
