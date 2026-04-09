@@ -1,0 +1,312 @@
+/* ================================================================
+   WAS.js — Washington Wizards · Generado por csv_to_data_js.py
+   ================================================================ */
+
+"use strict";
+
+/* ── Configuración del equipo ────────────────────────────────── */
+window.TEAM_CONFIG = {
+  name:          "Washington Wizards",
+  abbr:          "WAS",
+  conference:    "East",
+  primaryColor:  "#002B5C",
+  secondaryColor:"#E31837",
+  subtitleText:  "Performance Dashboard · 2020-21 → 2025-26",
+};
+
+/* ── Helper interno ──────────────────────────────────────────── */
+function buildGames(resStr, opps, scores, margins) {
+  const res = resStr.split("");
+  let w = 0, l = 0;
+  return res.map((r, i) => {
+    if (r === "W") w++; else l++;
+    const m  = margins[i % margins.length];
+    const pf = scores[i % scores.length];
+    const pa = pf - m;
+    return { n: i + 1, r, pf, pa, opp: opps[i % opps.length] || "OPP", w, l, m };
+  });
+}
+
+/* ── Datos por temporada ─────────────────────────────────────── */
+window.SEASON_DATA = {
+
+  "2020-21": {
+    w: 34, l: 38,
+    topW:   { pts: 122, opp: 93, against: "Cleveland Cavaliers" },
+    worstL: { pts: 91, opp: 120, against: "Detroit Pistons" },
+    conf_rank: 8,
+    games: buildGames(
+      "LLLLLWWLLLWLLLLWLWLLWLLWWWWWLWWLLWLLLLLWLLLWWLLLLWWLWWWWWWWWLWWLWLWWLLWW",
+      ["Philadelphia 76ers", "Orlando Magic", "Orlando Magic", "Chicago Bulls", "Chicago Bulls", "Minnesota Timberwolves", "Brooklyn Nets", "Philadelphia 76ers", "Boston Celtics", "Miami Heat", "Phoenix Suns", "San Antonio Spurs", "Houston Rockets", "New Orleans Pelicans", "Atlanta Hawks", "Brooklyn Nets", "Portland Trail Blazers", "Miami Heat", "Miami Heat", "Charlotte Hornets", "Chicago Bulls", "Toronto Raptors", "New York Knicks", "Boston Celtics", "Houston Rockets", "Denver Nuggets", "Portland Trail Blazers", "Los Angeles Lakers", "Los Angeles Clippers", "Denver Nuggets", "Minnesota Timberwolves", "Boston Celtics", "Memphis Grizzlies", "Los Angeles Clippers", "Memphis Grizzlies", "Philadelphia 76ers", "Milwaukee Bucks", "Milwaukee Bucks", "Sacramento Kings", "Utah Jazz", "Brooklyn Nets", "New York Knicks", "New York Knicks", "Detroit Pistons", "Indiana Pacers", "Charlotte Hornets", "Detroit Pistons", "Dallas Mavericks", "Toronto Raptors", "Orlando Magic", "Golden State Warriors", "Phoenix Suns", "Utah Jazz", "Sacramento Kings", "New Orleans Pelicans", "Detroit Pistons", "Oklahoma City Thunder", "Golden State Warriors", "Oklahoma City Thunder", "Cleveland Cavaliers", "San Antonio Spurs", "Los Angeles Lakers", "Cleveland Cavaliers", "Dallas Mavericks", "Indiana Pacers", "Milwaukee Bucks", "Toronto Raptors", "Indiana Pacers", "Atlanta Hawks", "Atlanta Hawks", "Cleveland Cavaliers", "Charlotte Hornets"],
+      [107, 120, 113, 107, 130, 130, 123, 136, 107, 124, 128, 101, 88, 106, 100, 149, 121, 103, 95, 97, 105, 115, 91, 104, 131, 130, 118, 127, 116, 112, 128, 110, 111, 119, 112, 101, 119, 122, 119, 131, 106, 113, 102, 106, 132, 104, 91, 87, 101, 131, 110, 106, 125, 123, 117, 121, 119, 118, 129, 119, 143, 116, 122, 124, 154, 134, 131, 133, 124, 116, 120, 115],
+      [-6, -10, -7, -8, -3, 21, 1, -5, -9, -4, 21, -20, -19, -18, -16, 3, -11, 3, -27, -22, 4, -22, -18, 13, 12, 2, 7, 3, -19, 2, 16, -1, -14, 2, -15, -26, -6, -11, -2, 9, -7, -18, -4, 14, 8, -10, -29, -22, -2, 15, 3, -28, 4, 12, 2, 21, 12, 4, 20, 9, -3, 9, 29, -1, 13, -1, 2, 1, -1, -4, 15, 5]
+    ),
+    leaders: {
+      pts: { name: "Bradley Beal", val: 31.3, all: [{"name": "Bradley Beal", "val": 31.3}, {"name": "Russell Westbrook", "val": 22.2}, {"name": "Thomas Bryant", "val": 14.3}, {"name": "Rui Hachimura", "val": 13.8}, {"name": "Dāvis Bertāns", "val": 11.5}, {"name": "Daniel Gafford", "val": 10.1}, {"name": "Robin Lopez", "val": 9.0}, {"name": "Raul Neto", "val": 8.7}, {"name": "Alex Len", "val": 7.1}, {"name": "Moritz Wagner", "val": 7.1}, {"name": "Ish Smith", "val": 6.7}, {"name": "Deni Avdija", "val": 6.3}, {"name": "Garrison Mathews", "val": 5.5}, {"name": "Chandler Hutchison", "val": 5.2}, {"name": "Jerome Robinson", "val": 4.9}, {"name": "Troy Brown Jr.", "val": 4.3}, {"name": "Anthony Gill", "val": 3.1}, {"name": "Jordan Bell", "val": 2.8}, {"name": "Isaac Bonga", "val": 2.0}, {"name": "Cassius Winston", "val": 1.9}, {"name": "Anžejs Pasečņiks", "val": 0.0}] },
+      reb: { name: "Russell Westbrook", val: 11.5, all: [{"name": "Russell Westbrook", "val": 11.5}, {"name": "Thomas Bryant", "val": 6.1}, {"name": "Daniel Gafford", "val": 5.6}, {"name": "Rui Hachimura", "val": 5.5}, {"name": "Deni Avdija", "val": 4.9}, {"name": "Bradley Beal", "val": 4.7}, {"name": "Alex Len", "val": 4.4}, {"name": "Robin Lopez", "val": 3.8}, {"name": "Jordan Bell", "val": 3.8}, {"name": "Ish Smith", "val": 3.4}, {"name": "Chandler Hutchison", "val": 3.2}, {"name": "Dāvis Bertāns", "val": 2.9}, {"name": "Moritz Wagner", "val": 2.9}, {"name": "Troy Brown Jr.", "val": 2.9}, {"name": "Raul Neto", "val": 2.4}, {"name": "Jerome Robinson", "val": 2.2}, {"name": "Anthony Gill", "val": 2.0}, {"name": "Isaac Bonga", "val": 1.7}, {"name": "Garrison Mathews", "val": 1.4}, {"name": "Anžejs Pasečņiks", "val": 1.0}, {"name": "Cassius Winston", "val": 0.4}] },
+      ast: { name: "Russell Westbrook", val: 11.7, all: [{"name": "Russell Westbrook", "val": 11.7}, {"name": "Bradley Beal", "val": 4.4}, {"name": "Ish Smith", "val": 3.9}, {"name": "Raul Neto", "val": 2.3}, {"name": "Thomas Bryant", "val": 1.5}, {"name": "Jerome Robinson", "val": 1.5}, {"name": "Rui Hachimura", "val": 1.4}, {"name": "Moritz Wagner", "val": 1.3}, {"name": "Deni Avdija", "val": 1.2}, {"name": "Anžejs Pasečņiks", "val": 1.0}, {"name": "Jordan Bell", "val": 1.0}, {"name": "Dāvis Bertāns", "val": 0.9}, {"name": "Troy Brown Jr.", "val": 0.9}, {"name": "Alex Len", "val": 0.8}, {"name": "Robin Lopez", "val": 0.8}, {"name": "Chandler Hutchison", "val": 0.7}, {"name": "Isaac Bonga", "val": 0.6}, {"name": "Daniel Gafford", "val": 0.5}, {"name": "Cassius Winston", "val": 0.5}, {"name": "Anthony Gill", "val": 0.4}, {"name": "Garrison Mathews", "val": 0.4}] },
+      stl: { name: "Russell Westbrook", val: 1.4, all: [{"name": "Russell Westbrook", "val": 1.4}, {"name": "Bradley Beal", "val": 1.2}, {"name": "Raul Neto", "val": 1.1}, {"name": "Moritz Wagner", "val": 0.9}, {"name": "Rui Hachimura", "val": 0.8}, {"name": "Ish Smith", "val": 0.7}, {"name": "Jerome Robinson", "val": 0.7}, {"name": "Daniel Gafford", "val": 0.7}, {"name": "Deni Avdija", "val": 0.6}, {"name": "Dāvis Bertāns", "val": 0.6}, {"name": "Chandler Hutchison", "val": 0.6}, {"name": "Jordan Bell", "val": 0.6}, {"name": "Garrison Mathews", "val": 0.5}, {"name": "Thomas Bryant", "val": 0.4}, {"name": "Anthony Gill", "val": 0.4}, {"name": "Alex Len", "val": 0.3}, {"name": "Isaac Bonga", "val": 0.3}, {"name": "Robin Lopez", "val": 0.2}, {"name": "Troy Brown Jr.", "val": 0.1}, {"name": "Cassius Winston", "val": 0.1}, {"name": "Anžejs Pasečņiks", "val": 0.0}] },
+      blk: { name: "Daniel Gafford", val: 1.8, all: [{"name": "Daniel Gafford", "val": 1.8}, {"name": "Alex Len", "val": 1.0}, {"name": "Thomas Bryant", "val": 0.8}, {"name": "Robin Lopez", "val": 0.6}, {"name": "Jordan Bell", "val": 0.6}, {"name": "Bradley Beal", "val": 0.4}, {"name": "Jerome Robinson", "val": 0.4}, {"name": "Russell Westbrook", "val": 0.4}, {"name": "Ish Smith", "val": 0.3}, {"name": "Deni Avdija", "val": 0.3}, {"name": "Chandler Hutchison", "val": 0.3}, {"name": "Moritz Wagner", "val": 0.3}, {"name": "Dāvis Bertāns", "val": 0.2}, {"name": "Troy Brown Jr.", "val": 0.2}, {"name": "Isaac Bonga", "val": 0.2}, {"name": "Anthony Gill", "val": 0.2}, {"name": "Raul Neto", "val": 0.1}, {"name": "Garrison Mathews", "val": 0.1}, {"name": "Rui Hachimura", "val": 0.1}, {"name": "Anžejs Pasečņiks", "val": 0.0}, {"name": "Cassius Winston", "val": 0.0}] },
+    },
+    avail: [
+      { name: "Robin Lopez", g: 71 },
+      { name: "Russell Westbrook", g: 65 },
+      { name: "Raul Neto", g: 64 },
+      { name: "Garrison Mathews", g: 64 },
+      { name: "Bradley Beal", g: 60 },
+      { name: "Rui Hachimura", g: 57 },
+      { name: "Dāvis Bertāns", g: 57 },
+      { name: "Alex Len", g: 57 },
+      { name: "Deni Avdija", g: 54 },
+      { name: "Ish Smith", g: 44 },
+      { name: "Isaac Bonga", g: 40 },
+      { name: "Anthony Gill", g: 26 },
+      { name: "Moritz Wagner", g: 25 },
+      { name: "Daniel Gafford", g: 23 },
+      { name: "Cassius Winston", g: 22 },
+      { name: "Troy Brown Jr.", g: 21 },
+      { name: "Chandler Hutchison", g: 18 },
+      { name: "Jerome Robinson", g: 17 },
+      { name: "Thomas Bryant", g: 10 },
+      { name: "Jordan Bell", g: 5 },
+      { name: "Anžejs Pasečņiks", g: 1 },
+    ]
+  },
+
+  "2021-22": {
+    w: 35, l: 47,
+    topW:   { pts: 135, opp: 103, against: "Dallas Mavericks" },
+    worstL: { pts: 102, opp: 144, against: "Boston Celtics" },
+    conf_rank: 12,
+    games: buildGames(
+      "WWLWWWLLWWWWWLLWLLWWLWLLLWLLLLWWLLWLWLLWWWLWLLLLLLWLLWLWLWLLWLWLLLLLLWLLWWLWWLWLLL",
+      ["Toronto Raptors", "Indiana Pacers", "Brooklyn Nets", "Boston Celtics", "Atlanta Hawks", "Boston Celtics", "Atlanta Hawks", "Toronto Raptors", "Memphis Grizzlies", "Milwaukee Bucks", "Cleveland Cavaliers", "Orlando Magic", "New Orleans Pelicans", "Charlotte Hornets", "Miami Heat", "Miami Heat", "Charlotte Hornets", "New Orleans Pelicans", "Oklahoma City Thunder", "Dallas Mavericks", "San Antonio Spurs", "Minnesota Timberwolves", "Cleveland Cavaliers", "Toronto Raptors", "Indiana Pacers", "Detroit Pistons", "Utah Jazz", "Denver Nuggets", "Sacramento Kings", "Phoenix Suns", "Utah Jazz", "New York Knicks", "Philadelphia 76ers", "Miami Heat", "Cleveland Cavaliers", "Chicago Bulls", "Charlotte Hornets", "Houston Rockets", "Chicago Bulls", "Orlando Magic", "Oklahoma City Thunder", "Orlando Magic", "Portland Trail Blazers", "Philadelphia 76ers", "Brooklyn Nets", "Toronto Raptors", "Boston Celtics", "Los Angeles Clippers", "Memphis Grizzlies", "Milwaukee Bucks", "Philadelphia 76ers", "Phoenix Suns", "Miami Heat", "Brooklyn Nets", "Sacramento Kings", "Detroit Pistons", "Indiana Pacers", "Brooklyn Nets", "San Antonio Spurs", "Cleveland Cavaliers", "Detroit Pistons", "Atlanta Hawks", "Indiana Pacers", "Los Angeles Clippers", "Los Angeles Lakers", "Portland Trail Blazers", "Golden State Warriors", "Denver Nuggets", "New York Knicks", "Los Angeles Lakers", "Houston Rockets", "Milwaukee Bucks", "Detroit Pistons", "Golden State Warriors", "Chicago Bulls", "Orlando Magic", "Dallas Mavericks", "Boston Celtics", "Minnesota Timberwolves", "Atlanta Hawks", "New York Knicks", "Charlotte Hornets"],
+      [98, 135, 90, 116, 122, 115, 111, 100, 115, 101, 97, 104, 105, 87, 97, 103, 103, 102, 101, 120, 99, 115, 101, 90, 110, 119, 98, 107, 105, 98, 109, 124, 96, 112, 110, 119, 124, 111, 122, 102, 122, 112, 110, 117, 118, 105, 87, 115, 95, 98, 106, 80, 100, 113, 110, 103, 108, 117, 153, 86, 116, 114, 133, 109, 109, 118, 112, 109, 97, 127, 97, 102, 100, 123, 94, 127, 135, 102, 132, 103, 92, 108],
+      [15, 1, -14, 9, 11, 3, -7, -9, 28, 7, 3, 12, 5, -10, -15, 3, -6, -25, 2, 6, -17, 8, -15, -12, -6, 3, -25, -6, -14, -20, 6, 7, -21, -7, 17, -1, 3, -3, -8, 2, 4, 6, -5, 19, -1, -4, -29, -1, -20, -14, 3, -15, -21, 1, -13, 9, -5, 14, -4, -6, 3, -3, 10, -6, -13, -9, -14, -18, -3, 8, -18, -12, 3, 8, -13, 17, 32, -42, 18, -15, -22, -16]
+    ),
+    leaders: {
+      pts: { name: "Bradley Beal", val: 23.2, all: [{"name": "Bradley Beal", "val": 23.2}, {"name": "Kristaps Porziņģis", "val": 22.1}, {"name": "Kyle Kuzma", "val": 17.1}, {"name": "Montrezl Harrell", "val": 14.1}, {"name": "Kentavious Caldwell-Pope", "val": 13.2}, {"name": "Spencer Dinwiddie", "val": 12.6}, {"name": "Rui Hachimura", "val": 11.3}, {"name": "Daniel Gafford", "val": 9.4}, {"name": "Ish Smith", "val": 8.6}, {"name": "Deni Avdija", "val": 8.4}, {"name": "Corey Kispert", "val": 8.2}, {"name": "Raul Neto", "val": 7.5}, {"name": "Thomas Bryant", "val": 7.4}, {"name": "Brad Wanamaker", "val": 7.0}, {"name": "Aaron Holiday", "val": 6.1}, {"name": "Dāvis Bertāns", "val": 5.7}, {"name": "Tomáš Satoranský", "val": 4.9}, {"name": "Anthony Gill", "val": 4.1}, {"name": "Greg Monroe", "val": 4.0}, {"name": "Vernon Carey Jr.", "val": 4.0}, {"name": "Tremont Waters", "val": 2.0}, {"name": "Craig Sword", "val": 2.0}, {"name": "Cassius Winston", "val": 2.0}, {"name": "Isaiah Todd", "val": 1.7}, {"name": "Jordan Schakel", "val": 1.3}, {"name": "Alize Johnson", "val": 1.3}, {"name": "Joel Ayayi", "val": 0.3}, {"name": "Jordan Goodwin", "val": 0.0}, {"name": "Jaime Echenique", "val": 0.0}] },
+      reb: { name: "Kristaps Porziņģis", val: 8.8, all: [{"name": "Kristaps Porziņģis", "val": 8.8}, {"name": "Kyle Kuzma", "val": 8.5}, {"name": "Montrezl Harrell", "val": 6.7}, {"name": "Daniel Gafford", "val": 5.7}, {"name": "Deni Avdija", "val": 5.2}, {"name": "Greg Monroe", "val": 5.0}, {"name": "Bradley Beal", "val": 4.7}, {"name": "Spencer Dinwiddie", "val": 4.7}, {"name": "Alize Johnson", "val": 4.0}, {"name": "Thomas Bryant", "val": 4.0}, {"name": "Brad Wanamaker", "val": 4.0}, {"name": "Rui Hachimura", "val": 3.8}, {"name": "Kentavious Caldwell-Pope", "val": 3.4}, {"name": "Ish Smith", "val": 3.0}, {"name": "Tomáš Satoranský", "val": 2.8}, {"name": "Corey Kispert", "val": 2.7}, {"name": "Vernon Carey Jr.", "val": 2.3}, {"name": "Jordan Schakel", "val": 2.0}, {"name": "Anthony Gill", "val": 1.9}, {"name": "Raul Neto", "val": 1.9}, {"name": "Dāvis Bertāns", "val": 1.8}, {"name": "Aaron Holiday", "val": 1.6}, {"name": "Isaiah Todd", "val": 1.0}, {"name": "Jordan Goodwin", "val": 0.5}, {"name": "Joel Ayayi", "val": 0.4}, {"name": "Cassius Winston", "val": 0.1}, {"name": "Tremont Waters", "val": 0.0}, {"name": "Craig Sword", "val": 0.0}, {"name": "Jaime Echenique", "val": 0.0}] },
+      ast: { name: "Brad Wanamaker", val: 7.0, all: [{"name": "Brad Wanamaker", "val": 7.0}, {"name": "Bradley Beal", "val": 6.6}, {"name": "Spencer Dinwiddie", "val": 5.8}, {"name": "Ish Smith", "val": 5.2}, {"name": "Tomáš Satoranský", "val": 4.9}, {"name": "Kyle Kuzma", "val": 3.5}, {"name": "Raul Neto", "val": 3.1}, {"name": "Kristaps Porziņģis", "val": 2.9}, {"name": "Montrezl Harrell", "val": 2.1}, {"name": "Deni Avdija", "val": 2.0}, {"name": "Aaron Holiday", "val": 1.9}, {"name": "Kentavious Caldwell-Pope", "val": 1.9}, {"name": "Corey Kispert", "val": 1.1}, {"name": "Rui Hachimura", "val": 1.1}, {"name": "Cassius Winston", "val": 1.0}, {"name": "Thomas Bryant", "val": 0.9}, {"name": "Daniel Gafford", "val": 0.9}, {"name": "Anthony Gill", "val": 0.6}, {"name": "Joel Ayayi", "val": 0.6}, {"name": "Dāvis Bertāns", "val": 0.5}, {"name": "Greg Monroe", "val": 0.5}, {"name": "Craig Sword", "val": 0.3}, {"name": "Isaiah Todd", "val": 0.3}, {"name": "Vernon Carey Jr.", "val": 0.0}, {"name": "Tremont Waters", "val": 0.0}, {"name": "Jordan Schakel", "val": 0.0}, {"name": "Alize Johnson", "val": 0.0}, {"name": "Jordan Goodwin", "val": 0.0}, {"name": "Jaime Echenique", "val": 0.0}] },
+      stl: { name: "Brad Wanamaker", val: 2.0, all: [{"name": "Brad Wanamaker", "val": 2.0}, {"name": "Craig Sword", "val": 1.3}, {"name": "Kentavious Caldwell-Pope", "val": 1.1}, {"name": "Tremont Waters", "val": 1.0}, {"name": "Ish Smith", "val": 1.0}, {"name": "Bradley Beal", "val": 0.9}, {"name": "Raul Neto", "val": 0.8}, {"name": "Kristaps Porziņģis", "val": 0.7}, {"name": "Deni Avdija", "val": 0.7}, {"name": "Tomáš Satoranský", "val": 0.7}, {"name": "Spencer Dinwiddie", "val": 0.6}, {"name": "Kyle Kuzma", "val": 0.6}, {"name": "Aaron Holiday", "val": 0.6}, {"name": "Greg Monroe", "val": 0.5}, {"name": "Corey Kispert", "val": 0.5}, {"name": "Rui Hachimura", "val": 0.5}, {"name": "Daniel Gafford", "val": 0.4}, {"name": "Montrezl Harrell", "val": 0.4}, {"name": "Isaiah Todd", "val": 0.3}, {"name": "Dāvis Bertāns", "val": 0.3}, {"name": "Vernon Carey Jr.", "val": 0.3}, {"name": "Jordan Schakel", "val": 0.3}, {"name": "Thomas Bryant", "val": 0.2}, {"name": "Anthony Gill", "val": 0.1}, {"name": "Alize Johnson", "val": 0.0}, {"name": "Cassius Winston", "val": 0.0}, {"name": "Jordan Goodwin", "val": 0.0}, {"name": "Jaime Echenique", "val": 0.0}, {"name": "Joel Ayayi", "val": 0.0}] },
+      blk: { name: "Kristaps Porziņģis", val: 1.5, all: [{"name": "Kristaps Porziņģis", "val": 1.5}, {"name": "Daniel Gafford", "val": 1.4}, {"name": "Kyle Kuzma", "val": 0.9}, {"name": "Thomas Bryant", "val": 0.8}, {"name": "Montrezl Harrell", "val": 0.7}, {"name": "Ish Smith", "val": 0.5}, {"name": "Greg Monroe", "val": 0.5}, {"name": "Deni Avdija", "val": 0.5}, {"name": "Bradley Beal", "val": 0.4}, {"name": "Vernon Carey Jr.", "val": 0.3}, {"name": "Corey Kispert", "val": 0.3}, {"name": "Kentavious Caldwell-Pope", "val": 0.3}, {"name": "Anthony Gill", "val": 0.3}, {"name": "Dāvis Bertāns", "val": 0.2}, {"name": "Isaiah Todd", "val": 0.2}, {"name": "Rui Hachimura", "val": 0.2}, {"name": "Aaron Holiday", "val": 0.2}, {"name": "Spencer Dinwiddie", "val": 0.2}, {"name": "Tomáš Satoranský", "val": 0.2}, {"name": "Raul Neto", "val": 0.0}, {"name": "Tremont Waters", "val": 0.0}, {"name": "Jordan Schakel", "val": 0.0}, {"name": "Craig Sword", "val": 0.0}, {"name": "Brad Wanamaker", "val": 0.0}, {"name": "Alize Johnson", "val": 0.0}, {"name": "Cassius Winston", "val": 0.0}, {"name": "Jordan Goodwin", "val": 0.0}, {"name": "Jaime Echenique", "val": 0.0}, {"name": "Joel Ayayi", "val": 0.0}] },
+    },
+    avail: [
+      { name: "Deni Avdija", g: 82 },
+      { name: "Kentavious Caldwell-Pope", g: 77 },
+      { name: "Corey Kispert", g: 77 },
+      { name: "Daniel Gafford", g: 72 },
+      { name: "Raul Neto", g: 70 },
+      { name: "Kyle Kuzma", g: 66 },
+      { name: "Montrezl Harrell", g: 46 },
+      { name: "Spencer Dinwiddie", g: 44 },
+      { name: "Anthony Gill", g: 44 },
+      { name: "Rui Hachimura", g: 42 },
+      { name: "Aaron Holiday", g: 41 },
+      { name: "Bradley Beal", g: 40 },
+      { name: "Dāvis Bertāns", g: 34 },
+      { name: "Ish Smith", g: 28 },
+      { name: "Thomas Bryant", g: 27 },
+      { name: "Tomáš Satoranský", g: 22 },
+      { name: "Kristaps Porziņģis", g: 17 },
+      { name: "Isaiah Todd", g: 12 },
+      { name: "Cassius Winston", g: 7 },
+      { name: "Joel Ayayi", g: 7 },
+      { name: "Jordan Schakel", g: 4 },
+      { name: "Vernon Carey Jr.", g: 3 },
+      { name: "Craig Sword", g: 3 },
+      { name: "Alize Johnson", g: 3 },
+      { name: "Greg Monroe", g: 2 },
+      { name: "Jordan Goodwin", g: 2 },
+      { name: "Brad Wanamaker", g: 1 },
+      { name: "Tremont Waters", g: 1 },
+      { name: "Jaime Echenique", g: 1 },
+    ]
+  },
+
+  "2022-23": {
+    w: 35, l: 47,
+    topW:   { pts: 127, opp: 102, against: "Phoenix Suns" },
+    worstL: { pts: 86, opp: 128, against: "Brooklyn Nets" },
+    conf_rank: 12,
+    games: buildGames(
+      "WWLWLLLWLLWWWWLWWLLLWLLLLLLLLLLWLWWWWWLLLWLLWWWWWWLLLWWLWWLLWWLLWLLLWLLLLWLWLLLLWL",
+      ["Indiana Pacers", "Chicago Bulls", "Cleveland Cavaliers", "Detroit Pistons", "Indiana Pacers", "Boston Celtics", "Philadelphia 76ers", "Philadelphia 76ers", "Brooklyn Nets", "Memphis Grizzlies", "Charlotte Hornets", "Dallas Mavericks", "Utah Jazz", "Memphis Grizzlies", "Oklahoma City Thunder", "Miami Heat", "Charlotte Hornets", "Miami Heat", "Miami Heat", "Boston Celtics", "Minnesota Timberwolves", "Brooklyn Nets", "Charlotte Hornets", "Los Angeles Lakers", "Chicago Bulls", "Indiana Pacers", "Los Angeles Clippers", "Brooklyn Nets", "Denver Nuggets", "Los Angeles Clippers", "Los Angeles Lakers", "Phoenix Suns", "Utah Jazz", "Sacramento Kings", "Philadelphia 76ers", "Phoenix Suns", "Orlando Magic", "Milwaukee Bucks", "Milwaukee Bucks", "Oklahoma City Thunder", "New Orleans Pelicans", "Chicago Bulls", "New York Knicks", "Golden State Warriors", "New York Knicks", "Orlando Magic", "Dallas Mavericks", "Houston Rockets", "New Orleans Pelicans", "San Antonio Spurs", "Portland Trail Blazers", "Brooklyn Nets", "Cleveland Cavaliers", "Charlotte Hornets", "Indiana Pacers", "Golden State Warriors", "Portland Trail Blazers", "Minnesota Timberwolves", "New York Knicks", "Chicago Bulls", "Atlanta Hawks", "Toronto Raptors", "Toronto Raptors", "Milwaukee Bucks", "Detroit Pistons", "Atlanta Hawks", "Atlanta Hawks", "Philadelphia 76ers", "Detroit Pistons", "Cleveland Cavaliers", "Sacramento Kings", "Orlando Magic", "Denver Nuggets", "San Antonio Spurs", "Toronto Raptors", "Boston Celtics", "Orlando Magic", "New York Knicks", "Milwaukee Bucks", "Atlanta Hawks", "Miami Heat", "Houston Rockets"],
+      [114, 102, 107, 120, 117, 94, 111, 121, 86, 97, 108, 113, 121, 102, 120, 107, 106, 105, 107, 121, 142, 107, 116, 119, 111, 111, 107, 100, 128, 93, 117, 113, 112, 125, 116, 127, 119, 118, 113, 110, 112, 100, 108, 118, 116, 138, 127, 108, 113, 127, 116, 123, 91, 118, 127, 126, 126, 114, 109, 82, 119, 119, 109, 111, 119, 120, 107, 93, 117, 94, 118, 112, 104, 136, 104, 130, 109, 109, 128, 116, 114, 109],
+      [7, 2, -10, 21, -10, -18, -7, 10, -42, -6, 8, 8, 9, 10, -1, 1, 4, -8, -3, -9, 15, -6, -1, -11, -4, -10, -7, -12, -13, -9, -2, 3, -8, 14, 5, 25, 19, 23, -10, -17, -20, 3, -4, -9, 11, 20, 1, 5, 10, 21, -8, -2, -23, 14, 14, -9, 25, 8, -6, -20, 3, 11, -7, -6, 2, -2, -7, -19, 20, -23, -14, -10, -14, 12, -10, 19, -7, -9, -12, -18, 6, -5]
+    ),
+    leaders: {
+      pts: { name: "Kristaps Porziņģis", val: 23.2, all: [{"name": "Kristaps Porziņģis", "val": 23.2}, {"name": "Bradley Beal", "val": 23.2}, {"name": "Kyle Kuzma", "val": 21.2}, {"name": "Rui Hachimura", "val": 13.0}, {"name": "Corey Kispert", "val": 11.1}, {"name": "Monte Morris", "val": 10.3}, {"name": "Deni Avdija", "val": 9.2}, {"name": "Daniel Gafford", "val": 9.0}, {"name": "Will Barton", "val": 7.7}, {"name": "Kendrick Nunn", "val": 7.5}, {"name": "Delon Wright", "val": 7.4}, {"name": "Jay Huff", "val": 7.3}, {"name": "Jordan Goodwin", "val": 6.6}, {"name": "Quenton Jackson", "val": 6.2}, {"name": "Johnny Davis", "val": 5.8}, {"name": "Xavier Cooks", "val": 3.8}, {"name": "Taj Gibson", "val": 3.4}, {"name": "Anthony Gill", "val": 3.3}, {"name": "Isaiah Todd", "val": 1.5}, {"name": "Jordan Schakel", "val": 1.5}, {"name": "Devon Dotson", "val": 0.5}, {"name": "Vernon Carey Jr.", "val": 0.5}, {"name": "Jamaree Bouyea", "val": 0.0}] },
+      reb: { name: "Kristaps Porziņģis", val: 8.4, all: [{"name": "Kristaps Porziņģis", "val": 8.4}, {"name": "Kyle Kuzma", "val": 7.2}, {"name": "Deni Avdija", "val": 6.4}, {"name": "Daniel Gafford", "val": 5.6}, {"name": "Rui Hachimura", "val": 4.3}, {"name": "Bradley Beal", "val": 3.9}, {"name": "Xavier Cooks", "val": 3.8}, {"name": "Delon Wright", "val": 3.6}, {"name": "Monte Morris", "val": 3.4}, {"name": "Jordan Goodwin", "val": 3.3}, {"name": "Jay Huff", "val": 3.0}, {"name": "Corey Kispert", "val": 2.8}, {"name": "Will Barton", "val": 2.8}, {"name": "Johnny Davis", "val": 2.3}, {"name": "Isaiah Todd", "val": 2.0}, {"name": "Taj Gibson", "val": 1.9}, {"name": "Kendrick Nunn", "val": 1.7}, {"name": "Anthony Gill", "val": 1.7}, {"name": "Devon Dotson", "val": 1.7}, {"name": "Jamaree Bouyea", "val": 1.0}, {"name": "Vernon Carey Jr.", "val": 1.0}, {"name": "Quenton Jackson", "val": 0.9}, {"name": "Jordan Schakel", "val": 0.0}] },
+      ast: { name: "Bradley Beal", val: 5.4, all: [{"name": "Bradley Beal", "val": 5.4}, {"name": "Monte Morris", "val": 5.3}, {"name": "Delon Wright", "val": 3.9}, {"name": "Kyle Kuzma", "val": 3.7}, {"name": "Deni Avdija", "val": 2.8}, {"name": "Kristaps Porziņģis", "val": 2.7}, {"name": "Jordan Goodwin", "val": 2.7}, {"name": "Will Barton", "val": 2.4}, {"name": "Kendrick Nunn", "val": 1.8}, {"name": "Quenton Jackson", "val": 1.7}, {"name": "Jay Huff", "val": 1.4}, {"name": "Devon Dotson", "val": 1.3}, {"name": "Corey Kispert", "val": 1.2}, {"name": "Rui Hachimura", "val": 1.2}, {"name": "Daniel Gafford", "val": 1.1}, {"name": "Johnny Davis", "val": 1.0}, {"name": "Isaiah Todd", "val": 0.7}, {"name": "Taj Gibson", "val": 0.7}, {"name": "Anthony Gill", "val": 0.6}, {"name": "Xavier Cooks", "val": 0.6}, {"name": "Jordan Schakel", "val": 0.5}, {"name": "Vernon Carey Jr.", "val": 0.3}, {"name": "Jamaree Bouyea", "val": 0.0}] },
+      stl: { name: "Delon Wright", val: 1.8, all: [{"name": "Delon Wright", "val": 1.8}, {"name": "Kristaps Porziņģis", "val": 0.9}, {"name": "Deni Avdija", "val": 0.9}, {"name": "Jordan Goodwin", "val": 0.9}, {"name": "Bradley Beal", "val": 0.9}, {"name": "Devon Dotson", "val": 0.8}, {"name": "Monte Morris", "val": 0.7}, {"name": "Kyle Kuzma", "val": 0.6}, {"name": "Xavier Cooks", "val": 0.6}, {"name": "Kendrick Nunn", "val": 0.5}, {"name": "Jordan Schakel", "val": 0.5}, {"name": "Jay Huff", "val": 0.4}, {"name": "Johnny Davis", "val": 0.4}, {"name": "Quenton Jackson", "val": 0.4}, {"name": "Will Barton", "val": 0.4}, {"name": "Daniel Gafford", "val": 0.4}, {"name": "Rui Hachimura", "val": 0.4}, {"name": "Corey Kispert", "val": 0.4}, {"name": "Taj Gibson", "val": 0.3}, {"name": "Isaiah Todd", "val": 0.2}, {"name": "Vernon Carey Jr.", "val": 0.2}, {"name": "Anthony Gill", "val": 0.1}, {"name": "Jamaree Bouyea", "val": 0.0}] },
+      blk: { name: "Kristaps Porziņģis", val: 1.5, all: [{"name": "Kristaps Porziņģis", "val": 1.5}, {"name": "Daniel Gafford", "val": 1.3}, {"name": "Bradley Beal", "val": 0.7}, {"name": "Jay Huff", "val": 0.6}, {"name": "Kyle Kuzma", "val": 0.5}, {"name": "Jordan Goodwin", "val": 0.4}, {"name": "Xavier Cooks", "val": 0.4}, {"name": "Deni Avdija", "val": 0.4}, {"name": "Rui Hachimura", "val": 0.4}, {"name": "Johnny Davis", "val": 0.3}, {"name": "Will Barton", "val": 0.3}, {"name": "Delon Wright", "val": 0.3}, {"name": "Monte Morris", "val": 0.2}, {"name": "Anthony Gill", "val": 0.2}, {"name": "Taj Gibson", "val": 0.2}, {"name": "Vernon Carey Jr.", "val": 0.2}, {"name": "Quenton Jackson", "val": 0.1}, {"name": "Kendrick Nunn", "val": 0.1}, {"name": "Corey Kispert", "val": 0.1}, {"name": "Isaiah Todd", "val": 0.0}, {"name": "Devon Dotson", "val": 0.0}, {"name": "Jamaree Bouyea", "val": 0.0}, {"name": "Jordan Schakel", "val": 0.0}] },
+    },
+    avail: [
+      { name: "Daniel Gafford", g: 78 },
+      { name: "Deni Avdija", g: 76 },
+      { name: "Corey Kispert", g: 74 },
+      { name: "Kristaps Porziņģis", g: 65 },
+      { name: "Kyle Kuzma", g: 64 },
+      { name: "Monte Morris", g: 62 },
+      { name: "Jordan Goodwin", g: 62 },
+      { name: "Anthony Gill", g: 59 },
+      { name: "Delon Wright", g: 50 },
+      { name: "Bradley Beal", g: 50 },
+      { name: "Taj Gibson", g: 49 },
+      { name: "Will Barton", g: 40 },
+      { name: "Kendrick Nunn", g: 31 },
+      { name: "Rui Hachimura", g: 30 },
+      { name: "Johnny Davis", g: 28 },
+      { name: "Vernon Carey Jr.", g: 11 },
+      { name: "Xavier Cooks", g: 10 },
+      { name: "Quenton Jackson", g: 9 },
+      { name: "Jay Huff", g: 7 },
+      { name: "Isaiah Todd", g: 6 },
+      { name: "Devon Dotson", g: 6 },
+      { name: "Jordan Schakel", g: 2 },
+      { name: "Jamaree Bouyea", g: 1 },
+    ]
+  },
+
+  "2023-24": {
+    w: 15, l: 67,
+    topW:   { pts: 127, opp: 99, against: "Atlanta Hawks" },
+    worstL: { pts: 101, opp: 146, against: "Philadelphia 76ers" },
+    conf_rank: 14,
+    games: buildGames(
+      "LWLLLLWLLLLLLLLLWLLLLLLWLLWLLLWLLLLLLWLLLLLLWWLLLLLLLLLLLLLLLLWWLLLLLWWWLLLWLLLLLL",
+      ["Indiana Pacers", "Memphis Grizzlies", "Boston Celtics", "Atlanta Hawks", "Miami Heat", "Philadelphia 76ers", "Charlotte Hornets", "Charlotte Hornets", "Brooklyn Nets", "Toronto Raptors", "Dallas Mavericks", "New York Knicks", "Milwaukee Bucks", "Charlotte Hornets", "Milwaukee Bucks", "Atlanta Hawks", "Detroit Pistons", "Orlando Magic", "Orlando Magic", "Philadelphia 76ers", "Brooklyn Nets", "Philadelphia 76ers", "New Orleans Pelicans", "Indiana Pacers", "Phoenix Suns", "Sacramento Kings", "Portland Trail Blazers", "Golden State Warriors", "Orlando Magic", "Toronto Raptors", "Brooklyn Nets", "Atlanta Hawks", "Cleveland Cavaliers", "Cleveland Cavaliers", "New York Knicks", "Oklahoma City Thunder", "Indiana Pacers", "Atlanta Hawks", "Detroit Pistons", "New York Knicks", "San Antonio Spurs", "Denver Nuggets", "Minnesota Timberwolves", "Utah Jazz", "Detroit Pistons", "San Antonio Spurs", "Los Angeles Clippers", "Miami Heat", "Phoenix Suns", "Cleveland Cavaliers", "Boston Celtics", "Philadelphia 76ers", "Dallas Mavericks", "New Orleans Pelicans", "Denver Nuggets", "Oklahoma City Thunder", "Cleveland Cavaliers", "Golden State Warriors", "Los Angeles Lakers", "Los Angeles Clippers", "Utah Jazz", "Orlando Magic", "Charlotte Hornets", "Miami Heat", "Memphis Grizzlies", "Houston Rockets", "Chicago Bulls", "Boston Celtics", "Houston Rockets", "Sacramento Kings", "Toronto Raptors", "Chicago Bulls", "Brooklyn Nets", "Detroit Pistons", "Miami Heat", "Milwaukee Bucks", "Los Angeles Lakers", "Portland Trail Blazers", "Toronto Raptors", "Minnesota Timberwolves", "Chicago Bulls", "Boston Celtics"],
+      [120, 113, 107, 121, 114, 128, 132, 117, 94, 107, 117, 99, 129, 114, 128, 108, 126, 120, 125, 126, 97, 101, 122, 137, 108, 131, 118, 118, 119, 102, 110, 126, 101, 90, 105, 128, 104, 127, 117, 109, 127, 104, 107, 108, 118, 118, 109, 102, 112, 106, 129, 113, 104, 126, 110, 106, 105, 112, 131, 115, 115, 109, 112, 110, 97, 119, 98, 104, 114, 109, 112, 107, 119, 87, 107, 117, 120, 102, 122, 121, 127, 122],
+      [-23, 7, -19, -9, -7, -18, 16, -7, -8, -4, -13, -21, -13, -3, -3, -28, 19, -19, -5, -5, -27, -45, -20, 14, -4, -12, 1, -11, -8, -30, 6, -4, -39, -24, -16, -8, -8, 28, -12, -4, -4, -9, -11, -15, 14, 5, -16, -8, -28, -8, -4, -6, -8, -7, -20, -41, -9, -11, -3, -25, -12, -10, 12, 2, -12, -16, -29, -26, -23, 7, 3, 2, -3, -9, -12, 4, -5, -6, -8, -9, -2, -10]
+    ),
+    leaders: {
+      pts: { name: "Kyle Kuzma", val: 22.2, all: [{"name": "Kyle Kuzma", "val": 22.2}, {"name": "Jordan Poole", "val": 17.4}, {"name": "Deni Avdija", "val": 14.7}, {"name": "Corey Kispert", "val": 13.4}, {"name": "Marvin Bagley III", "val": 13.3}, {"name": "Tyus Jones", "val": 12.0}, {"name": "Daniel Gafford", "val": 10.9}, {"name": "Tristan Vukcevic", "val": 8.5}, {"name": "Bilal Coulibaly", "val": 8.4}, {"name": "Richaun Holmes", "val": 7.1}, {"name": "Landry Shamet", "val": 7.1}, {"name": "Danilo Gallinari", "val": 7.0}, {"name": "Jared Butler", "val": 6.3}, {"name": "Justin Champagnie", "val": 5.9}, {"name": "Eugene Omoruyi", "val": 4.8}, {"name": "Patrick Baldwin Jr.", "val": 4.4}, {"name": "Delon Wright", "val": 4.1}, {"name": "Ryan Rollins", "val": 4.1}, {"name": "Mike Muscala", "val": 4.0}, {"name": "Jules Bernard", "val": 3.9}, {"name": "Anthony Gill", "val": 3.8}, {"name": "Johnny Davis", "val": 3.0}, {"name": "Hamidou Diallo", "val": 1.0}, {"name": "Trey Jemison", "val": 0.0}] },
+      reb: { name: "Marvin Bagley III", val: 8.1, all: [{"name": "Marvin Bagley III", "val": 8.1}, {"name": "Daniel Gafford", "val": 8.0}, {"name": "Deni Avdija", "val": 7.2}, {"name": "Kyle Kuzma", "val": 6.6}, {"name": "Richaun Holmes", "val": 6.1}, {"name": "Bilal Coulibaly", "val": 4.1}, {"name": "Tristan Vukcevic", "val": 3.6}, {"name": "Justin Champagnie", "val": 3.5}, {"name": "Patrick Baldwin Jr.", "val": 3.2}, {"name": "Mike Muscala", "val": 3.1}, {"name": "Danilo Gallinari", "val": 2.9}, {"name": "Corey Kispert", "val": 2.8}, {"name": "Jordan Poole", "val": 2.7}, {"name": "Tyus Jones", "val": 2.7}, {"name": "Eugene Omoruyi", "val": 2.0}, {"name": "Anthony Gill", "val": 1.9}, {"name": "Delon Wright", "val": 1.8}, {"name": "Jared Butler", "val": 1.5}, {"name": "Johnny Davis", "val": 1.4}, {"name": "Jules Bernard", "val": 1.4}, {"name": "Landry Shamet", "val": 1.3}, {"name": "Ryan Rollins", "val": 1.1}, {"name": "Hamidou Diallo", "val": 1.0}, {"name": "Trey Jemison", "val": 0.5}] },
+      ast: { name: "Tyus Jones", val: 7.3, all: [{"name": "Tyus Jones", "val": 7.3}, {"name": "Jordan Poole", "val": 4.4}, {"name": "Kyle Kuzma", "val": 4.2}, {"name": "Deni Avdija", "val": 3.8}, {"name": "Jared Butler", "val": 3.2}, {"name": "Delon Wright", "val": 2.5}, {"name": "Corey Kispert", "val": 2.0}, {"name": "Bilal Coulibaly", "val": 1.7}, {"name": "Daniel Gafford", "val": 1.5}, {"name": "Tristan Vukcevic", "val": 1.3}, {"name": "Justin Champagnie", "val": 1.3}, {"name": "Danilo Gallinari", "val": 1.2}, {"name": "Landry Shamet", "val": 1.2}, {"name": "Marvin Bagley III", "val": 1.2}, {"name": "Ryan Rollins", "val": 1.1}, {"name": "Mike Muscala", "val": 0.9}, {"name": "Patrick Baldwin Jr.", "val": 0.8}, {"name": "Eugene Omoruyi", "val": 0.8}, {"name": "Jules Bernard", "val": 0.8}, {"name": "Anthony Gill", "val": 0.7}, {"name": "Richaun Holmes", "val": 0.6}, {"name": "Johnny Davis", "val": 0.6}, {"name": "Hamidou Diallo", "val": 0.5}, {"name": "Trey Jemison", "val": 0.0}] },
+      stl: { name: "Tyus Jones", val: 1.1, all: [{"name": "Tyus Jones", "val": 1.1}, {"name": "Delon Wright", "val": 1.1}, {"name": "Jordan Poole", "val": 1.1}, {"name": "Daniel Gafford", "val": 1.0}, {"name": "Hamidou Diallo", "val": 1.0}, {"name": "Bilal Coulibaly", "val": 0.9}, {"name": "Ryan Rollins", "val": 0.8}, {"name": "Deni Avdija", "val": 0.8}, {"name": "Justin Champagnie", "val": 0.7}, {"name": "Jared Butler", "val": 0.7}, {"name": "Eugene Omoruyi", "val": 0.6}, {"name": "Marvin Bagley III", "val": 0.6}, {"name": "Tristan Vukcevic", "val": 0.5}, {"name": "Landry Shamet", "val": 0.5}, {"name": "Richaun Holmes", "val": 0.5}, {"name": "Corey Kispert", "val": 0.5}, {"name": "Patrick Baldwin Jr.", "val": 0.5}, {"name": "Kyle Kuzma", "val": 0.5}, {"name": "Johnny Davis", "val": 0.4}, {"name": "Anthony Gill", "val": 0.3}, {"name": "Danilo Gallinari", "val": 0.2}, {"name": "Jules Bernard", "val": 0.2}, {"name": "Mike Muscala", "val": 0.2}, {"name": "Trey Jemison", "val": 0.0}] },
+      blk: { name: "Daniel Gafford", val: 2.2, all: [{"name": "Daniel Gafford", "val": 2.2}, {"name": "Marvin Bagley III", "val": 0.8}, {"name": "Bilal Coulibaly", "val": 0.8}, {"name": "Kyle Kuzma", "val": 0.7}, {"name": "Tristan Vukcevic", "val": 0.7}, {"name": "Richaun Holmes", "val": 0.6}, {"name": "Justin Champagnie", "val": 0.6}, {"name": "Deni Avdija", "val": 0.5}, {"name": "Patrick Baldwin Jr.", "val": 0.4}, {"name": "Tyus Jones", "val": 0.3}, {"name": "Jordan Poole", "val": 0.3}, {"name": "Mike Muscala", "val": 0.3}, {"name": "Ryan Rollins", "val": 0.3}, {"name": "Corey Kispert", "val": 0.2}, {"name": "Landry Shamet", "val": 0.2}, {"name": "Jared Butler", "val": 0.2}, {"name": "Delon Wright", "val": 0.2}, {"name": "Johnny Davis", "val": 0.2}, {"name": "Anthony Gill", "val": 0.2}, {"name": "Jules Bernard", "val": 0.1}, {"name": "Danilo Gallinari", "val": 0.1}, {"name": "Eugene Omoruyi", "val": 0.1}, {"name": "Hamidou Diallo", "val": 0.0}, {"name": "Trey Jemison", "val": 0.0}] },
+    },
+    avail: [
+      { name: "Corey Kispert", g: 80 },
+      { name: "Jordan Poole", g: 78 },
+      { name: "Deni Avdija", g: 75 },
+      { name: "Kyle Kuzma", g: 70 },
+      { name: "Tyus Jones", g: 66 },
+      { name: "Bilal Coulibaly", g: 63 },
+      { name: "Anthony Gill", g: 50 },
+      { name: "Johnny Davis", g: 50 },
+      { name: "Landry Shamet", g: 46 },
+      { name: "Daniel Gafford", g: 45 },
+      { name: "Eugene Omoruyi", g: 43 },
+      { name: "Jared Butler", g: 40 },
+      { name: "Patrick Baldwin Jr.", g: 38 },
+      { name: "Delon Wright", g: 33 },
+      { name: "Danilo Gallinari", g: 26 },
+      { name: "Mike Muscala", g: 24 },
+      { name: "Marvin Bagley III", g: 24 },
+      { name: "Jules Bernard", g: 19 },
+      { name: "Richaun Holmes", g: 17 },
+      { name: "Justin Champagnie", g: 15 },
+      { name: "Tristan Vukcevic", g: 10 },
+      { name: "Ryan Rollins", g: 10 },
+      { name: "Hamidou Diallo", g: 2 },
+      { name: "Trey Jemison", g: 2 },
+    ]
+  },
+
+  "2024-25": {
+    w: 18, l: 64,
+    topW:   { pts: 125, opp: 107, against: "Chicago Bulls" },
+    worstL: { pts: 109, opp: 162, against: "Indiana Pacers" },
+    conf_rank: 15,
+    games: buildGames(
+      "LLWWLLLLLLLLLLLLLLLLWLLLWLLWLLWLLLLLLLLLLLLLLLLWWWLLLLLLWLWLWWLLWWLLLLLWLLLWLLLLLW",
+      ["Boston Celtics", "Cleveland Cavaliers", "Atlanta Hawks", "Atlanta Hawks", "Miami Heat", "Golden State Warriors", "Memphis Grizzlies", "Orlando Magic", "Houston Rockets", "San Antonio Spurs", "Atlanta Hawks", "Detroit Pistons", "New York Knicks", "Boston Celtics", "Indiana Pacers", "Chicago Bulls", "Los Angeles Clippers", "Milwaukee Bucks", "Cleveland Cavaliers", "Dallas Mavericks", "Denver Nuggets", "Memphis Grizzlies", "Cleveland Cavaliers", "Boston Celtics", "Charlotte Hornets", "Milwaukee Bucks", "Oklahoma City Thunder", "Charlotte Hornets", "New York Knicks", "New York Knicks", "Chicago Bulls", "New Orleans Pelicans", "New Orleans Pelicans", "Houston Rockets", "Philadelphia 76ers", "Chicago Bulls", "Oklahoma City Thunder", "Minnesota Timberwolves", "Phoenix Suns", "Golden State Warriors", "Sacramento Kings", "Los Angeles Lakers", "Los Angeles Clippers", "Phoenix Suns", "Dallas Mavericks", "Toronto Raptors", "Los Angeles Lakers", "Minnesota Timberwolves", "Charlotte Hornets", "Brooklyn Nets", "Cleveland Cavaliers", "Atlanta Hawks", "San Antonio Spurs", "Indiana Pacers", "Milwaukee Bucks", "Orlando Magic", "Brooklyn Nets", "Portland Trail Blazers", "Charlotte Hornets", "Miami Heat", "Utah Jazz", "Toronto Raptors", "Toronto Raptors", "Detroit Pistons", "Detroit Pistons", "Denver Nuggets", "Portland Trail Blazers", "Utah Jazz", "Orlando Magic", "New York Knicks", "Toronto Raptors", "Philadelphia 76ers", "Indiana Pacers", "Brooklyn Nets", "Miami Heat", "Sacramento Kings", "Orlando Magic", "Boston Celtics", "Indiana Pacers", "Philadelphia 76ers", "Chicago Bulls", "Miami Heat"],
+      [102, 116, 121, 133, 98, 112, 104, 94, 92, 130, 117, 104, 106, 96, 103, 108, 96, 114, 87, 101, 122, 112, 105, 98, 123, 101, 105, 113, 132, 106, 125, 120, 98, 112, 103, 105, 95, 106, 123, 114, 100, 88, 93, 109, 108, 82, 96, 105, 124, 119, 124, 111, 121, 130, 101, 90, 107, 121, 113, 90, 125, 118, 104, 103, 129, 126, 97, 112, 105, 103, 104, 119, 109, 112, 94, 116, 97, 90, 98, 103, 89, 119],
+      [-20, -19, 2, 13, -20, -13, -24, -27, -15, -9, -12, -20, -28, -12, -12, -19, -25, -10, -31, -36, 9, -28, -10, -14, 9, -11, -18, 3, -4, -20, 18, -12, -12, -23, -6, -33, -41, -14, -7, -8, -23, -23, -17, -10, -22, -24, -38, 2, 10, 17, -10, -14, -10, -4, -3, -20, 8, -8, 13, -16, 3, 1, -15, -20, 4, 3, -15, -16, -15, -19, -8, 5, -53, -3, -26, 5, -12, -34, -6, -19, -30, 1]
+    ),
+    leaders: {
+      pts: { name: "Jordan Poole", val: 20.5, all: [{"name": "Jordan Poole", "val": 20.5}, {"name": "Kyle Kuzma", "val": 15.2}, {"name": "Alex Sarr", "val": 13.0}, {"name": "Malcolm Brogdon", "val": 12.7}, {"name": "Bilal Coulibaly", "val": 12.3}, {"name": "Corey Kispert", "val": 11.6}, {"name": "Jonas Valančiūnas", "val": 11.5}, {"name": "Khris Middleton", "val": 10.7}, {"name": "Bub Carrington", "val": 9.8}, {"name": "Tristan Vukcevic", "val": 9.4}, {"name": "Marcus Smart", "val": 9.3}, {"name": "AJ Johnson", "val": 9.1}, {"name": "Justin Champagnie", "val": 8.8}, {"name": "Kyshawn George", "val": 8.7}, {"name": "Colby Jones", "val": 8.7}, {"name": "Richaun Holmes", "val": 7.4}, {"name": "Jared Butler", "val": 6.9}, {"name": "Jaylen Martin", "val": 5.8}, {"name": "Marvin Bagley III", "val": 4.9}, {"name": "JT Thor", "val": 3.9}, {"name": "Anthony Gill", "val": 2.5}, {"name": "Johnny Davis", "val": 2.4}, {"name": "Patrick Baldwin Jr.", "val": 2.1}, {"name": "Jalen McDaniels", "val": 0.0}] },
+      reb: { name: "Jonas Valančiūnas", val: 8.2, all: [{"name": "Jonas Valančiūnas", "val": 8.2}, {"name": "Alex Sarr", "val": 6.5}, {"name": "Kyle Kuzma", "val": 5.8}, {"name": "Justin Champagnie", "val": 5.7}, {"name": "Richaun Holmes", "val": 5.7}, {"name": "Bilal Coulibaly", "val": 5.0}, {"name": "Colby Jones", "val": 4.3}, {"name": "Kyshawn George", "val": 4.2}, {"name": "Bub Carrington", "val": 4.2}, {"name": "JT Thor", "val": 3.8}, {"name": "Malcolm Brogdon", "val": 3.8}, {"name": "Khris Middleton", "val": 3.7}, {"name": "Tristan Vukcevic", "val": 3.7}, {"name": "Jaylen Martin", "val": 3.4}, {"name": "Corey Kispert", "val": 3.0}, {"name": "Jordan Poole", "val": 3.0}, {"name": "Marvin Bagley III", "val": 2.9}, {"name": "AJ Johnson", "val": 2.4}, {"name": "Marcus Smart", "val": 1.9}, {"name": "Jared Butler", "val": 1.3}, {"name": "Anthony Gill", "val": 1.3}, {"name": "Johnny Davis", "val": 1.1}, {"name": "Patrick Baldwin Jr.", "val": 1.0}, {"name": "Jalen McDaniels", "val": 0.0}] },
+      ast: { name: "Jordan Poole", val: 4.5, all: [{"name": "Jordan Poole", "val": 4.5}, {"name": "Bub Carrington", "val": 4.4}, {"name": "Malcolm Brogdon", "val": 4.1}, {"name": "Bilal Coulibaly", "val": 3.4}, {"name": "Khris Middleton", "val": 3.4}, {"name": "AJ Johnson", "val": 3.1}, {"name": "Jared Butler", "val": 2.6}, {"name": "Kyle Kuzma", "val": 2.5}, {"name": "Kyshawn George", "val": 2.5}, {"name": "Colby Jones", "val": 2.5}, {"name": "Marcus Smart", "val": 2.5}, {"name": "Alex Sarr", "val": 2.4}, {"name": "Jonas Valančiūnas", "val": 2.2}, {"name": "Corey Kispert", "val": 1.7}, {"name": "Richaun Holmes", "val": 1.4}, {"name": "Jaylen Martin", "val": 1.3}, {"name": "Tristan Vukcevic", "val": 1.1}, {"name": "Justin Champagnie", "val": 1.0}, {"name": "JT Thor", "val": 0.5}, {"name": "Marvin Bagley III", "val": 0.4}, {"name": "Anthony Gill", "val": 0.3}, {"name": "Johnny Davis", "val": 0.3}, {"name": "Jalen McDaniels", "val": 0.3}, {"name": "Patrick Baldwin Jr.", "val": 0.1}] },
+      stl: { name: "Bilal Coulibaly", val: 1.3, all: [{"name": "Bilal Coulibaly", "val": 1.3}, {"name": "Khris Middleton", "val": 1.3}, {"name": "Colby Jones", "val": 1.3}, {"name": "Jordan Poole", "val": 1.3}, {"name": "Marcus Smart", "val": 1.1}, {"name": "Kyshawn George", "val": 1.0}, {"name": "Justin Champagnie", "val": 1.0}, {"name": "Alex Sarr", "val": 0.7}, {"name": "Bub Carrington", "val": 0.7}, {"name": "Jaylen Martin", "val": 0.7}, {"name": "Kyle Kuzma", "val": 0.6}, {"name": "AJ Johnson", "val": 0.5}, {"name": "Malcolm Brogdon", "val": 0.5}, {"name": "JT Thor", "val": 0.5}, {"name": "Johnny Davis", "val": 0.4}, {"name": "Jared Butler", "val": 0.4}, {"name": "Marvin Bagley III", "val": 0.4}, {"name": "Jonas Valančiūnas", "val": 0.4}, {"name": "Corey Kispert", "val": 0.4}, {"name": "Tristan Vukcevic", "val": 0.3}, {"name": "Richaun Holmes", "val": 0.3}, {"name": "Jalen McDaniels", "val": 0.3}, {"name": "Anthony Gill", "val": 0.2}, {"name": "Patrick Baldwin Jr.", "val": 0.1}] },
+      blk: { name: "Alex Sarr", val: 1.5, all: [{"name": "Alex Sarr", "val": 1.5}, {"name": "Bilal Coulibaly", "val": 0.7}, {"name": "Kyshawn George", "val": 0.7}, {"name": "Tristan Vukcevic", "val": 0.7}, {"name": "Richaun Holmes", "val": 0.7}, {"name": "Justin Champagnie", "val": 0.6}, {"name": "Jonas Valančiūnas", "val": 0.6}, {"name": "JT Thor", "val": 0.5}, {"name": "Colby Jones", "val": 0.4}, {"name": "Jordan Poole", "val": 0.4}, {"name": "Bub Carrington", "val": 0.3}, {"name": "Marvin Bagley III", "val": 0.3}, {"name": "Corey Kispert", "val": 0.2}, {"name": "Johnny Davis", "val": 0.2}, {"name": "Malcolm Brogdon", "val": 0.2}, {"name": "Khris Middleton", "val": 0.2}, {"name": "Marcus Smart", "val": 0.2}, {"name": "Kyle Kuzma", "val": 0.2}, {"name": "Jared Butler", "val": 0.2}, {"name": "AJ Johnson", "val": 0.1}, {"name": "Patrick Baldwin Jr.", "val": 0.1}, {"name": "Jaylen Martin", "val": 0.0}, {"name": "Anthony Gill", "val": 0.0}, {"name": "Jalen McDaniels", "val": 0.0}] },
+    },
+    avail: [
+      { name: "Bub Carrington", g: 82 },
+      { name: "Jordan Poole", g: 68 },
+      { name: "Kyshawn George", g: 68 },
+      { name: "Alex Sarr", g: 67 },
+      { name: "Justin Champagnie", g: 62 },
+      { name: "Corey Kispert", g: 61 },
+      { name: "Bilal Coulibaly", g: 59 },
+      { name: "Anthony Gill", g: 51 },
+      { name: "Jonas Valančiūnas", g: 49 },
+      { name: "Tristan Vukcevic", g: 35 },
+      { name: "Johnny Davis", g: 34 },
+      { name: "Jared Butler", g: 32 },
+      { name: "Kyle Kuzma", g: 32 },
+      { name: "Richaun Holmes", g: 31 },
+      { name: "Malcolm Brogdon", g: 24 },
+      { name: "AJ Johnson", g: 22 },
+      { name: "Patrick Baldwin Jr.", g: 22 },
+      { name: "Marvin Bagley III", g: 19 },
+      { name: "Colby Jones", g: 15 },
+      { name: "Marcus Smart", g: 15 },
+      { name: "Khris Middleton", g: 14 },
+      { name: "Jaylen Martin", g: 13 },
+      { name: "JT Thor", g: 11 },
+      { name: "Jalen McDaniels", g: 4 },
+    ]
+  },
+
+  "2025-26": {
+    w: 17, l: 62,
+    topW:   { pts: 133, opp: 110, against: "Utah Jazz" },
+    worstL: { pts: 101, opp: 146, against: "Boston Celtics" },
+    conf_rank: 15,
+    games: buildGames(
+      "LWLLLLLLLLLLLLLLWLWLLLLWLWLLWWLWWLWLLLLLLLLLWWLWLWLLLWWLLLLLLLLLLLLLLLLWLLLLLLL",
+      ["Milwaukee Bucks", "Dallas Mavericks", "Charlotte Hornets", "Philadelphia 76ers", "Oklahoma City Thunder", "Orlando Magic", "New York Knicks", "Boston Celtics", "Cleveland Cavaliers", "Dallas Mavericks", "Detroit Pistons", "Houston Rockets", "Brooklyn Nets", "Minnesota Timberwolves", "Toronto Raptors", "Chicago Bulls", "Atlanta Hawks", "Indiana Pacers", "Milwaukee Bucks", "Philadelphia 76ers", "Boston Celtics", "Atlanta Hawks", "Cleveland Cavaliers", "Indiana Pacers", "San Antonio Spurs", "Memphis Grizzlies", "San Antonio Spurs", "Charlotte Hornets", "Toronto Raptors", "Memphis Grizzlies", "Phoenix Suns", "Milwaukee Bucks", "Brooklyn Nets", "Minnesota Timberwolves", "Orlando Magic", "Philadelphia 76ers", "New Orleans Pelicans", "Phoenix Suns", "Los Angeles Clippers", "Sacramento Kings", "Denver Nuggets", "Los Angeles Clippers", "Denver Nuggets", "Charlotte Hornets", "Portland Trail Blazers", "Milwaukee Bucks", "Los Angeles Lakers", "Sacramento Kings", "New York Knicks", "Detroit Pistons", "Brooklyn Nets", "Miami Heat", "Cleveland Cavaliers", "Indiana Pacers", "Indiana Pacers", "Charlotte Hornets", "Atlanta Hawks", "Atlanta Hawks", "Toronto Raptors", "Houston Rockets", "Orlando Magic", "Utah Jazz", "New Orleans Pelicans", "Miami Heat", "Orlando Magic", "Boston Celtics", "Golden State Warriors", "Detroit Pistons", "Detroit Pistons", "Oklahoma City Thunder", "New York Knicks", "Utah Jazz", "Golden State Warriors", "Portland Trail Blazers", "Los Angeles Lakers", "Philadelphia 76ers", "Miami Heat", "Brooklyn Nets", "Chicago Bulls"],
+      [120, 117, 113, 134, 108, 94, 102, 107, 115, 105, 135, 112, 106, 109, 110, 120, 132, 86, 129, 102, 101, 116, 126, 108, 94, 130, 113, 109, 138, 116, 101, 114, 119, 115, 120, 110, 107, 93, 105, 115, 115, 106, 97, 115, 115, 109, 111, 116, 101, 126, 113, 101, 113, 112, 131, 112, 98, 96, 125, 118, 109, 112, 118, 129, 131, 100, 117, 117, 95, 111, 113, 133, 126, 88, 101, 131, 136, 115, 98],
+      [-13, 10, -26, -5, -19, -31, -17, -29, -33, -6, -2, -23, -23, -11, -30, -1, 19, -33, 3, -19, -45, -15, -4, 19, -25, 8, -11, -17, 21, 4, -14, 1, 20, -26, 8, -21, -21, -19, -14, -13, -6, -4, -10, -4, 4, 10, -31, 4, -31, 9, -14, -31, -25, 7, 13, -17, -21, -30, -9, -5, -17, -10, -20, -21, -5, -11, -8, -13, -22, -21, -32, 23, -5, -35, -19, -22, -16, -6, -31]
+    ),
+    leaders: {
+      pts: { name: "CJ McCollum", val: 18.8, all: [{"name": "CJ McCollum", "val": 18.8}, {"name": "Alex Sarr", "val": 16.3}, {"name": "Trae Young", "val": 15.2}, {"name": "Kyshawn George", "val": 14.8}, {"name": "Jaden Hardy", "val": 12.9}, {"name": "Tre Johnson", "val": 12.2}, {"name": "Bilal Coulibaly", "val": 11.5}, {"name": "Julian Reese", "val": 11.4}, {"name": "Alondes Williams", "val": 11.0}, {"name": "Bub Carrington", "val": 10.3}, {"name": "Khris Middleton", "val": 10.3}, {"name": "Will Riley", "val": 10.1}, {"name": "Marvin Bagley III", "val": 10.1}, {"name": "Corey Kispert", "val": 9.2}, {"name": "Cam Whitmore", "val": 9.2}, {"name": "Tristan Vukcevic", "val": 9.0}, {"name": "Justin Champagnie", "val": 8.6}, {"name": "Kadary Richmond", "val": 8.3}, {"name": "Sharife Cooper", "val": 7.7}, {"name": "Jamir Watkins", "val": 7.0}, {"name": "Leaky Black", "val": 7.0}, {"name": "Anthony Gill", "val": 5.4}, {"name": "Malaki Branham", "val": 4.6}, {"name": "Skal Labissière", "val": 4.3}, {"name": "AJ Johnson", "val": 2.8}, {"name": "Keshon Gilbert", "val": 2.0}] },
+      reb: { name: "Julian Reese", val: 11.3, all: [{"name": "Julian Reese", "val": 11.3}, {"name": "Alex Sarr", "val": 7.4}, {"name": "Alondes Williams", "val": 6.3}, {"name": "Marvin Bagley III", "val": 5.7}, {"name": "Justin Champagnie", "val": 5.5}, {"name": "Leaky Black", "val": 5.3}, {"name": "Kyshawn George", "val": 5.1}, {"name": "Bilal Coulibaly", "val": 4.3}, {"name": "Khris Middleton", "val": 3.9}, {"name": "Jamir Watkins", "val": 3.8}, {"name": "CJ McCollum", "val": 3.5}, {"name": "Bub Carrington", "val": 3.4}, {"name": "Kadary Richmond", "val": 3.3}, {"name": "Skal Labissière", "val": 3.0}, {"name": "Trae Young", "val": 3.0}, {"name": "Tristan Vukcevic", "val": 3.0}, {"name": "Tre Johnson", "val": 2.8}, {"name": "Cam Whitmore", "val": 2.8}, {"name": "Anthony Gill", "val": 2.8}, {"name": "Will Riley", "val": 2.7}, {"name": "Corey Kispert", "val": 2.3}, {"name": "Sharife Cooper", "val": 2.1}, {"name": "Jaden Hardy", "val": 1.7}, {"name": "Keshon Gilbert", "val": 1.7}, {"name": "Malaki Branham", "val": 1.6}, {"name": "AJ Johnson", "val": 1.2}] },
+      ast: { name: "Trae Young", val: 6.2, all: [{"name": "Trae Young", "val": 6.2}, {"name": "Bub Carrington", "val": 4.6}, {"name": "Kyshawn George", "val": 4.5}, {"name": "CJ McCollum", "val": 3.6}, {"name": "Khris Middleton", "val": 3.3}, {"name": "Alondes Williams", "val": 3.0}, {"name": "Sharife Cooper", "val": 2.8}, {"name": "Alex Sarr", "val": 2.7}, {"name": "Kadary Richmond", "val": 2.7}, {"name": "Bilal Coulibaly", "val": 2.5}, {"name": "Julian Reese", "val": 2.0}, {"name": "Tre Johnson", "val": 2.0}, {"name": "Will Riley", "val": 1.9}, {"name": "Corey Kispert", "val": 1.7}, {"name": "Leaky Black", "val": 1.5}, {"name": "Marvin Bagley III", "val": 1.5}, {"name": "Jamir Watkins", "val": 1.3}, {"name": "Anthony Gill", "val": 1.3}, {"name": "Jaden Hardy", "val": 1.2}, {"name": "Justin Champagnie", "val": 1.2}, {"name": "Tristan Vukcevic", "val": 1.1}, {"name": "Keshon Gilbert", "val": 1.0}, {"name": "Skal Labissière", "val": 1.0}, {"name": "AJ Johnson", "val": 0.9}, {"name": "Malaki Branham", "val": 0.8}, {"name": "Cam Whitmore", "val": 0.7}] },
+      stl: { name: "Kadary Richmond", val: 2.7, all: [{"name": "Kadary Richmond", "val": 2.7}, {"name": "Julian Reese", "val": 1.3}, {"name": "Bilal Coulibaly", "val": 1.3}, {"name": "Leaky Black", "val": 1.1}, {"name": "Kyshawn George", "val": 1.0}, {"name": "Jamir Watkins", "val": 1.0}, {"name": "Alex Sarr", "val": 0.8}, {"name": "Alondes Williams", "val": 0.8}, {"name": "Khris Middleton", "val": 0.8}, {"name": "Justin Champagnie", "val": 0.8}, {"name": "CJ McCollum", "val": 0.7}, {"name": "Keshon Gilbert", "val": 0.7}, {"name": "Cam Whitmore", "val": 0.7}, {"name": "Will Riley", "val": 0.7}, {"name": "Skal Labissière", "val": 0.7}, {"name": "Trae Young", "val": 0.6}, {"name": "Tre Johnson", "val": 0.6}, {"name": "Bub Carrington", "val": 0.6}, {"name": "Marvin Bagley III", "val": 0.5}, {"name": "Anthony Gill", "val": 0.5}, {"name": "Tristan Vukcevic", "val": 0.5}, {"name": "Corey Kispert", "val": 0.4}, {"name": "Malaki Branham", "val": 0.4}, {"name": "Jaden Hardy", "val": 0.3}, {"name": "Sharife Cooper", "val": 0.3}, {"name": "AJ Johnson", "val": 0.3}] },
+      blk: { name: "Alex Sarr", val: 2.0, all: [{"name": "Alex Sarr", "val": 2.0}, {"name": "Keshon Gilbert", "val": 1.3}, {"name": "Bilal Coulibaly", "val": 1.0}, {"name": "Kyshawn George", "val": 0.9}, {"name": "Alondes Williams", "val": 0.8}, {"name": "Marvin Bagley III", "val": 0.7}, {"name": "Tristan Vukcevic", "val": 0.7}, {"name": "Leaky Black", "val": 0.6}, {"name": "Justin Champagnie", "val": 0.6}, {"name": "Julian Reese", "val": 0.5}, {"name": "Jamir Watkins", "val": 0.5}, {"name": "Anthony Gill", "val": 0.4}, {"name": "Cam Whitmore", "val": 0.4}, {"name": "CJ McCollum", "val": 0.3}, {"name": "Kadary Richmond", "val": 0.3}, {"name": "Khris Middleton", "val": 0.3}, {"name": "Skal Labissière", "val": 0.3}, {"name": "Tre Johnson", "val": 0.3}, {"name": "Jaden Hardy", "val": 0.2}, {"name": "Corey Kispert", "val": 0.2}, {"name": "Trae Young", "val": 0.2}, {"name": "Bub Carrington", "val": 0.2}, {"name": "Sharife Cooper", "val": 0.1}, {"name": "Will Riley", "val": 0.1}, {"name": "Malaki Branham", "val": 0.1}, {"name": "AJ Johnson", "val": 0.0}] },
+    },
+    avail: [
+      { name: "Bub Carrington", g: 79 },
+      { name: "Will Riley", g: 71 },
+      { name: "Justin Champagnie", g: 67 },
+      { name: "Tre Johnson", g: 60 },
+      { name: "Bilal Coulibaly", g: 55 },
+      { name: "Anthony Gill", g: 52 },
+      { name: "Tristan Vukcevic", g: 49 },
+      { name: "Kyshawn George", g: 48 },
+      { name: "Alex Sarr", g: 48 },
+      { name: "Jamir Watkins", g: 47 },
+      { name: "Sharife Cooper", g: 38 },
+      { name: "Marvin Bagley III", g: 38 },
+      { name: "CJ McCollum", g: 35 },
+      { name: "Khris Middleton", g: 34 },
+      { name: "Malaki Branham", g: 28 },
+      { name: "AJ Johnson", g: 25 },
+      { name: "Jaden Hardy", g: 22 },
+      { name: "Cam Whitmore", g: 21 },
+      { name: "Corey Kispert", g: 19 },
+      { name: "Leaky Black", g: 12 },
+      { name: "Julian Reese", g: 10 },
+      { name: "Trae Young", g: 5 },
+      { name: "Alondes Williams", g: 4 },
+      { name: "Kadary Richmond", g: 3 },
+      { name: "Keshon Gilbert", g: 3 },
+      { name: "Skal Labissière", g: 3 },
+    ]
+  },
+
+};
