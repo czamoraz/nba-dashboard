@@ -3,9 +3,9 @@ name: Update current season data
 # ── Cuándo corre ──────────────────────────────────────────────────────────────
 on:
   schedule:
-    # Todos los días a las 9am UTC (durante la temporada NBA: oct–jun)
+    # Todos los días a las 8am GMT-4 (= 12pm UTC)
     # En off-season el script termina sin cambios; no hay costo real.
-    - cron: "0 9 * * *"
+    - cron: "0 12 * * *"
 
   # También permite correrlo manualmente desde GitHub UI (Actions → Run workflow)
   workflow_dispatch:
