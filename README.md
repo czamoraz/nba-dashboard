@@ -188,7 +188,7 @@ El sitio estar√° disponible en `https://TU_USUARIO.github.io/NOMBRE_REPO` en 1‚Ä
 | Atlanta Hawks | ATL | Dallas Mavericks | DAL |
 | Boston Celtics | BOS | Denver Nuggets | DEN |
 | Brooklyn Nets | BRK | Golden State Warriors | GSW |
-| Charlotte Hornets | CHA | Houston Rockets | HOU |
+| Charlotte Hornets | CHO | Houston Rockets | HOU |
 | Chicago Bulls | CHI | Los Angeles Clippers | LAC |
 | Cleveland Cavaliers | CLE | Los Angeles Lakers | LAL |
 | Detroit Pistons | DET | Memphis Grizzlies | MEM |

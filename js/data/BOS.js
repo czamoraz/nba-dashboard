@@ -247,11 +247,11 @@ window.SEASON_DATA = {
   "2025-26": {
     w: 54, l: 25,
     topW:   { pts: 146, opp: 101, against: "WAS" },
-    worstL: { pts: 89, opp: 118, against: "CHA" },
+    worstL: { pts: 89, opp: 118, against: "CHO" },
     conf_rank: 2,
     games: buildGames(
       "LLLWWWLLWLWLWWWLWWLWWWWWLLWWWWLWWWWLWLLWWLWWLWLWWWWWLWWWWLWWWLWWLLWWWWLWWWLWWWW",
-      ["PHI", "NYK", "DET", "NOP", "CLE", "PHI", "HOU", "UTA", "WAS", "ORL", "ORL", "PHI", "MEM", "LAC", "BRK", "BRK", "ORL", "DET", "MIN", "CLE", "NYK", "WAS", "LAL", "TOR", "MIL", "DET", "MIA", "TOR", "IND", "IND", "POR", "UTA", "SAC", "LAC", "CHI", "DEN", "TOR", "SAS", "IND", "MIA", "ATL", "DET", "IND", "BRK", "CHI", "POR", "ATL", "SAC", "MIL", "DAL", "HOU", "MIA", "NYK", "CHI", "GSW", "LAL", "PHX", "DEN", "BRK", "PHI", "MIL", "CHA", "DAL", "CLE", "SAS", "OKC", "WAS", "PHX", "GSW", "MEM", "MIN", "OKC", "ATL", "CHA", "ATL", "MIA", "MIL", "TOR", "CHA"],
+      ["PHI", "NYK", "DET", "NOP", "CLE", "PHI", "HOU", "UTA", "WAS", "ORL", "ORL", "PHI", "MEM", "LAC", "BRK", "BRK", "ORL", "DET", "MIN", "CLE", "NYK", "WAS", "LAL", "TOR", "MIL", "DET", "MIA", "TOR", "IND", "IND", "POR", "UTA", "SAC", "LAC", "CHI", "DEN", "TOR", "SAS", "IND", "MIA", "ATL", "DET", "IND", "BRK", "CHI", "POR", "ATL", "SAC", "MIL", "DAL", "HOU", "MIA", "NYK", "CHI", "GSW", "LAL", "PHX", "DEN", "BRK", "PHI", "MIL", "CHO", "DAL", "CLE", "SAS", "OKC", "WAS", "PHX", "GSW", "MEM", "MIN", "OKC", "ATL", "CHO", "ATL", "MIA", "MIL", "TOR", "CHO"],
       [116, 95, 113, 122, 125, 109, 101, 103, 136, 110, 111, 100, 131, 121, 113, 105, 138, 117, 115, 117, 123, 146, 126, 121, 101, 105, 129, 112, 103, 140, 108, 129, 120, 146, 115, 110, 125, 95, 96, 119, 132, 103, 119, 130, 111, 102, 106, 112, 107, 110, 114, 98, 89, 124, 121, 111, 97, 84, 148, 114, 108, 89, 120, 109, 116, 102, 111, 120, 120, 117, 92, 119, 109, 114, 102, 147, 133, 115, 113],
       [-1, -10, -6, 32, 20, 1, -27, -2, 29, -13, 4, -2, 36, 3, 14, -8, 9, 3, -4, 2, 6, 45, 21, 8, -15, -7, 13, 16, 8, 18, -6, 10, 14, 31, 14, -4, 8, -5, -2, 5, 26, -1, 15, 4, -3, 8, -11, 19, 28, 10, 21, 2, -22, 19, 11, 22, 16, -19, 37, 16, 27, -29, 20, 11, -9, -2, 11, 8, 21, 5, -10, 10, 7, 15, -10, 18, 32, 14, 11]
     ),
