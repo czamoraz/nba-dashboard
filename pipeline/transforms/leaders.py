@@ -7,14 +7,23 @@ import pandas as pd
 
 def build_leaders(season_leaders: pd.DataFrame) -> dict:
     """
-    Encuentra el líder de cada categoría estadística para una temporada.
+    Encuentra el líder de cada categoría y devuelve el ranking completo de jugadores.
     """
     def leader(df, col):
         df_clean = df[df[col].notna()].copy()
         if df_clean.empty:
-            return {"name": "N/A", "val": 0.0}
-        row = df_clean.loc[df_clean[col].idxmax()]
-        return {"name": str(row["player"]), "val": round(float(row[col]), 1)}
+            return {"name": "N/A", "val": 0.0, "all": []}
+        df_sorted = df_clean.sort_values(col, ascending=False)
+        top = df_sorted.iloc[0]
+        all_players = [
+            {"name": str(r["player"]), "val": round(float(r[col]), 1)}
+            for _, r in df_sorted.iterrows()
+        ]
+        return {
+            "name": str(top["player"]),
+            "val":  round(float(top[col]), 1),
+            "all":  all_players,
+        }
 
     return {
         "pts": leader(season_leaders, "pts"),

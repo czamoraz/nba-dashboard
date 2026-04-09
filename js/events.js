@@ -149,12 +149,108 @@ window.Events = (() => {
 
     overlay.addEventListener("click", closePanel);
 
+    /* Panel de ranking de jugadores por categoría */
+    const CAT_LABELS = {
+      pts: "Puntos por partido",
+      reb: "Rebotes por partido",
+      ast: "Asistencias por partido",
+      stl: "Robos por partido",
+      blk: "Tapas por partido",
+    };
+
+    function openLeadersPanel(season, cat) {
+      const catData = window.SEASON_DATA[season].leaders[cat];
+
+      panel.querySelector(".panel-header").innerHTML = `
+        <div>
+          <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;
+               color:var(--text-muted);margin-bottom:6px">Temporada ${season}</div>
+          <div style="font-size:1.1rem;font-weight:700;color:var(--text)">${CAT_LABELS[cat]}</div>
+        </div>
+        <button class="panel-close" id="panelClose" aria-label="Cerrar">✕</button>
+      `;
+
+      panel.querySelector(".panel-body").innerHTML = catData.all.map((p, i) => `
+        <div class="panel-row">
+          <span class="panel-row-label">
+            <span style="display:inline-block;width:18px;font-size:10px;
+                  color:var(--text-muted);text-align:right;margin-right:8px">${i + 1}</span>
+            ${p.name}
+          </span>
+          <span class="panel-row-val"
+                style="color:${i === 0 ? "var(--team-primary)" : "var(--text)"};
+                       font-weight:${i === 0 ? "700" : "500"}">${p.val}</span>
+        </div>
+      `).join("");
+
+      panel.querySelector("#panelClose").addEventListener("click", closePanel);
+      panel.classList.add("open");
+      overlay.classList.add("open");
+      document.body.style.overflow = "hidden";
+    }
+
     /* Expose openPanel so main.js puede pasársela a Charts */
     window.__openPanel = openPanel;
+    window.__openLeadersPanel = openLeadersPanel;
   }
 
   /* ══════════════════════════════════════════════════════════════
-     3. PARTÍCULAS — animación al cambiar temporada
+     3. POPUP MODAL — disponibilidad de jugadores
+     ══════════════════════════════════════════════════════════════ */
+  function initAvailPopup() {
+    const modal   = document.getElementById("availModal");
+    const overlay = document.getElementById("availOverlay");
+    const closeBtn = document.getElementById("availModalClose");
+    if (!modal || !overlay) return;
+
+    function openAvailPopup(season) {
+      const avail   = [...window.SEASON_DATA[season].avail].sort((a, b) => b.g - a.g);
+      const primary = window.TEAM_CONFIG.primaryColor;
+      const body    = document.getElementById("availModalBody");
+      const seasonEl = document.getElementById("availModalSeason");
+      if (seasonEl) seasonEl.textContent = "Temporada " + season;
+
+      body.innerHTML = avail.map(p => {
+        const pct   = (p.g / 82 * 100).toFixed(0);
+        const color = p.g >= 70 ? primary : p.g >= 55 ? "#E67E22" : "#666";
+        const label = p.g >= 70 ? "Titular" : p.g >= 55 ? "Regular" : "Lesionado";
+        return `
+          <div class="avail-modal-row">
+            <div class="avail-modal-name" title="${p.name}">${p.name}</div>
+            <div class="avail-modal-track">
+              <div class="avail-modal-fill" style="width:0%;background:${color}"
+                   data-target="${pct}"></div>
+            </div>
+            <div class="avail-modal-games">${p.g}<span>/82</span></div>
+          </div>
+        `;
+      }).join("");
+
+      modal.classList.add("open");
+      overlay.classList.add("open");
+      document.body.style.overflow = "hidden";
+
+      requestAnimationFrame(() => {
+        body.querySelectorAll(".avail-modal-fill").forEach((bar, i) => {
+          setTimeout(() => { bar.style.width = bar.dataset.target + "%"; }, i * 50);
+        });
+      });
+    }
+
+    function closeAvailPopup() {
+      modal.classList.remove("open");
+      overlay.classList.remove("open");
+      document.body.style.overflow = "";
+    }
+
+    overlay.addEventListener("click", closeAvailPopup);
+    closeBtn && closeBtn.addEventListener("click", closeAvailPopup);
+
+    window.__openAvailPopup = openAvailPopup;
+  }
+
+  /* ══════════════════════════════════════════════════════════════
+     4. PARTÍCULAS — animación al cambiar temporada
      ══════════════════════════════════════════════════════════════ */
   function initParticles() {
     const canvas = document.getElementById("particle-canvas");
@@ -217,7 +313,7 @@ window.Events = (() => {
   }
 
   /* ══════════════════════════════════════════════════════════════
-     4. THEME TOGGLE — light / dark mode
+     5. THEME TOGGLE — light / dark mode
      ══════════════════════════════════════════════════════════════ */
   function initThemeToggle(onThemeChange) {
     const btn = document.getElementById("themeToggle");
@@ -249,6 +345,7 @@ window.Events = (() => {
   return {
     initTooltip,
     initDetailPanel,
+    initAvailPopup,
     initParticles,
     initThemeToggle,
     getExternalTooltipHandler,

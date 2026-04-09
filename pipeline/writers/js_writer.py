@@ -145,7 +145,8 @@ def _write_js_file(team: str, team_config: dict, season_blocks: dict):
         lines.append(f'    leaders: {{')
         for stat in ["pts", "reb", "ast", "stl", "blk"]:
             if stat in ld:
-                lines.append(f'      {stat}: {{ name: "{ld[stat]["name"]}", val: {ld[stat]["val"]} }},')
+                all_json = json.dumps(ld[stat].get("all", []), ensure_ascii=False)
+                lines.append(f'      {stat}: {{ name: "{ld[stat]["name"]}", val: {ld[stat]["val"]}, all: {all_json} }},')
         lines.append(f'    }},')
 
         lines.append(f'    avail: [')

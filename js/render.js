@@ -93,12 +93,19 @@ window.Render = (() => {
     ];
 
     container.innerHTML = CATS.map(c => `
-      <div class="leader-card" title="${c.title}">
+      <div class="leader-card leader-card--clickable" title="Click para ver líderes de temporada">
         <div class="leader-cat">${c.label}</div>
         <div class="leader-val">${d[c.key].val}</div>
         <div class="leader-name" title="${d[c.key].name}">${d[c.key].name}</div>
       </div>
     `).join("");
+
+    /* Click → panel de ranking por categoría */
+    container.querySelectorAll(".leader-card").forEach((el, i) => {
+      el.addEventListener("click", () => {
+        window.__openLeadersPanel && window.__openLeadersPanel(season, CATS[i].key);
+      });
+    });
 
     /* Staggered fade-in */
     container.querySelectorAll(".leader-card").forEach((el, i) => {
@@ -114,7 +121,7 @@ window.Render = (() => {
 
   /* ── Availability bars ───────────────────────────────────────── */
   function availability(season) {
-    const avail     = [...window.SEASON_DATA[season].avail].sort((a, b) => b.g - a.g);
+    const avail     = [...window.SEASON_DATA[season].avail].sort((a, b) => b.g - a.g).slice(0, 8);
     const container = document.getElementById("availBars");
     if (!container) return;
 
@@ -126,19 +133,24 @@ window.Render = (() => {
       const color = p.g >= 70 ? primary
                   : p.g >= 55 ? "#E67E22"
                   : "#666";
-      const label = p.g >= 70 ? "Titular"
-                  : p.g >= 55 ? "Regular"
-                  : "Lesionado";
       return `
         <div class="abar">
           <div class="abar-name" title="${p.name}">${p.name}</div>
           <div class="abar-track">
             <div class="abar-fill" style="width:0%;background:${color}"
-                 data-target="${pct}" data-label="${label}"></div>
+                 data-target="${pct}"></div>
           </div>
           <div class="abar-val">${p.g}/82</div>
         </div>`;
     }).join("");
+
+    /* Click en el cuadro completo → popup de disponibilidad */
+    const card = document.getElementById("availCard");
+    if (card) {
+      card.onclick = () => {
+        window.__openAvailPopup && window.__openAvailPopup(season);
+      };
+    }
 
     /* Animate bars */
     requestAnimationFrame(() => {
