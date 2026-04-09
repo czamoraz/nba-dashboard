@@ -11,12 +11,48 @@
   AppState.seasons       = DataAPI.getAllSeasons();
   AppState.currentSeason = AppState.seasons[AppState.seasons.length - 1];
 
-  /* ── Aplicar colores del equipo al DOM ───────────────────────── */
+  /* ── Luminancia relativa WCAG ───────────────────────────────── */
+  function relativeLuminance(hex) {
+    const r = parseInt(hex.slice(1, 3), 16) / 255;
+    const g = parseInt(hex.slice(3, 5), 16) / 255;
+    const b = parseInt(hex.slice(5, 7), 16) / 255;
+    const lin = c => c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+    return 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
+  }
+
+  function contrastRatio(l1, l2) {
+    return (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05);
+  }
+
+  /* ── Aplicar colores del equipo al DOM (adaptado al tema) ────── */
   function applyTeamColors() {
-    const config = DataAPI.getTeamConfig();
-    const root   = document.documentElement;
-    root.style.setProperty("--team-primary",   config.primaryColor);
-    root.style.setProperty("--team-secondary", config.secondaryColor);
+    const config  = DataAPI.getTeamConfig();
+    const isDark  = document.documentElement.getAttribute("data-theme") !== "light";
+    // Luminancia aproximada del fondo: #0f0f0f (dark) / #f4f4f4 (light)
+    const bgL     = isDark ? 0.003 : 0.91;
+    const MIN_CONTRAST = 1.5;
+
+    const primaryL   = relativeLuminance(config.primaryColor);
+    const secondaryL = relativeLuminance(config.secondaryColor);
+
+    let primary   = config.primaryColor;
+    let secondary = config.secondaryColor;
+
+    // Si el primary tiene poco contraste contra el fondo y el secondary lo mejora → swap
+    if (contrastRatio(primaryL, bgL) < MIN_CONTRAST &&
+        contrastRatio(secondaryL, bgL) > contrastRatio(primaryL, bgL)) {
+      primary   = config.secondaryColor;
+      secondary = config.primaryColor;
+    }
+
+    // Texto sobre el primary: negro si es claro, blanco si es oscuro (umbral WCAG ~0.179)
+    const adaptedL    = relativeLuminance(primary);
+    const textOnPrimary = adaptedL > 0.179 ? "#000000" : "#ffffff";
+
+    const root = document.documentElement;
+    root.style.setProperty("--team-primary",      primary);
+    root.style.setProperty("--team-secondary",    secondary);
+    root.style.setProperty("--team-primary-text", textOnPrimary);
   }
 
   /* ── Aplicar nombre del equipo ───────────────────────────────── */
@@ -93,7 +129,9 @@
     Events.initParticles();
 
     Events.initThemeToggle(() => {
+      applyTeamColors();
       Charts.updateTheme();
+      Render.availability(AppState.currentSeason);
     });
 
     renderSeason(AppState.currentSeason, false);

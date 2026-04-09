@@ -72,7 +72,7 @@
 
 .stab.active {
   background: var(--team-primary);
-  color: #fff;
+  color: var(--team-primary-text, #fff);
   border-color: var(--team-primary);
 }
 

@@ -9,8 +9,9 @@
 window.Charts = (() => {
 
   /* ── Instancias activas ──────────────────────────────────────── */
-  let gamesInst   = null;
-  let winPctInst  = null;
+  let gamesInst        = null;
+  let winPctInst       = null;
+  let winPctSeasonRef  = null; // temporada activa al construir winPctInst
 
   /* ── Color helpers ───────────────────────────────────────────── */
   function isDark() {
@@ -37,6 +38,12 @@ window.Charts = (() => {
     return `rgba(${r},${g},${b},${alpha})`;
   }
 
+  /* Lee el primary adaptado al tema (CSS var seteada por main.js) */
+  function teamPrimary() {
+    return document.documentElement.style.getPropertyValue("--team-primary").trim()
+      || window.TEAM_CONFIG.primaryColor;
+  }
+
   /* ── Detectar rachas (≥ N del mismo resultado) ───────────────── */
   function detectStreaks(games, minLen = 4) {
     const streaks = [];
@@ -61,7 +68,7 @@ window.Charts = (() => {
       const streaks = chart.config._streaks || [];
       if (!chartArea) return;
 
-      const primary  = window.TEAM_CONFIG.primaryColor;
+      const primary  = teamPrimary();
       const winFill  = isDark()
         ? hexToRgba(primary, 0.10)
         : hexToRgba(primary, 0.07);
@@ -97,7 +104,7 @@ window.Charts = (() => {
     if (!ctx) return null;
     if (gamesInst) { gamesInst.destroy(); gamesInst = null; }
 
-    const primary = window.TEAM_CONFIG.primaryColor;
+    const primary = teamPrimary();
     const streaks = detectStreaks(games);
 
     // Excluir partidos no jugados (margin === 0 es imposible en la NBA real)
@@ -190,7 +197,8 @@ window.Charts = (() => {
     if (!ctx) return null;
     if (winPctInst) { winPctInst.destroy(); winPctInst = null; }
 
-    const primary = window.TEAM_CONFIG.primaryColor;
+    winPctSeasonRef = currentSeason;
+    const primary = teamPrimary();
     const labels  = seasons;
     const vals    = seasons.map(s => {
       const d = window.SEASON_DATA[s];
@@ -262,10 +270,30 @@ window.Charts = (() => {
 
   /* ── Actualizar colores de charts al cambiar tema ────────────── */
   function updateTheme() {
+    const primary = teamPrimary();
+
+    /* Gráfico de partidos: color de victorias y derrotas */
+    if (gamesInst) {
+      gamesInst.data.datasets[0].backgroundColor            = primary;
+      gamesInst.data.datasets[0].pointHoverBackgroundColor  = primary;
+      gamesInst.data.datasets[1].backgroundColor            = isDark() ? "#555" : "#bbb";
+      gamesInst.data.datasets[1].pointHoverBackgroundColor  = isDark() ? "#777" : "#999";
+    }
+
+    /* Gráfico de win%: línea, relleno y puntos */
+    if (winPctInst) {
+      const ds = winPctInst.data.datasets[0];
+      ds.borderColor      = primary;
+      ds.backgroundColor  = isDark() ? hexToRgba(primary, 0.07) : hexToRgba(primary, 0.05);
+      ds.pointBackgroundColor = winPctInst.data.labels.map(
+        l => l === winPctSeasonRef ? primary : (isDark() ? "#555" : "#ccc")
+      );
+    }
+
     [gamesInst, winPctInst].forEach(chart => {
       if (!chart) return;
       const opts = chart.options;
-      /* Update scales */
+      /* Scales */
       ["x", "y"].forEach(axis => {
         if (opts.scales[axis]) {
           if (opts.scales[axis].ticks) opts.scales[axis].ticks.color = tickColor();
@@ -273,7 +301,7 @@ window.Charts = (() => {
           if (opts.scales[axis].title) opts.scales[axis].title.color = tickColor();
         }
       });
-      /* Update tooltip */
+      /* Tooltip */
       if (opts.plugins && opts.plugins.tooltip) {
         const tt = opts.plugins.tooltip;
         tt.backgroundColor = bgColor();

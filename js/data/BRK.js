@@ -6,7 +6,7 @@
 
 /* ── Configuración del equipo ────────────────────────────────── */
 window.TEAM_CONFIG = {
-  name:          "BRK",
+  name:          "Brooklyn Nets",
   abbr:          "BRK",
   conference:    "East",
   primaryColor:  "#000000",

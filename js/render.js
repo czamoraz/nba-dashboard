@@ -126,7 +126,8 @@ window.Render = (() => {
     if (!container) return;
 
     const maxG    = 82;
-    const primary = window.TEAM_CONFIG.primaryColor;
+    const primary = document.documentElement.style.getPropertyValue("--team-primary").trim()
+                  || window.TEAM_CONFIG.primaryColor;
 
     container.innerHTML = avail.map(p => {
       const pct   = (p.g / maxG * 100).toFixed(0);
