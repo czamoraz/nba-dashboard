@@ -12,6 +12,9 @@ __pycache__/
 .AppleDouble
 .LSOverride
 
+# ── Claude Code ───────────────────────────────────────────────
+.claude
+
 # ── Editores ──────────────────────────────────────────────────
 .vscode/
 .idea/
