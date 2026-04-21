@@ -203,6 +203,8 @@
 
   <main class="conferences" id="root"></main>
 
+  <script src="js/data/standings.js" onerror="void 0"></script>
+
   <footer class="footer">
     Para agregar datos de un equipo: <code>python scraper.py --team ABBR</code>
     &nbsp;→&nbsp; <code>python csv_to_data_js.py --team ABBR</code>
@@ -292,15 +294,8 @@
     // Para auto-detección real, el servidor necesita un endpoint.
     const TEAMS_WITH_DATA = window.__TEAMS_WITH_DATA__ || [];  // inyectado por csv_to_data_js.py
 
-    /* ── Posición actual en conferencia (temporada más reciente) ── */
-    const CURRENT_STANDINGS = {
-      // East
-      DET: 1, BOS: 2, NYK: 3, CLE: 4, ATL: 5, TOR: 6,
-      PHI: 7, ORL: 8, CHO: 9, MIA: 10, MIL: 11, CHI: 12, BRK: 13, IND: 14, WAS: 15,
-      // West
-      OKC: 1, SAS: 2, DEN: 3, LAL: 4, HOU: 5, MIN: 6,
-      PHO: 7, LAC: 8, POR: 9, GSW: 10, NOP: 11, MEM: 12, DAL: 13, SAC: 14, UTA: 15,
-    };
+    /* ── Posición actual en conferencia (generado por csv_to_data_js.py) ── */
+    const CURRENT_STANDINGS = window.__CURRENT_STANDINGS__ || {};
 
     /* ── Render ─────────────────────────────────────────────────── */
     function cardHTML(team, rank) {

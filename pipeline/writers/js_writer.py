@@ -77,6 +77,39 @@ def generate_data_js(team: str, team_config: dict, conf_ranks: dict):
     _write_js_file(team, team_config, season_blocks)
 
 
+def regenerate_standings_js():
+    """
+    Lee todos los *_data.json en js/data/ y genera js/data/standings.js
+    con el conf_rank de la temporada más reciente de cada equipo.
+    Se llama automáticamente al final de cada generación de equipo.
+    """
+    import glob as _glob
+
+    data_dir = os.path.join("js", "data")
+    standings = {}
+
+    for json_path in sorted(_glob.glob(os.path.join(data_dir, "*_data.json"))):
+        abbr = os.path.basename(json_path).replace("_data.json", "")
+        try:
+            with open(json_path, encoding="utf-8") as f:
+                data = json.load(f)
+            if not data:
+                continue
+            last_season = sorted(data.keys())[-1]
+            rank = data[last_season].get("conf_rank", 0)
+            if rank:
+                standings[abbr] = rank
+        except Exception:
+            pass
+
+    out_path = os.path.join(data_dir, "standings.js")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write("/* Generado automáticamente por csv_to_data_js.py — no editar manualmente */\n")
+        f.write(f"window.__CURRENT_STANDINGS__ = {json.dumps(standings, indent=2)};\n")
+
+    print(f"   {out_path}  ({len(standings)} equipos)")
+
+
 def _write_js_file(team: str, team_config: dict, season_blocks: dict):
     """Serializa season_blocks al formato JS del dashboard."""
     tc = team_config
@@ -172,6 +205,8 @@ def _write_js_file(team: str, team_config: dict, season_blocks: dict):
     json_path = os.path.join(output_dir, f"{team}_data.json")
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(season_blocks, f, ensure_ascii=False, indent=2)
+
+    regenerate_standings_js()
 
     print(f"\n✅ Archivos generados:")
     print(f"   {output_path}")
