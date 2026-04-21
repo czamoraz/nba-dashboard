@@ -166,7 +166,16 @@ def _write_js_file(team: str, team_config: dict, season_blocks: dict):
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
-    print(f"\n✅ Archivo generado: {output_path}")
+    # Companion JSON — fuente de verdad para update_current_season.py
+    # Se commitea junto al JS para que GitHub Actions pueda leer el historial
+    # sin necesitar los CSVs (que están en .gitignore).
+    json_path = os.path.join(output_dir, f"{team}_data.json")
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(season_blocks, f, ensure_ascii=False, indent=2)
+
+    print(f"\n✅ Archivos generados:")
+    print(f"   {output_path}")
+    print(f"   {json_path}")
     print(f"   Equipo    : {tc['name']} ({tc['abbr']})")
     print(f"   Temporadas: {', '.join(season_blocks.keys())}")
     if any(v == 0 for v in [season_blocks[s]["conf_rank"] for s in season_blocks]):
