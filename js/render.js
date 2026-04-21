@@ -46,7 +46,7 @@ window.Render = (() => {
       },
       {
         val:  `${d.conf_rank}<span>°</span>`,
-        lab:  "Posición Conf. Este",
+        lab:  `Posición Conf. ${window.TEAM_CONFIG.conference === "East" ? "Este" : "Oeste"}`,
         sub:  "",
       },
       {
@@ -167,9 +167,19 @@ window.Render = (() => {
   function streakLegend(streaks) {
     const el = document.getElementById("streakLegendInfo");
     if (!el) return;
-    const max = streaks.reduce((best, s) => s.len > best.len ? s : best, { len: 0 });
-    if (max.len >= 4) {
-      el.textContent = `Mejor racha: ${max.len} victorias seguidas (partidos ${max.start}–${max.end})`;
+
+    const wins   = streaks.filter(s => s.result === "W");
+    const losses = streaks.filter(s => s.result === "L");
+
+    const bestWin   = wins.reduce((b, s)   => s.len > b.len ? s : b, { len: 0 });
+    const worstLoss = losses.reduce((b, s) => s.len > b.len ? s : b, { len: 0 });
+
+    const parts = [];
+    if (bestWin.len   >= 4) parts.push(`Mejor racha: ${bestWin.len} victorias seguidas (partidos ${bestWin.start}–${bestWin.end})`);
+    if (worstLoss.len >= 4) parts.push(`Peor racha: ${worstLoss.len} derrotas seguidas (partidos ${worstLoss.start}–${worstLoss.end})`);
+
+    if (parts.length > 0) {
+      el.innerHTML = parts.join(" &nbsp;·&nbsp; ");
       el.style.display = "block";
     } else {
       el.style.display = "none";

@@ -88,17 +88,16 @@
     .conf-title.east { background: rgba(26,107,189,.18); color: #5ba3e8; border: 1px solid rgba(26,107,189,.3); }
     .conf-title.west { background: rgba(184,41,26,.18);  color: #e87060; border: 1px solid rgba(184,41,26,.3); }
 
-    /* ── División ────────────────────────────────────────────────── */
-    .division { display: flex; flex-direction: column; gap: .5rem; }
-
-    .division-name {
-      font-size: .65rem;
-      font-weight: 600;
-      letter-spacing: .1em;
-      text-transform: uppercase;
+    /* ── Rank badge ─────────────────────────────────────────────── */
+    .team-rank {
+      position: relative;
+      z-index: 1;
+      font-size: .75rem;
+      font-weight: 700;
       color: var(--muted);
-      padding-left: .25rem;
-      margin-bottom: .2rem;
+      min-width: 22px;
+      text-align: right;
+      flex-shrink: 0;
     }
 
     /* ── Team card ───────────────────────────────────────────────── */
@@ -293,17 +292,23 @@
     // Para auto-detección real, el servidor necesita un endpoint.
     const TEAMS_WITH_DATA = window.__TEAMS_WITH_DATA__ || [];  // inyectado por csv_to_data_js.py
 
+    /* ── Posición actual en conferencia (temporada más reciente) ── */
+    const CURRENT_STANDINGS = {
+      // East
+      DET: 1, BOS: 2, NYK: 3, CLE: 4, ATL: 5, TOR: 6,
+      PHI: 7, ORL: 8, CHO: 9, MIA: 10, MIL: 11, CHI: 12, BRK: 13, IND: 14, WAS: 15,
+      // West
+      OKC: 1, SAS: 2, DEN: 3, LAL: 4, HOU: 5, MIN: 6,
+      PHO: 7, LAC: 8, POR: 9, GSW: 10, NOP: 11, MEM: 12, DAL: 13, SAC: 14, UTA: 15,
+    };
+
     /* ── Render ─────────────────────────────────────────────────── */
-    function cardHTML(team) {
-      const hasData = TEAMS_WITH_DATA.length === 0 || TEAMS_WITH_DATA.includes(team.abbr);
-      const href    = `index.html?team=${team.abbr}`;
-
-      // Contraste del texto del swatch
-      const textColor = team.c1 === "#000000" ? "#fff" : "#fff";
-
+    function cardHTML(team, rank) {
+      const href = `index.html?team=${team.abbr}`;
       return `
         <a class="team-card" href="${href}"
            style="--c1:${team.c1};--c2:${team.c2}">
+          <div class="team-rank">${rank}</div>
           <div class="team-swatch" style="background:${team.c1};border-color:${team.c2}">
             ${team.abbr}
           </div>
@@ -317,17 +322,17 @@
 
     function render() {
       const root = document.getElementById("root");
-      root.innerHTML = CONFERENCES.map(conf => `
-        <div class="conference-block">
-          <span class="conf-title ${conf.cls}">${conf.name}</span>
-          ${conf.divisions.map(div => `
-            <div class="division">
-              <div class="division-name">${div.name} Division</div>
-              ${div.teams.map(cardHTML).join("")}
-            </div>
-          `).join("")}
-        </div>
-      `).join("");
+      root.innerHTML = CONFERENCES.map(conf => {
+        const allTeams = conf.divisions.flatMap(d => d.teams);
+        const sorted   = [...allTeams].sort(
+          (a, b) => (CURRENT_STANDINGS[a.abbr] || 99) - (CURRENT_STANDINGS[b.abbr] || 99)
+        );
+        return `
+          <div class="conference-block">
+            <span class="conf-title ${conf.cls}">${conf.name}</span>
+            ${sorted.map(t => cardHTML(t, CURRENT_STANDINGS[t.abbr] || "–")).join("")}
+          </div>`;
+      }).join("");
     }
 
     render();
