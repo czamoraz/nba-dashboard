@@ -10,6 +10,7 @@ Uso:
   python update_current_season.py --team ATL --season 2025-26
   python update_current_season.py --team ATL --delay 8   # más lento si B-Ref bloquea
   python update_current_season.py --team ATL --skip-js   # solo muestra los datos
+  python update_current_season.py --all                  # actualiza los 30 equipos
 """
 
 import argparse
@@ -19,7 +20,7 @@ import os
 import sys
 import pandas as pd
 
-from pipeline.catalog import TEAM_CATALOG
+from pipeline.catalog import TEAM_CATALOG, NBA_TEAMS
 from pipeline.scrapers.games     import scrape_games
 from pipeline.scrapers.leaders   import scrape_leaders
 from pipeline.scrapers.conf_rank import scrape_conf_rank, scrape_all_conf_ranks
@@ -136,15 +137,21 @@ Ejemplos:
   python update_current_season.py --team GSW --season 2024-25
   python update_current_season.py --team ATL --delay 8
   python update_current_season.py --team ATL --skip-js
+  python update_current_season.py --all
+  python update_current_season.py --all --delay 8
         """
     )
     parser.add_argument(
         "--team", "-t",
         type=str.upper,
-        required=True,
         nargs="+",
         metavar="ABBR",
         help="Abreviatura(s) del equipo (ej: ATL, o ATL BOS LAL)"
+    )
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="Actualiza los 30 equipos NBA"
     )
     parser.add_argument(
         "--season",
@@ -250,7 +257,14 @@ def update_team(team: str, season: str, season_int: int, delay: float,
 
 def main():
     args       = parse_args()
-    teams      = args.team
+    if args.all:
+        # Los 30 equipos activos (excluye nombres históricos)
+        teams = sorted(t for t in NBA_TEAMS if t not in {"NJN", "NOH", "NOK", "SEA", "VAN"})
+    elif args.team:
+        teams = args.team
+    else:
+        print("Error: usa --team ABBR... o --all para actualizar todos los equipos.")
+        sys.exit(1)
     season     = args.season or detect_current_season()
     season_int = season_to_int(season)
     delay      = args.delay

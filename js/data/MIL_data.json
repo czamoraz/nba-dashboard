@@ -1,0 +1,5072 @@
+{
+  "2020-21": {
+    "w": 46,
+    "l": 26,
+    "topW": {
+      "pts": 144,
+      "opp": 97,
+      "against": "Miami Heat"
+    },
+    "worstL": {
+      "pts": 97,
+      "opp": 128,
+      "against": "Denver Nuggets"
+    },
+    "conf_rank": 3,
+    "result_str": "LWLWLWWWLWWWWLLWWLLWWWWWLLLLLWWWWWLWWWWWWWWLLLWWWLLLWWWLLWWLWLWWWWWLWWWL",
+    "opponents": [
+      "Boston Celtics",
+      "Golden State Warriors",
+      "New York Knicks",
+      "Miami Heat",
+      "Miami Heat",
+      "Chicago Bulls",
+      "Detroit Pistons",
+      "Detroit Pistons",
+      "Utah Jazz",
+      "Cleveland Cavaliers",
+      "Orlando Magic",
+      "Detroit Pistons",
+      "Dallas Mavericks",
+      "Brooklyn Nets",
+      "Los Angeles Lakers",
+      "Atlanta Hawks",
+      "Toronto Raptors",
+      "New Orleans Pelicans",
+      "Charlotte Hornets",
+      "Portland Trail Blazers",
+      "Indiana Pacers",
+      "Cleveland Cavaliers",
+      "Cleveland Cavaliers",
+      "Denver Nuggets",
+      "Phoenix Suns",
+      "Utah Jazz",
+      "Oklahoma City Thunder",
+      "Toronto Raptors",
+      "Toronto Raptors",
+      "Oklahoma City Thunder",
+      "Sacramento Kings",
+      "Minnesota Timberwolves",
+      "New Orleans Pelicans",
+      "Los Angeles Clippers",
+      "Denver Nuggets",
+      "Memphis Grizzlies",
+      "New York Knicks",
+      "Washington Wizards",
+      "Washington Wizards",
+      "Philadelphia 76ers",
+      "San Antonio Spurs",
+      "Indiana Pacers",
+      "Boston Celtics",
+      "Boston Celtics",
+      "New York Knicks",
+      "Los Angeles Clippers",
+      "Los Angeles Lakers",
+      "Portland Trail Blazers",
+      "Sacramento Kings",
+      "Golden State Warriors",
+      "Dallas Mavericks",
+      "Charlotte Hornets",
+      "Orlando Magic",
+      "Minnesota Timberwolves",
+      "Atlanta Hawks",
+      "Memphis Grizzlies",
+      "Phoenix Suns",
+      "Philadelphia 76ers",
+      "Philadelphia 76ers",
+      "Atlanta Hawks",
+      "Charlotte Hornets",
+      "Houston Rockets",
+      "Chicago Bulls",
+      "Brooklyn Nets",
+      "Brooklyn Nets",
+      "Washington Wizards",
+      "Houston Rockets",
+      "San Antonio Spurs",
+      "Orlando Magic",
+      "Indiana Pacers",
+      "Miami Heat",
+      "Chicago Bulls"
+    ],
+    "pts_for": [
+      121,
+      138,
+      110,
+      144,
+      108,
+      126,
+      125,
+      130,
+      118,
+      100,
+      121,
+      110,
+      112,
+      123,
+      106,
+      129,
+      115,
+      126,
+      114,
+      134,
+      130,
+      123,
+      124,
+      125,
+      124,
+      115,
+      109,
+      113,
+      96,
+      98,
+      128,
+      139,
+      129,
+      105,
+      97,
+      112,
+      134,
+      125,
+      133,
+      109,
+      120,
+      140,
+      121,
+      114,
+      96,
+      105,
+      112,
+      127,
+      129,
+      121,
+      101,
+      119,
+      124,
+      130,
+      120,
+      115,
+      127,
+      124,
+      132,
+      104,
+      114,
+      136,
+      108,
+      117,
+      124,
+      135,
+      141,
+      125,
+      114,
+      142,
+      122,
+      112
+    ],
+    "margins": [
+      -1,
+      39,
+      -20,
+      47,
+      -11,
+      30,
+      10,
+      15,
+      -13,
+      10,
+      22,
+      9,
+      3,
+      -2,
+      -7,
+      14,
+      7,
+      -5,
+      -12,
+      28,
+      20,
+      18,
+      25,
+      13,
+      -1,
+      -14,
+      -5,
+      -11,
+      -14,
+      13,
+      13,
+      27,
+      4,
+      5,
+      -31,
+      1,
+      33,
+      6,
+      11,
+      4,
+      7,
+      27,
+      2,
+      -8,
+      -6,
+      -24,
+      15,
+      18,
+      1,
+      -1,
+      -15,
+      -8,
+      37,
+      25,
+      11,
+      -13,
+      -1,
+      7,
+      38,
+      -7,
+      10,
+      -7,
+      10,
+      3,
+      6,
+      1,
+      8,
+      -21,
+      12,
+      9,
+      14,
+      -6
+    ],
+    "leaders": {
+      "pts": {
+        "name": "Giannis Antetokounmpo",
+        "val": 28.1,
+        "all": [
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 28.1
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 20.4
+          },
+          {
+            "name": "Jrue Holiday",
+            "val": 17.7
+          },
+          {
+            "name": "Elijah Bryant",
+            "val": 16.0
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 12.3
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 11.4
+          },
+          {
+            "name": "Donte DiVincenzo",
+            "val": 10.4
+          },
+          {
+            "name": "Bryn Forbes",
+            "val": 10.0
+          },
+          {
+            "name": "Justin Jackson",
+            "val": 9.0
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 6.8
+          },
+          {
+            "name": "Jeff Teague",
+            "val": 6.6
+          },
+          {
+            "name": "D.J. Augustin",
+            "val": 6.1
+          },
+          {
+            "name": "Jordan Nwora",
+            "val": 5.7
+          },
+          {
+            "name": "D.J. Wilson",
+            "val": 3.6
+          },
+          {
+            "name": "Mamadi Diakite",
+            "val": 3.1
+          },
+          {
+            "name": "Sam Merrill",
+            "val": 3.0
+          },
+          {
+            "name": "Rodions Kurucs",
+            "val": 3.0
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 2.9
+          },
+          {
+            "name": "P.J. Tucker",
+            "val": 2.6
+          },
+          {
+            "name": "Torrey Craig",
+            "val": 2.5
+          },
+          {
+            "name": "Axel Toupane",
+            "val": 1.8
+          },
+          {
+            "name": "Jaylen Adams",
+            "val": 0.3
+          }
+        ]
+      },
+      "reb": {
+        "name": "Giannis Antetokounmpo",
+        "val": 11.0,
+        "all": [
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 11.0
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 7.1
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 6.0
+          },
+          {
+            "name": "Justin Jackson",
+            "val": 6.0
+          },
+          {
+            "name": "Elijah Bryant",
+            "val": 6.0
+          },
+          {
+            "name": "Donte DiVincenzo",
+            "val": 5.8
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 5.0
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 4.8
+          },
+          {
+            "name": "Jrue Holiday",
+            "val": 4.5
+          },
+          {
+            "name": "P.J. Tucker",
+            "val": 2.8
+          },
+          {
+            "name": "Torrey Craig",
+            "val": 2.4
+          },
+          {
+            "name": "Mamadi Diakite",
+            "val": 2.4
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 2.2
+          },
+          {
+            "name": "D.J. Wilson",
+            "val": 2.1
+          },
+          {
+            "name": "Jordan Nwora",
+            "val": 2.0
+          },
+          {
+            "name": "Rodions Kurucs",
+            "val": 1.8
+          },
+          {
+            "name": "Bryn Forbes",
+            "val": 1.6
+          },
+          {
+            "name": "Jeff Teague",
+            "val": 1.5
+          },
+          {
+            "name": "D.J. Augustin",
+            "val": 1.4
+          },
+          {
+            "name": "Sam Merrill",
+            "val": 1.0
+          },
+          {
+            "name": "Axel Toupane",
+            "val": 0.8
+          },
+          {
+            "name": "Jaylen Adams",
+            "val": 0.4
+          }
+        ]
+      },
+      "ast": {
+        "name": "Jrue Holiday",
+        "val": 6.1,
+        "all": [
+          {
+            "name": "Jrue Holiday",
+            "val": 6.1
+          },
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 5.9
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 5.4
+          },
+          {
+            "name": "Donte DiVincenzo",
+            "val": 3.1
+          },
+          {
+            "name": "D.J. Augustin",
+            "val": 3.0
+          },
+          {
+            "name": "Elijah Bryant",
+            "val": 3.0
+          },
+          {
+            "name": "Jeff Teague",
+            "val": 2.8
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 1.2
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 1.1
+          },
+          {
+            "name": "Justin Jackson",
+            "val": 1.0
+          },
+          {
+            "name": "Torrey Craig",
+            "val": 0.9
+          },
+          {
+            "name": "P.J. Tucker",
+            "val": 0.8
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 0.8
+          },
+          {
+            "name": "Rodions Kurucs",
+            "val": 0.8
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 0.7
+          },
+          {
+            "name": "Sam Merrill",
+            "val": 0.7
+          },
+          {
+            "name": "Bryn Forbes",
+            "val": 0.6
+          },
+          {
+            "name": "Mamadi Diakite",
+            "val": 0.6
+          },
+          {
+            "name": "Axel Toupane",
+            "val": 0.5
+          },
+          {
+            "name": "D.J. Wilson",
+            "val": 0.3
+          },
+          {
+            "name": "Jaylen Adams",
+            "val": 0.3
+          },
+          {
+            "name": "Jordan Nwora",
+            "val": 0.2
+          }
+        ]
+      },
+      "stl": {
+        "name": "Jrue Holiday",
+        "val": 1.6,
+        "all": [
+          {
+            "name": "Jrue Holiday",
+            "val": 1.6
+          },
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 1.2
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 1.1
+          },
+          {
+            "name": "Donte DiVincenzo",
+            "val": 1.1
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 0.8
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 0.7
+          },
+          {
+            "name": "Rodions Kurucs",
+            "val": 0.6
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 0.6
+          },
+          {
+            "name": "Jordan Nwora",
+            "val": 0.5
+          },
+          {
+            "name": "Mamadi Diakite",
+            "val": 0.5
+          },
+          {
+            "name": "Torrey Craig",
+            "val": 0.5
+          },
+          {
+            "name": "D.J. Augustin",
+            "val": 0.5
+          },
+          {
+            "name": "P.J. Tucker",
+            "val": 0.5
+          },
+          {
+            "name": "Jeff Teague",
+            "val": 0.4
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 0.4
+          },
+          {
+            "name": "Bryn Forbes",
+            "val": 0.3
+          },
+          {
+            "name": "Sam Merrill",
+            "val": 0.3
+          },
+          {
+            "name": "Axel Toupane",
+            "val": 0.3
+          },
+          {
+            "name": "D.J. Wilson",
+            "val": 0.1
+          },
+          {
+            "name": "Elijah Bryant",
+            "val": 0.0
+          },
+          {
+            "name": "Justin Jackson",
+            "val": 0.0
+          },
+          {
+            "name": "Jaylen Adams",
+            "val": 0.0
+          }
+        ]
+      },
+      "blk": {
+        "name": "Brook Lopez",
+        "val": 1.5,
+        "all": [
+          {
+            "name": "Brook Lopez",
+            "val": 1.5
+          },
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 1.2
+          },
+          {
+            "name": "Elijah Bryant",
+            "val": 1.0
+          },
+          {
+            "name": "Jrue Holiday",
+            "val": 0.6
+          },
+          {
+            "name": "Mamadi Diakite",
+            "val": 0.4
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 0.4
+          },
+          {
+            "name": "Axel Toupane",
+            "val": 0.4
+          },
+          {
+            "name": "Torrey Craig",
+            "val": 0.4
+          },
+          {
+            "name": "D.J. Wilson",
+            "val": 0.3
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 0.3
+          },
+          {
+            "name": "Jordan Nwora",
+            "val": 0.2
+          },
+          {
+            "name": "Donte DiVincenzo",
+            "val": 0.2
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 0.2
+          },
+          {
+            "name": "Jeff Teague",
+            "val": 0.2
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 0.1
+          },
+          {
+            "name": "P.J. Tucker",
+            "val": 0.1
+          },
+          {
+            "name": "Sam Merrill",
+            "val": 0.0
+          },
+          {
+            "name": "Rodions Kurucs",
+            "val": 0.0
+          },
+          {
+            "name": "D.J. Augustin",
+            "val": 0.0
+          },
+          {
+            "name": "Bryn Forbes",
+            "val": 0.0
+          },
+          {
+            "name": "Justin Jackson",
+            "val": 0.0
+          },
+          {
+            "name": "Jaylen Adams",
+            "val": 0.0
+          }
+        ]
+      }
+    },
+    "avail": [
+      {
+        "name": "Bryn Forbes",
+        "g": 70
+      },
+      {
+        "name": "Brook Lopez",
+        "g": 70
+      },
+      {
+        "name": "Pat Connaughton",
+        "g": 69
+      },
+      {
+        "name": "Khris Middleton",
+        "g": 68
+      },
+      {
+        "name": "Donte DiVincenzo",
+        "g": 66
+      },
+      {
+        "name": "Bobby Portis",
+        "g": 66
+      },
+      {
+        "name": "Giannis Antetokounmpo",
+        "g": 61
+      },
+      {
+        "name": "Jrue Holiday",
+        "g": 59
+      },
+      {
+        "name": "Thanasis Antetokounmpo",
+        "g": 57
+      },
+      {
+        "name": "D.J. Augustin",
+        "g": 37
+      },
+      {
+        "name": "Jordan Nwora",
+        "g": 30
+      },
+      {
+        "name": "Sam Merrill",
+        "g": 30
+      },
+      {
+        "name": "Jeff Teague",
+        "g": 21
+      },
+      {
+        "name": "P.J. Tucker",
+        "g": 20
+      },
+      {
+        "name": "Torrey Craig",
+        "g": 18
+      },
+      {
+        "name": "Mamadi Diakite",
+        "g": 14
+      },
+      {
+        "name": "D.J. Wilson",
+        "g": 12
+      },
+      {
+        "name": "Axel Toupane",
+        "g": 8
+      },
+      {
+        "name": "Jaylen Adams",
+        "g": 7
+      },
+      {
+        "name": "Rodions Kurucs",
+        "g": 5
+      },
+      {
+        "name": "Elijah Bryant",
+        "g": 1
+      },
+      {
+        "name": "Justin Jackson",
+        "g": 1
+      }
+    ]
+  },
+  "2021-22": {
+    "w": 51,
+    "l": 31,
+    "topW": {
+      "pts": 123,
+      "opp": 92,
+      "against": "Orlando Magic"
+    },
+    "worstL": {
+      "pts": 95,
+      "opp": 137,
+      "against": "Miami Heat"
+    },
+    "conf_rank": 3,
+    "result_str": "WLWWLLLWLLWWLLWWWWWWWWLWWLWWLWLLWWWWWWLLWLLWLLWWWLWLWWWWLLWLLWWWWWWLWWLWWLWWLLWWWL",
+    "opponents": [
+      "Brooklyn Nets",
+      "Miami Heat",
+      "San Antonio Spurs",
+      "Indiana Pacers",
+      "Minnesota Timberwolves",
+      "San Antonio Spurs",
+      "Utah Jazz",
+      "Detroit Pistons",
+      "New York Knicks",
+      "Washington Wizards",
+      "Philadelphia 76ers",
+      "New York Knicks",
+      "Boston Celtics",
+      "Atlanta Hawks",
+      "Los Angeles Lakers",
+      "Oklahoma City Thunder",
+      "Orlando Magic",
+      "Orlando Magic",
+      "Detroit Pistons",
+      "Denver Nuggets",
+      "Indiana Pacers",
+      "Charlotte Hornets",
+      "Toronto Raptors",
+      "Miami Heat",
+      "Cleveland Cavaliers",
+      "Miami Heat",
+      "Houston Rockets",
+      "New York Knicks",
+      "Boston Celtics",
+      "Indiana Pacers",
+      "New Orleans Pelicans",
+      "Cleveland Cavaliers",
+      "Houston Rockets",
+      "Dallas Mavericks",
+      "Boston Celtics",
+      "Orlando Magic",
+      "Orlando Magic",
+      "New Orleans Pelicans",
+      "Detroit Pistons",
+      "Toronto Raptors",
+      "Brooklyn Nets",
+      "Charlotte Hornets",
+      "Charlotte Hornets",
+      "Golden State Warriors",
+      "Toronto Raptors",
+      "Atlanta Hawks",
+      "Memphis Grizzlies",
+      "Chicago Bulls",
+      "Sacramento Kings",
+      "Cleveland Cavaliers",
+      "New York Knicks",
+      "Denver Nuggets",
+      "Washington Wizards",
+      "Portland Trail Blazers",
+      "Los Angeles Clippers",
+      "Los Angeles Lakers",
+      "Phoenix Suns",
+      "Portland Trail Blazers",
+      "Indiana Pacers",
+      "Philadelphia 76ers",
+      "Brooklyn Nets",
+      "Charlotte Hornets",
+      "Miami Heat",
+      "Chicago Bulls",
+      "Phoenix Suns",
+      "Oklahoma City Thunder",
+      "Atlanta Hawks",
+      "Golden State Warriors",
+      "Utah Jazz",
+      "Sacramento Kings",
+      "Minnesota Timberwolves",
+      "Chicago Bulls",
+      "Washington Wizards",
+      "Memphis Grizzlies",
+      "Philadelphia 76ers",
+      "Brooklyn Nets",
+      "Los Angeles Clippers",
+      "Dallas Mavericks",
+      "Chicago Bulls",
+      "Boston Celtics",
+      "Detroit Pistons",
+      "Cleveland Cavaliers"
+    ],
+    "pts_for": [
+      127,
+      95,
+      121,
+      119,
+      108,
+      93,
+      95,
+      117,
+      98,
+      94,
+      118,
+      112,
+      113,
+      100,
+      109,
+      96,
+      117,
+      123,
+      114,
+      120,
+      118,
+      127,
+      93,
+      124,
+      112,
+      104,
+      123,
+      112,
+      103,
+      114,
+      112,
+      90,
+      126,
+      102,
+      117,
+      127,
+      136,
+      136,
+      106,
+      111,
+      121,
+      106,
+      99,
+      118,
+      96,
+      114,
+      126,
+      94,
+      133,
+      99,
+      123,
+      100,
+      112,
+      137,
+      137,
+      131,
+      107,
+      107,
+      128,
+      120,
+      123,
+      130,
+      120,
+      118,
+      132,
+      142,
+      124,
+      109,
+      117,
+      135,
+      119,
+      126,
+      114,
+      102,
+      118,
+      120,
+      119,
+      112,
+      127,
+      127,
+      131,
+      115
+    ],
+    "margins": [
+      23,
+      -42,
+      10,
+      10,
+      -5,
+      -9,
+      -12,
+      28,
+      -15,
+      -7,
+      9,
+      12,
+      -9,
+      -20,
+      7,
+      7,
+      9,
+      31,
+      21,
+      11,
+      18,
+      2,
+      -4,
+      22,
+      8,
+      -9,
+      9,
+      15,
+      -14,
+      15,
+      -4,
+      -29,
+      20,
+      7,
+      4,
+      17,
+      18,
+      23,
+      -9,
+      -6,
+      12,
+      -8,
+      -4,
+      19,
+      -7,
+      -7,
+      12,
+      4,
+      6,
+      -16,
+      15,
+      -36,
+      14,
+      29,
+      24,
+      15,
+      -24,
+      -15,
+      9,
+      -3,
+      -3,
+      24,
+      1,
+      6,
+      10,
+      27,
+      9,
+      -13,
+      6,
+      9,
+      -19,
+      28,
+      12,
+      -25,
+      2,
+      1,
+      -34,
+      -6,
+      21,
+      6,
+      30,
+      -18
+    ],
+    "leaders": {
+      "pts": {
+        "name": "Giannis Antetokounmpo",
+        "val": 29.9,
+        "all": [
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 29.9
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 20.1
+          },
+          {
+            "name": "Jrue Holiday",
+            "val": 18.3
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 14.6
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 12.4
+          },
+          {
+            "name": "Grayson Allen",
+            "val": 11.1
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 9.9
+          },
+          {
+            "name": "DeMarcus Cousins",
+            "val": 9.1
+          },
+          {
+            "name": "Jordan Nwora",
+            "val": 7.9
+          },
+          {
+            "name": "Rayjon Tucker",
+            "val": 7.5
+          },
+          {
+            "name": "Donte DiVincenzo",
+            "val": 7.2
+          },
+          {
+            "name": "Serge Ibaka",
+            "val": 7.0
+          },
+          {
+            "name": "George Hill",
+            "val": 6.2
+          },
+          {
+            "name": "Jevon Carter",
+            "val": 5.6
+          },
+          {
+            "name": "Greg Monroe",
+            "val": 5.4
+          },
+          {
+            "name": "Wesley Matthews",
+            "val": 5.1
+          },
+          {
+            "name": "Lindell Wigginton",
+            "val": 4.2
+          },
+          {
+            "name": "Sandro Mamukelashvili",
+            "val": 3.8
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 3.6
+          },
+          {
+            "name": "Rodney Hood",
+            "val": 3.3
+          },
+          {
+            "name": "Semi Ojeleye",
+            "val": 2.9
+          },
+          {
+            "name": "Justin Robinson",
+            "val": 2.8
+          },
+          {
+            "name": "Javonte Smart",
+            "val": 2.4
+          },
+          {
+            "name": "Georgios Kalaitzakis",
+            "val": 1.8
+          },
+          {
+            "name": "DeAndre' Bembry",
+            "val": 0.8
+          },
+          {
+            "name": "Langston Galloway",
+            "val": 0.7
+          },
+          {
+            "name": "Luke Kornet",
+            "val": 0.0
+          },
+          {
+            "name": "Jeff Dowtin Jr.",
+            "val": 0.0
+          },
+          {
+            "name": "Javin DeLaurier",
+            "val": 0.0
+          }
+        ]
+      },
+      "reb": {
+        "name": "Giannis Antetokounmpo",
+        "val": 11.6,
+        "all": [
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 11.6
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 9.1
+          },
+          {
+            "name": "DeMarcus Cousins",
+            "val": 5.8
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 5.4
+          },
+          {
+            "name": "Serge Ibaka",
+            "val": 5.3
+          },
+          {
+            "name": "Jrue Holiday",
+            "val": 4.5
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 4.2
+          },
+          {
+            "name": "Greg Monroe",
+            "val": 4.2
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 4.1
+          },
+          {
+            "name": "Jordan Nwora",
+            "val": 3.6
+          },
+          {
+            "name": "Donte DiVincenzo",
+            "val": 3.5
+          },
+          {
+            "name": "Grayson Allen",
+            "val": 3.4
+          },
+          {
+            "name": "Langston Galloway",
+            "val": 3.3
+          },
+          {
+            "name": "George Hill",
+            "val": 2.9
+          },
+          {
+            "name": "Semi Ojeleye",
+            "val": 2.9
+          },
+          {
+            "name": "Jevon Carter",
+            "val": 2.2
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 2.1
+          },
+          {
+            "name": "Sandro Mamukelashvili",
+            "val": 2.0
+          },
+          {
+            "name": "Rayjon Tucker",
+            "val": 2.0
+          },
+          {
+            "name": "Wesley Matthews",
+            "val": 1.9
+          },
+          {
+            "name": "Rodney Hood",
+            "val": 1.7
+          },
+          {
+            "name": "Javonte Smart",
+            "val": 1.5
+          },
+          {
+            "name": "DeAndre' Bembry",
+            "val": 1.4
+          },
+          {
+            "name": "Lindell Wigginton",
+            "val": 1.3
+          },
+          {
+            "name": "Luke Kornet",
+            "val": 1.0
+          },
+          {
+            "name": "Javin DeLaurier",
+            "val": 1.0
+          },
+          {
+            "name": "Georgios Kalaitzakis",
+            "val": 0.9
+          },
+          {
+            "name": "Justin Robinson",
+            "val": 0.8
+          },
+          {
+            "name": "Jeff Dowtin Jr.",
+            "val": 0.0
+          }
+        ]
+      },
+      "ast": {
+        "name": "Jrue Holiday",
+        "val": 6.8,
+        "all": [
+          {
+            "name": "Jrue Holiday",
+            "val": 6.8
+          },
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 5.8
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 5.4
+          },
+          {
+            "name": "Rayjon Tucker",
+            "val": 3.0
+          },
+          {
+            "name": "Jevon Carter",
+            "val": 2.5
+          },
+          {
+            "name": "Langston Galloway",
+            "val": 2.3
+          },
+          {
+            "name": "George Hill",
+            "val": 2.2
+          },
+          {
+            "name": "Donte DiVincenzo",
+            "val": 1.7
+          },
+          {
+            "name": "Grayson Allen",
+            "val": 1.5
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 1.3
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 1.2
+          },
+          {
+            "name": "Lindell Wigginton",
+            "val": 1.2
+          },
+          {
+            "name": "Justin Robinson",
+            "val": 1.2
+          },
+          {
+            "name": "Javonte Smart",
+            "val": 1.1
+          },
+          {
+            "name": "DeMarcus Cousins",
+            "val": 1.1
+          },
+          {
+            "name": "Jordan Nwora",
+            "val": 1.0
+          },
+          {
+            "name": "Rodney Hood",
+            "val": 0.8
+          },
+          {
+            "name": "DeAndre' Bembry",
+            "val": 0.8
+          },
+          {
+            "name": "Serge Ibaka",
+            "val": 0.7
+          },
+          {
+            "name": "Wesley Matthews",
+            "val": 0.7
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 0.5
+          },
+          {
+            "name": "Sandro Mamukelashvili",
+            "val": 0.5
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 0.5
+          },
+          {
+            "name": "Greg Monroe",
+            "val": 0.4
+          },
+          {
+            "name": "Semi Ojeleye",
+            "val": 0.3
+          },
+          {
+            "name": "Georgios Kalaitzakis",
+            "val": 0.0
+          },
+          {
+            "name": "Luke Kornet",
+            "val": 0.0
+          },
+          {
+            "name": "Jeff Dowtin Jr.",
+            "val": 0.0
+          },
+          {
+            "name": "Javin DeLaurier",
+            "val": 0.0
+          }
+        ]
+      },
+      "stl": {
+        "name": "Jrue Holiday",
+        "val": 1.6,
+        "all": [
+          {
+            "name": "Jrue Holiday",
+            "val": 1.6
+          },
+          {
+            "name": "Rayjon Tucker",
+            "val": 1.5
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 1.2
+          },
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 1.1
+          },
+          {
+            "name": "Javin DeLaurier",
+            "val": 1.0
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 0.9
+          },
+          {
+            "name": "DeMarcus Cousins",
+            "val": 0.9
+          },
+          {
+            "name": "George Hill",
+            "val": 0.8
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 0.7
+          },
+          {
+            "name": "Grayson Allen",
+            "val": 0.7
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 0.6
+          },
+          {
+            "name": "Greg Monroe",
+            "val": 0.6
+          },
+          {
+            "name": "Donte DiVincenzo",
+            "val": 0.6
+          },
+          {
+            "name": "Justin Robinson",
+            "val": 0.5
+          },
+          {
+            "name": "Jevon Carter",
+            "val": 0.5
+          },
+          {
+            "name": "Wesley Matthews",
+            "val": 0.5
+          },
+          {
+            "name": "Jordan Nwora",
+            "val": 0.4
+          },
+          {
+            "name": "DeAndre' Bembry",
+            "val": 0.3
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 0.3
+          },
+          {
+            "name": "Lindell Wigginton",
+            "val": 0.3
+          },
+          {
+            "name": "Rodney Hood",
+            "val": 0.3
+          },
+          {
+            "name": "Javonte Smart",
+            "val": 0.3
+          },
+          {
+            "name": "Semi Ojeleye",
+            "val": 0.3
+          },
+          {
+            "name": "Langston Galloway",
+            "val": 0.3
+          },
+          {
+            "name": "Sandro Mamukelashvili",
+            "val": 0.2
+          },
+          {
+            "name": "Serge Ibaka",
+            "val": 0.2
+          },
+          {
+            "name": "Georgios Kalaitzakis",
+            "val": 0.1
+          },
+          {
+            "name": "Luke Kornet",
+            "val": 0.0
+          },
+          {
+            "name": "Jeff Dowtin Jr.",
+            "val": 0.0
+          }
+        ]
+      },
+      "blk": {
+        "name": "Giannis Antetokounmpo",
+        "val": 1.4,
+        "all": [
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 1.4
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 1.2
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 0.7
+          },
+          {
+            "name": "DeMarcus Cousins",
+            "val": 0.5
+          },
+          {
+            "name": "Greg Monroe",
+            "val": 0.4
+          },
+          {
+            "name": "Serge Ibaka",
+            "val": 0.4
+          },
+          {
+            "name": "Jrue Holiday",
+            "val": 0.4
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 0.3
+          },
+          {
+            "name": "Jordan Nwora",
+            "val": 0.3
+          },
+          {
+            "name": "Grayson Allen",
+            "val": 0.3
+          },
+          {
+            "name": "Semi Ojeleye",
+            "val": 0.3
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 0.3
+          },
+          {
+            "name": "Wesley Matthews",
+            "val": 0.2
+          },
+          {
+            "name": "Donte DiVincenzo",
+            "val": 0.2
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 0.2
+          },
+          {
+            "name": "Jevon Carter",
+            "val": 0.2
+          },
+          {
+            "name": "Sandro Mamukelashvili",
+            "val": 0.2
+          },
+          {
+            "name": "Javonte Smart",
+            "val": 0.2
+          },
+          {
+            "name": "Lindell Wigginton",
+            "val": 0.1
+          },
+          {
+            "name": "Georgios Kalaitzakis",
+            "val": 0.1
+          },
+          {
+            "name": "George Hill",
+            "val": 0.1
+          },
+          {
+            "name": "Rodney Hood",
+            "val": 0.1
+          },
+          {
+            "name": "Justin Robinson",
+            "val": 0.0
+          },
+          {
+            "name": "Rayjon Tucker",
+            "val": 0.0
+          },
+          {
+            "name": "DeAndre' Bembry",
+            "val": 0.0
+          },
+          {
+            "name": "Langston Galloway",
+            "val": 0.0
+          },
+          {
+            "name": "Luke Kornet",
+            "val": 0.0
+          },
+          {
+            "name": "Jeff Dowtin Jr.",
+            "val": 0.0
+          },
+          {
+            "name": "Javin DeLaurier",
+            "val": 0.0
+          }
+        ]
+      }
+    },
+    "avail": [
+      {
+        "name": "Bobby Portis",
+        "g": 72
+      },
+      {
+        "name": "Jrue Holiday",
+        "g": 67
+      },
+      {
+        "name": "Giannis Antetokounmpo",
+        "g": 67
+      },
+      {
+        "name": "Khris Middleton",
+        "g": 66
+      },
+      {
+        "name": "Grayson Allen",
+        "g": 66
+      },
+      {
+        "name": "Pat Connaughton",
+        "g": 65
+      },
+      {
+        "name": "Jordan Nwora",
+        "g": 62
+      },
+      {
+        "name": "George Hill",
+        "g": 54
+      },
+      {
+        "name": "Wesley Matthews",
+        "g": 49
+      },
+      {
+        "name": "Thanasis Antetokounmpo",
+        "g": 48
+      },
+      {
+        "name": "Sandro Mamukelashvili",
+        "g": 41
+      },
+      {
+        "name": "Rodney Hood",
+        "g": 39
+      },
+      {
+        "name": "Jevon Carter",
+        "g": 20
+      },
+      {
+        "name": "Semi Ojeleye",
+        "g": 20
+      },
+      {
+        "name": "Lindell Wigginton",
+        "g": 19
+      },
+      {
+        "name": "Serge Ibaka",
+        "g": 19
+      },
+      {
+        "name": "Justin Robinson",
+        "g": 17
+      },
+      {
+        "name": "DeMarcus Cousins",
+        "g": 17
+      },
+      {
+        "name": "Donte DiVincenzo",
+        "g": 17
+      },
+      {
+        "name": "Javonte Smart",
+        "g": 13
+      },
+      {
+        "name": "Brook Lopez",
+        "g": 13
+      },
+      {
+        "name": "Georgios Kalaitzakis",
+        "g": 9
+      },
+      {
+        "name": "DeAndre' Bembry",
+        "g": 8
+      },
+      {
+        "name": "Greg Monroe",
+        "g": 5
+      },
+      {
+        "name": "Langston Galloway",
+        "g": 3
+      },
+      {
+        "name": "Rayjon Tucker",
+        "g": 2
+      },
+      {
+        "name": "Luke Kornet",
+        "g": 1
+      },
+      {
+        "name": "Jeff Dowtin Jr.",
+        "g": 1
+      },
+      {
+        "name": "Javin DeLaurier",
+        "g": 1
+      }
+    ]
+  },
+  "2022-23": {
+    "w": 58,
+    "l": 24,
+    "topW": {
+      "pts": 130,
+      "opp": 94,
+      "against": "San Antonio Spurs"
+    },
+    "worstL": {
+      "pts": 101,
+      "opp": 142,
+      "against": "Memphis Grizzlies"
+    },
+    "conf_rank": 1,
+    "result_str": "WWWWWWWWWLWLLWLWLWWWLWWWWLWLWWLLLLWLWWLWWLLWWLWWWWWWWWWWWWWWWWLWWWLWWLWWWLWWLWWWLL",
+    "opponents": [
+      "Philadelphia 76ers",
+      "Houston Rockets",
+      "Brooklyn Nets",
+      "New York Knicks",
+      "Atlanta Hawks",
+      "Detroit Pistons",
+      "Detroit Pistons",
+      "Minnesota Timberwolves",
+      "Oklahoma City Thunder",
+      "Atlanta Hawks",
+      "Oklahoma City Thunder",
+      "San Antonio Spurs",
+      "Atlanta Hawks",
+      "Cleveland Cavaliers",
+      "Philadelphia 76ers",
+      "Portland Trail Blazers",
+      "Chicago Bulls",
+      "Cleveland Cavaliers",
+      "Dallas Mavericks",
+      "New York Knicks",
+      "Los Angeles Lakers",
+      "Charlotte Hornets",
+      "Orlando Magic",
+      "Sacramento Kings",
+      "Dallas Mavericks",
+      "Houston Rockets",
+      "Golden State Warriors",
+      "Memphis Grizzlies",
+      "Utah Jazz",
+      "New Orleans Pelicans",
+      "Cleveland Cavaliers",
+      "Brooklyn Nets",
+      "Boston Celtics",
+      "Chicago Bulls",
+      "Minnesota Timberwolves",
+      "Washington Wizards",
+      "Washington Wizards",
+      "Toronto Raptors",
+      "Charlotte Hornets",
+      "New York Knicks",
+      "Atlanta Hawks",
+      "Miami Heat",
+      "Miami Heat",
+      "Indiana Pacers",
+      "Toronto Raptors",
+      "Cleveland Cavaliers",
+      "Detroit Pistons",
+      "Denver Nuggets",
+      "Indiana Pacers",
+      "New Orleans Pelicans",
+      "Charlotte Hornets",
+      "Los Angeles Clippers",
+      "Miami Heat",
+      "Portland Trail Blazers",
+      "Los Angeles Lakers",
+      "Los Angeles Clippers",
+      "Boston Celtics",
+      "Chicago Bulls",
+      "Miami Heat",
+      "Phoenix Suns",
+      "Brooklyn Nets",
+      "Orlando Magic",
+      "Philadelphia 76ers",
+      "Washington Wizards",
+      "Orlando Magic",
+      "Brooklyn Nets",
+      "Golden State Warriors",
+      "Sacramento Kings",
+      "Phoenix Suns",
+      "Indiana Pacers",
+      "Toronto Raptors",
+      "San Antonio Spurs",
+      "Utah Jazz",
+      "Denver Nuggets",
+      "Detroit Pistons",
+      "Indiana Pacers",
+      "Boston Celtics",
+      "Philadelphia 76ers",
+      "Washington Wizards",
+      "Chicago Bulls",
+      "Memphis Grizzlies",
+      "Toronto Raptors"
+    ],
+    "pts_for": [
+      90,
+      125,
+      110,
+      119,
+      123,
+      110,
+      116,
+      115,
+      108,
+      98,
+      136,
+      93,
+      106,
+      113,
+      102,
+      119,
+      113,
+      117,
+      124,
+      109,
+      129,
+      105,
+      109,
+      126,
+      106,
+      92,
+      128,
+      101,
+      123,
+      128,
+      106,
+      100,
+      118,
+      113,
+      123,
+      95,
+      123,
+      104,
+      109,
+      111,
+      114,
+      102,
+      95,
+      132,
+      130,
+      102,
+      150,
+      107,
+      141,
+      135,
+      124,
+      106,
+      123,
+      127,
+      115,
+      119,
+      131,
+      112,
+      128,
+      104,
+      118,
+      139,
+      130,
+      117,
+      134,
+      118,
+      116,
+      133,
+      116,
+      123,
+      118,
+      130,
+      144,
+      106,
+      126,
+      149,
+      99,
+      117,
+      140,
+      105,
+      114,
+      105
+    ],
+    "margins": [
+      2,
+      20,
+      11,
+      11,
+      8,
+      2,
+      25,
+      13,
+      14,
+      -19,
+      4,
+      -18,
+      -15,
+      15,
+      -8,
+      8,
+      -5,
+      15,
+      9,
+      6,
+      -4,
+      9,
+      7,
+      13,
+      1,
+      -5,
+      17,
+      -41,
+      26,
+      9,
+      -8,
+      -18,
+      -21,
+      -6,
+      9,
+      -23,
+      10,
+      3,
+      -29,
+      4,
+      9,
+      -6,
+      -16,
+      13,
+      8,
+      -12,
+      20,
+      8,
+      10,
+      25,
+      9,
+      1,
+      8,
+      19,
+      9,
+      13,
+      6,
+      12,
+      29,
+      3,
+      14,
+      22,
+      -3,
+      6,
+      11,
+      5,
+      -9,
+      9,
+      12,
+      -16,
+      7,
+      36,
+      28,
+      -23,
+      9,
+      13,
+      -41,
+      13,
+      12,
+      13,
+      -23,
+      -16
+    ],
+    "leaders": {
+      "pts": {
+        "name": "Giannis Antetokounmpo",
+        "val": 31.1,
+        "all": [
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 31.1
+          },
+          {
+            "name": "Jrue Holiday",
+            "val": 19.3
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 15.9
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 15.1
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 14.1
+          },
+          {
+            "name": "Grayson Allen",
+            "val": 10.4
+          },
+          {
+            "name": "Jevon Carter",
+            "val": 8.0
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 7.6
+          },
+          {
+            "name": "Lindell Wigginton",
+            "val": 7.1
+          },
+          {
+            "name": "Jae Crowder",
+            "val": 6.9
+          },
+          {
+            "name": "Joe Ingles",
+            "val": 6.9
+          },
+          {
+            "name": "Jordan Nwora",
+            "val": 6.0
+          },
+          {
+            "name": "Goran Dragić",
+            "val": 5.6
+          },
+          {
+            "name": "MarJon Beauchamp",
+            "val": 5.1
+          },
+          {
+            "name": "George Hill",
+            "val": 5.0
+          },
+          {
+            "name": "Meyers Leonard",
+            "val": 4.8
+          },
+          {
+            "name": "A.J. Green",
+            "val": 4.4
+          },
+          {
+            "name": "Serge Ibaka",
+            "val": 4.1
+          },
+          {
+            "name": "Wesley Matthews",
+            "val": 3.4
+          },
+          {
+            "name": "Sandro Mamukelashvili",
+            "val": 2.4
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 1.4
+          }
+        ]
+      },
+      "reb": {
+        "name": "Giannis Antetokounmpo",
+        "val": 11.8,
+        "all": [
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 11.8
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 9.6
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 6.7
+          },
+          {
+            "name": "Jrue Holiday",
+            "val": 5.1
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 4.6
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 4.2
+          },
+          {
+            "name": "Meyers Leonard",
+            "val": 3.8
+          },
+          {
+            "name": "Jae Crowder",
+            "val": 3.8
+          },
+          {
+            "name": "Grayson Allen",
+            "val": 3.3
+          },
+          {
+            "name": "Jordan Nwora",
+            "val": 3.1
+          },
+          {
+            "name": "Joe Ingles",
+            "val": 2.8
+          },
+          {
+            "name": "Serge Ibaka",
+            "val": 2.8
+          },
+          {
+            "name": "Jevon Carter",
+            "val": 2.5
+          },
+          {
+            "name": "Sandro Mamukelashvili",
+            "val": 2.3
+          },
+          {
+            "name": "Wesley Matthews",
+            "val": 2.2
+          },
+          {
+            "name": "MarJon Beauchamp",
+            "val": 2.2
+          },
+          {
+            "name": "George Hill",
+            "val": 1.9
+          },
+          {
+            "name": "Goran Dragić",
+            "val": 1.7
+          },
+          {
+            "name": "A.J. Green",
+            "val": 1.3
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 1.2
+          },
+          {
+            "name": "Lindell Wigginton",
+            "val": 1.0
+          }
+        ]
+      },
+      "ast": {
+        "name": "Jrue Holiday",
+        "val": 7.4,
+        "all": [
+          {
+            "name": "Jrue Holiday",
+            "val": 7.4
+          },
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 5.7
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 4.9
+          },
+          {
+            "name": "Joe Ingles",
+            "val": 3.3
+          },
+          {
+            "name": "George Hill",
+            "val": 2.5
+          },
+          {
+            "name": "Jevon Carter",
+            "val": 2.4
+          },
+          {
+            "name": "Grayson Allen",
+            "val": 2.3
+          },
+          {
+            "name": "Lindell Wigginton",
+            "val": 2.0
+          },
+          {
+            "name": "Goran Dragić",
+            "val": 1.7
+          },
+          {
+            "name": "Jae Crowder",
+            "val": 1.5
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 1.5
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 1.3
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 1.3
+          },
+          {
+            "name": "Jordan Nwora",
+            "val": 1.0
+          },
+          {
+            "name": "Wesley Matthews",
+            "val": 0.7
+          },
+          {
+            "name": "MarJon Beauchamp",
+            "val": 0.7
+          },
+          {
+            "name": "Sandro Mamukelashvili",
+            "val": 0.7
+          },
+          {
+            "name": "A.J. Green",
+            "val": 0.6
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 0.4
+          },
+          {
+            "name": "Serge Ibaka",
+            "val": 0.3
+          },
+          {
+            "name": "Meyers Leonard",
+            "val": 0.1
+          }
+        ]
+      },
+      "stl": {
+        "name": "Jrue Holiday",
+        "val": 1.2,
+        "all": [
+          {
+            "name": "Jrue Holiday",
+            "val": 1.2
+          },
+          {
+            "name": "Grayson Allen",
+            "val": 0.9
+          },
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 0.8
+          },
+          {
+            "name": "Jevon Carter",
+            "val": 0.8
+          },
+          {
+            "name": "Joe Ingles",
+            "val": 0.7
+          },
+          {
+            "name": "Jae Crowder",
+            "val": 0.7
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 0.7
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 0.6
+          },
+          {
+            "name": "George Hill",
+            "val": 0.5
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 0.5
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 0.4
+          },
+          {
+            "name": "Wesley Matthews",
+            "val": 0.4
+          },
+          {
+            "name": "MarJon Beauchamp",
+            "val": 0.4
+          },
+          {
+            "name": "Jordan Nwora",
+            "val": 0.3
+          },
+          {
+            "name": "Goran Dragić",
+            "val": 0.3
+          },
+          {
+            "name": "Meyers Leonard",
+            "val": 0.2
+          },
+          {
+            "name": "A.J. Green",
+            "val": 0.2
+          },
+          {
+            "name": "Sandro Mamukelashvili",
+            "val": 0.2
+          },
+          {
+            "name": "Serge Ibaka",
+            "val": 0.1
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 0.1
+          },
+          {
+            "name": "Lindell Wigginton",
+            "val": 0.0
+          }
+        ]
+      },
+      "blk": {
+        "name": "Brook Lopez",
+        "val": 2.5,
+        "all": [
+          {
+            "name": "Brook Lopez",
+            "val": 2.5
+          },
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 0.8
+          },
+          {
+            "name": "Jrue Holiday",
+            "val": 0.4
+          },
+          {
+            "name": "Jevon Carter",
+            "val": 0.4
+          },
+          {
+            "name": "Serge Ibaka",
+            "val": 0.4
+          },
+          {
+            "name": "Lindell Wigginton",
+            "val": 0.3
+          },
+          {
+            "name": "Wesley Matthews",
+            "val": 0.3
+          },
+          {
+            "name": "Jae Crowder",
+            "val": 0.3
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 0.2
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 0.2
+          },
+          {
+            "name": "Jordan Nwora",
+            "val": 0.2
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 0.2
+          },
+          {
+            "name": "Grayson Allen",
+            "val": 0.2
+          },
+          {
+            "name": "Sandro Mamukelashvili",
+            "val": 0.2
+          },
+          {
+            "name": "Joe Ingles",
+            "val": 0.1
+          },
+          {
+            "name": "George Hill",
+            "val": 0.1
+          },
+          {
+            "name": "MarJon Beauchamp",
+            "val": 0.1
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 0.1
+          },
+          {
+            "name": "Meyers Leonard",
+            "val": 0.0
+          },
+          {
+            "name": "Goran Dragić",
+            "val": 0.0
+          },
+          {
+            "name": "A.J. Green",
+            "val": 0.0
+          }
+        ]
+      }
+    },
+    "avail": [
+      {
+        "name": "Jevon Carter",
+        "g": 81
+      },
+      {
+        "name": "Brook Lopez",
+        "g": 78
+      },
+      {
+        "name": "Grayson Allen",
+        "g": 72
+      },
+      {
+        "name": "Bobby Portis",
+        "g": 70
+      },
+      {
+        "name": "Jrue Holiday",
+        "g": 67
+      },
+      {
+        "name": "Giannis Antetokounmpo",
+        "g": 63
+      },
+      {
+        "name": "Pat Connaughton",
+        "g": 61
+      },
+      {
+        "name": "Wesley Matthews",
+        "g": 52
+      },
+      {
+        "name": "MarJon Beauchamp",
+        "g": 52
+      },
+      {
+        "name": "Joe Ingles",
+        "g": 46
+      },
+      {
+        "name": "Jordan Nwora",
+        "g": 38
+      },
+      {
+        "name": "Thanasis Antetokounmpo",
+        "g": 37
+      },
+      {
+        "name": "George Hill",
+        "g": 35
+      },
+      {
+        "name": "A.J. Green",
+        "g": 35
+      },
+      {
+        "name": "Khris Middleton",
+        "g": 33
+      },
+      {
+        "name": "Sandro Mamukelashvili",
+        "g": 24
+      },
+      {
+        "name": "Jae Crowder",
+        "g": 18
+      },
+      {
+        "name": "Serge Ibaka",
+        "g": 16
+      },
+      {
+        "name": "Meyers Leonard",
+        "g": 9
+      },
+      {
+        "name": "Lindell Wigginton",
+        "g": 7
+      },
+      {
+        "name": "Goran Dragić",
+        "g": 7
+      }
+    ]
+  },
+  "2023-24": {
+    "w": 49,
+    "l": 33,
+    "topW": {
+      "pts": 123,
+      "opp": 85,
+      "against": "Charlotte Hornets"
+    },
+    "worstL": {
+      "pts": 95,
+      "opp": 135,
+      "against": "Cleveland Cavaliers"
+    },
+    "conf_rank": 3,
+    "result_str": "WLWLWWWLLWWWWWLWWWLWWLWWWWWWWLWWLLWLLWWWLWWWLWLLWLLLWWLLWWWWWWLLWLWWLWWLLWLLLLWWLL",
+    "opponents": [
+      "Philadelphia 76ers",
+      "Atlanta Hawks",
+      "Miami Heat",
+      "Toronto Raptors",
+      "New York Knicks",
+      "Brooklyn Nets",
+      "Detroit Pistons",
+      "Indiana Pacers",
+      "Orlando Magic",
+      "Chicago Bulls",
+      "Toronto Raptors",
+      "Charlotte Hornets",
+      "Dallas Mavericks",
+      "Washington Wizards",
+      "Boston Celtics",
+      "Washington Wizards",
+      "Portland Trail Blazers",
+      "Miami Heat",
+      "Chicago Bulls",
+      "Atlanta Hawks",
+      "New York Knicks",
+      "Indiana Pacers",
+      "Chicago Bulls",
+      "Indiana Pacers",
+      "Detroit Pistons",
+      "Houston Rockets",
+      "San Antonio Spurs",
+      "Orlando Magic",
+      "New York Knicks",
+      "New York Knicks",
+      "Brooklyn Nets",
+      "Cleveland Cavaliers",
+      "Indiana Pacers",
+      "Indiana Pacers",
+      "San Antonio Spurs",
+      "Houston Rockets",
+      "Utah Jazz",
+      "Boston Celtics",
+      "Golden State Warriors",
+      "Sacramento Kings",
+      "Cleveland Cavaliers",
+      "Detroit Pistons",
+      "Detroit Pistons",
+      "Cleveland Cavaliers",
+      "Cleveland Cavaliers",
+      "New Orleans Pelicans",
+      "Denver Nuggets",
+      "Portland Trail Blazers",
+      "Dallas Mavericks",
+      "Utah Jazz",
+      "Phoenix Suns",
+      "Minnesota Timberwolves",
+      "Charlotte Hornets",
+      "Denver Nuggets",
+      "Miami Heat",
+      "Memphis Grizzlies",
+      "Minnesota Timberwolves",
+      "Philadelphia 76ers",
+      "Charlotte Hornets",
+      "Charlotte Hornets",
+      "Chicago Bulls",
+      "Los Angeles Clippers",
+      "Golden State Warriors",
+      "Los Angeles Lakers",
+      "Los Angeles Clippers",
+      "Sacramento Kings",
+      "Philadelphia 76ers",
+      "Phoenix Suns",
+      "Boston Celtics",
+      "Brooklyn Nets",
+      "Oklahoma City Thunder",
+      "Los Angeles Lakers",
+      "New Orleans Pelicans",
+      "Atlanta Hawks",
+      "Washington Wizards",
+      "Memphis Grizzlies",
+      "Toronto Raptors",
+      "New York Knicks",
+      "Boston Celtics",
+      "Orlando Magic",
+      "Oklahoma City Thunder",
+      "Orlando Magic"
+    ],
+    "pts_for": [
+      118,
+      110,
+      122,
+      111,
+      110,
+      129,
+      120,
+      124,
+      97,
+      118,
+      128,
+      130,
+      132,
+      142,
+      116,
+      131,
+      108,
+      131,
+      113,
+      132,
+      146,
+      119,
+      133,
+      140,
+      146,
+      128,
+      132,
+      118,
+      130,
+      122,
+      144,
+      119,
+      113,
+      130,
+      125,
+      108,
+      116,
+      135,
+      129,
+      143,
+      95,
+      141,
+      122,
+      126,
+      100,
+      141,
+      107,
+      116,
+      129,
+      108,
+      106,
+      105,
+      120,
+      112,
+      97,
+      110,
+      112,
+      119,
+      123,
+      111,
+      113,
+      113,
+      90,
+      122,
+      124,
+      94,
+      114,
+      140,
+      119,
+      115,
+      118,
+      124,
+      100,
+      122,
+      113,
+      101,
+      111,
+      109,
+      104,
+      117,
+      107,
+      88
+    ],
+    "margins": [
+      1,
+      -17,
+      8,
+      -19,
+      5,
+      4,
+      2,
+      -2,
+      -15,
+      9,
+      16,
+      31,
+      7,
+      13,
+      -3,
+      3,
+      6,
+      7,
+      -7,
+      11,
+      24,
+      -9,
+      4,
+      14,
+      32,
+      9,
+      13,
+      4,
+      19,
+      -7,
+      22,
+      8,
+      -9,
+      -12,
+      4,
+      -4,
+      -16,
+      33,
+      11,
+      1,
+      -40,
+      6,
+      9,
+      10,
+      -12,
+      24,
+      -6,
+      -3,
+      12,
+      -15,
+      -8,
+      -24,
+      36,
+      17,
+      -26,
+      -3,
+      5,
+      21,
+      38,
+      12,
+      16,
+      7,
+      -35,
+      -1,
+      7,
+      -35,
+      9,
+      11,
+      -3,
+      7,
+      25,
+      -4,
+      -7,
+      9,
+      -4,
+      -10,
+      -6,
+      -13,
+      13,
+      18,
+      -18,
+      -25
+    ],
+    "leaders": {
+      "pts": {
+        "name": "Giannis Antetokounmpo",
+        "val": 30.4,
+        "all": [
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 30.4
+          },
+          {
+            "name": "Damian Lillard",
+            "val": 24.3
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 15.1
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 13.8
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 12.5
+          },
+          {
+            "name": "Malik Beasley",
+            "val": 11.3
+          },
+          {
+            "name": "Jae Crowder",
+            "val": 6.2
+          },
+          {
+            "name": "Cameron Payne",
+            "val": 6.2
+          },
+          {
+            "name": "Patrick Beverley",
+            "val": 6.0
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 5.6
+          },
+          {
+            "name": "A.J. Green",
+            "val": 4.5
+          },
+          {
+            "name": "MarJon Beauchamp",
+            "val": 4.4
+          },
+          {
+            "name": "Danilo Gallinari",
+            "val": 2.8
+          },
+          {
+            "name": "Andre Jackson Jr.",
+            "val": 2.2
+          },
+          {
+            "name": "Lindell Wigginton",
+            "val": 2.0
+          },
+          {
+            "name": "TyTy Washington Jr.",
+            "val": 1.3
+          },
+          {
+            "name": "Chris Livingston",
+            "val": 1.2
+          },
+          {
+            "name": "Robin Lopez",
+            "val": 1.1
+          },
+          {
+            "name": "Ryan Rollins",
+            "val": 1.0
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 0.9
+          },
+          {
+            "name": "Marques Bolden",
+            "val": 0.0
+          }
+        ]
+      },
+      "reb": {
+        "name": "Giannis Antetokounmpo",
+        "val": 11.5,
+        "all": [
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 11.5
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 7.4
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 5.2
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 4.7
+          },
+          {
+            "name": "Damian Lillard",
+            "val": 4.4
+          },
+          {
+            "name": "Malik Beasley",
+            "val": 3.7
+          },
+          {
+            "name": "Patrick Beverley",
+            "val": 3.6
+          },
+          {
+            "name": "Jae Crowder",
+            "val": 3.2
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 3.1
+          },
+          {
+            "name": "MarJon Beauchamp",
+            "val": 2.1
+          },
+          {
+            "name": "Andre Jackson Jr.",
+            "val": 2.0
+          },
+          {
+            "name": "Cameron Payne",
+            "val": 1.3
+          },
+          {
+            "name": "A.J. Green",
+            "val": 1.1
+          },
+          {
+            "name": "Danilo Gallinari",
+            "val": 1.1
+          },
+          {
+            "name": "Chris Livingston",
+            "val": 1.0
+          },
+          {
+            "name": "Marques Bolden",
+            "val": 1.0
+          },
+          {
+            "name": "Ryan Rollins",
+            "val": 0.7
+          },
+          {
+            "name": "TyTy Washington Jr.",
+            "val": 0.5
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 0.4
+          },
+          {
+            "name": "Robin Lopez",
+            "val": 0.3
+          },
+          {
+            "name": "Lindell Wigginton",
+            "val": 0.0
+          }
+        ]
+      },
+      "ast": {
+        "name": "Damian Lillard",
+        "val": 7.0,
+        "all": [
+          {
+            "name": "Damian Lillard",
+            "val": 7.0
+          },
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 6.5
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 5.3
+          },
+          {
+            "name": "Patrick Beverley",
+            "val": 2.6
+          },
+          {
+            "name": "Cameron Payne",
+            "val": 2.3
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 2.1
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 1.6
+          },
+          {
+            "name": "Malik Beasley",
+            "val": 1.4
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 1.3
+          },
+          {
+            "name": "Jae Crowder",
+            "val": 1.3
+          },
+          {
+            "name": "Ryan Rollins",
+            "val": 1.0
+          },
+          {
+            "name": "Andre Jackson Jr.",
+            "val": 0.9
+          },
+          {
+            "name": "Danilo Gallinari",
+            "val": 0.7
+          },
+          {
+            "name": "MarJon Beauchamp",
+            "val": 0.6
+          },
+          {
+            "name": "TyTy Washington Jr.",
+            "val": 0.5
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 0.5
+          },
+          {
+            "name": "A.J. Green",
+            "val": 0.5
+          },
+          {
+            "name": "Robin Lopez",
+            "val": 0.3
+          },
+          {
+            "name": "Chris Livingston",
+            "val": 0.2
+          },
+          {
+            "name": "Lindell Wigginton",
+            "val": 0.0
+          },
+          {
+            "name": "Marques Bolden",
+            "val": 0.0
+          }
+        ]
+      },
+      "stl": {
+        "name": "Giannis Antetokounmpo",
+        "val": 1.2,
+        "all": [
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 1.2
+          },
+          {
+            "name": "Damian Lillard",
+            "val": 1.0
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 0.9
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 0.8
+          },
+          {
+            "name": "Jae Crowder",
+            "val": 0.8
+          },
+          {
+            "name": "Malik Beasley",
+            "val": 0.7
+          },
+          {
+            "name": "Patrick Beverley",
+            "val": 0.7
+          },
+          {
+            "name": "Ryan Rollins",
+            "val": 0.7
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 0.5
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 0.5
+          },
+          {
+            "name": "Cameron Payne",
+            "val": 0.5
+          },
+          {
+            "name": "Danilo Gallinari",
+            "val": 0.4
+          },
+          {
+            "name": "TyTy Washington Jr.",
+            "val": 0.3
+          },
+          {
+            "name": "MarJon Beauchamp",
+            "val": 0.3
+          },
+          {
+            "name": "Andre Jackson Jr.",
+            "val": 0.3
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 0.2
+          },
+          {
+            "name": "A.J. Green",
+            "val": 0.2
+          },
+          {
+            "name": "Chris Livingston",
+            "val": 0.1
+          },
+          {
+            "name": "Robin Lopez",
+            "val": 0.1
+          },
+          {
+            "name": "Lindell Wigginton",
+            "val": 0.0
+          },
+          {
+            "name": "Marques Bolden",
+            "val": 0.0
+          }
+        ]
+      },
+      "blk": {
+        "name": "Brook Lopez",
+        "val": 2.4,
+        "all": [
+          {
+            "name": "Brook Lopez",
+            "val": 2.4
+          },
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 1.1
+          },
+          {
+            "name": "Patrick Beverley",
+            "val": 0.5
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 0.4
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 0.3
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 0.3
+          },
+          {
+            "name": "Damian Lillard",
+            "val": 0.2
+          },
+          {
+            "name": "Robin Lopez",
+            "val": 0.2
+          },
+          {
+            "name": "Jae Crowder",
+            "val": 0.2
+          },
+          {
+            "name": "Andre Jackson Jr.",
+            "val": 0.1
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 0.1
+          },
+          {
+            "name": "Danilo Gallinari",
+            "val": 0.1
+          },
+          {
+            "name": "MarJon Beauchamp",
+            "val": 0.1
+          },
+          {
+            "name": "A.J. Green",
+            "val": 0.1
+          },
+          {
+            "name": "Cameron Payne",
+            "val": 0.1
+          },
+          {
+            "name": "Malik Beasley",
+            "val": 0.1
+          },
+          {
+            "name": "TyTy Washington Jr.",
+            "val": 0.0
+          },
+          {
+            "name": "Chris Livingston",
+            "val": 0.0
+          },
+          {
+            "name": "Ryan Rollins",
+            "val": 0.0
+          },
+          {
+            "name": "Lindell Wigginton",
+            "val": 0.0
+          },
+          {
+            "name": "Marques Bolden",
+            "val": 0.0
+          }
+        ]
+      }
+    },
+    "avail": [
+      {
+        "name": "Bobby Portis",
+        "g": 82
+      },
+      {
+        "name": "Brook Lopez",
+        "g": 79
+      },
+      {
+        "name": "Malik Beasley",
+        "g": 79
+      },
+      {
+        "name": "Pat Connaughton",
+        "g": 76
+      },
+      {
+        "name": "Damian Lillard",
+        "g": 73
+      },
+      {
+        "name": "Giannis Antetokounmpo",
+        "g": 73
+      },
+      {
+        "name": "Andre Jackson Jr.",
+        "g": 57
+      },
+      {
+        "name": "A.J. Green",
+        "g": 56
+      },
+      {
+        "name": "Khris Middleton",
+        "g": 55
+      },
+      {
+        "name": "Jae Crowder",
+        "g": 50
+      },
+      {
+        "name": "MarJon Beauchamp",
+        "g": 48
+      },
+      {
+        "name": "Cameron Payne",
+        "g": 47
+      },
+      {
+        "name": "Thanasis Antetokounmpo",
+        "g": 34
+      },
+      {
+        "name": "Patrick Beverley",
+        "g": 26
+      },
+      {
+        "name": "Chris Livingston",
+        "g": 21
+      },
+      {
+        "name": "Danilo Gallinari",
+        "g": 17
+      },
+      {
+        "name": "Robin Lopez",
+        "g": 16
+      },
+      {
+        "name": "TyTy Washington Jr.",
+        "g": 11
+      },
+      {
+        "name": "Ryan Rollins",
+        "g": 3
+      },
+      {
+        "name": "Lindell Wigginton",
+        "g": 3
+      },
+      {
+        "name": "Marques Bolden",
+        "g": 2
+      }
+    ]
+  },
+  "2024-25": {
+    "w": 48,
+    "l": 34,
+    "topW": {
+      "pts": 137,
+      "opp": 107,
+      "against": "Dallas Mavericks"
+    },
+    "worstL": {
+      "pts": 106,
+      "opp": 140,
+      "against": "New York Knicks"
+    },
+    "conf_rank": 5,
+    "result_str": "WLLLLLLWLLWWLWWWWWWWLLWWWLWWLLWLLWWWLWWWWWLWLLLLWLWLWWWWLWWWWLLLWWLLWWLLLLWWWWWWWW",
+    "opponents": [
+      "Philadelphia 76ers",
+      "Chicago Bulls",
+      "Brooklyn Nets",
+      "Boston Celtics",
+      "Memphis Grizzlies",
+      "Cleveland Cavaliers",
+      "Cleveland Cavaliers",
+      "Utah Jazz",
+      "New York Knicks",
+      "Boston Celtics",
+      "Toronto Raptors",
+      "Detroit Pistons",
+      "Charlotte Hornets",
+      "Houston Rockets",
+      "Chicago Bulls",
+      "Indiana Pacers",
+      "Charlotte Hornets",
+      "Miami Heat",
+      "Washington Wizards",
+      "Detroit Pistons",
+      "Atlanta Hawks",
+      "Boston Celtics",
+      "Brooklyn Nets",
+      "Orlando Magic",
+      "Atlanta Hawks",
+      "Cleveland Cavaliers",
+      "Washington Wizards",
+      "Chicago Bulls",
+      "Brooklyn Nets",
+      "Chicago Bulls",
+      "Indiana Pacers",
+      "Brooklyn Nets",
+      "Portland Trail Blazers",
+      "Toronto Raptors",
+      "San Antonio Spurs",
+      "Orlando Magic",
+      "New York Knicks",
+      "Sacramento Kings",
+      "Orlando Magic",
+      "Toronto Raptors",
+      "Philadelphia 76ers",
+      "Miami Heat",
+      "Los Angeles Clippers",
+      "Utah Jazz",
+      "Portland Trail Blazers",
+      "San Antonio Spurs",
+      "Memphis Grizzlies",
+      "Oklahoma City Thunder",
+      "Charlotte Hornets",
+      "Atlanta Hawks",
+      "Philadelphia 76ers",
+      "Golden State Warriors",
+      "Minnesota Timberwolves",
+      "Los Angeles Clippers",
+      "Washington Wizards",
+      "Miami Heat",
+      "Houston Rockets",
+      "Denver Nuggets",
+      "Dallas Mavericks",
+      "Atlanta Hawks",
+      "Dallas Mavericks",
+      "Orlando Magic",
+      "Cleveland Cavaliers",
+      "Indiana Pacers",
+      "Los Angeles Lakers",
+      "Indiana Pacers",
+      "Oklahoma City Thunder",
+      "Golden State Warriors",
+      "Los Angeles Lakers",
+      "Sacramento Kings",
+      "Phoenix Suns",
+      "Denver Nuggets",
+      "New York Knicks",
+      "Atlanta Hawks",
+      "Phoenix Suns",
+      "Philadelphia 76ers",
+      "Miami Heat",
+      "New Orleans Pelicans",
+      "Minnesota Timberwolves",
+      "New Orleans Pelicans",
+      "Detroit Pistons",
+      "Detroit Pistons"
+    ],
+    "pts_for": [
+      124,
+      122,
+      102,
+      108,
+      99,
+      113,
+      114,
+      123,
+      94,
+      107,
+      99,
+      127,
+      114,
+      101,
+      122,
+      129,
+      125,
+      106,
+      124,
+      128,
+      104,
+      105,
+      118,
+      114,
+      110,
+      101,
+      112,
+      112,
+      105,
+      111,
+      120,
+      110,
+      102,
+      128,
+      121,
+      109,
+      106,
+      130,
+      122,
+      130,
+      123,
+      125,
+      117,
+      125,
+      112,
+      118,
+      119,
+      96,
+      112,
+      110,
+      135,
+      111,
+      103,
+      116,
+      104,
+      120,
+      97,
+      121,
+      132,
+      127,
+      137,
+      109,
+      100,
+      114,
+      126,
+      126,
+      105,
+      93,
+      118,
+      114,
+      106,
+      117,
+      107,
+      124,
+      133,
+      126,
+      121,
+      111,
+      110,
+      136,
+      125,
+      140
+    ],
+    "margins": [
+      15,
+      -11,
+      -13,
+      -11,
+      -23,
+      -1,
+      -2,
+      23,
+      -22,
+      -6,
+      14,
+      7,
+      -1,
+      1,
+      16,
+      12,
+      6,
+      3,
+      10,
+      21,
+      -15,
+      -6,
+      5,
+      5,
+      8,
+      -23,
+      11,
+      21,
+      -6,
+      -5,
+      8,
+      -3,
+      -3,
+      24,
+      16,
+      3,
+      -34,
+      15,
+      29,
+      18,
+      14,
+      29,
+      -10,
+      15,
+      -13,
+      -26,
+      -13,
+      -29,
+      10,
+      -5,
+      8,
+      -14,
+      2,
+      6,
+      3,
+      7,
+      -3,
+      9,
+      15,
+      6,
+      30,
+      -2,
+      -12,
+      -1,
+      20,
+      7,
+      -16,
+      -11,
+      29,
+      6,
+      -2,
+      -10,
+      -9,
+      -21,
+      10,
+      13,
+      6,
+      4,
+      7,
+      25,
+      6,
+      7
+    ],
+    "leaders": {
+      "pts": {
+        "name": "Giannis Antetokounmpo",
+        "val": 30.4,
+        "all": [
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 30.4
+          },
+          {
+            "name": "Damian Lillard",
+            "val": 24.9
+          },
+          {
+            "name": "Kyle Kuzma",
+            "val": 14.5
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 13.9
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 13.0
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 12.6
+          },
+          {
+            "name": "Kevin Porter Jr.",
+            "val": 11.7
+          },
+          {
+            "name": "Gary Trent Jr.",
+            "val": 11.1
+          },
+          {
+            "name": "Taurean Prince",
+            "val": 8.2
+          },
+          {
+            "name": "A.J. Green",
+            "val": 7.4
+          },
+          {
+            "name": "Ryan Rollins",
+            "val": 6.2
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 5.3
+          },
+          {
+            "name": "Pete Nance",
+            "val": 3.8
+          },
+          {
+            "name": "Andre Jackson Jr.",
+            "val": 3.4
+          },
+          {
+            "name": "Jamaree Bouyea",
+            "val": 3.4
+          },
+          {
+            "name": "Tyler Smith",
+            "val": 2.9
+          },
+          {
+            "name": "AJ Johnson",
+            "val": 2.9
+          },
+          {
+            "name": "Delon Wright",
+            "val": 2.5
+          },
+          {
+            "name": "Jericho Sims",
+            "val": 2.4
+          },
+          {
+            "name": "MarJon Beauchamp",
+            "val": 2.0
+          },
+          {
+            "name": "Chris Livingston",
+            "val": 1.4
+          },
+          {
+            "name": "Liam Robbins",
+            "val": 0.7
+          },
+          {
+            "name": "Stanley Umude",
+            "val": 0.7
+          }
+        ]
+      },
+      "reb": {
+        "name": "Giannis Antetokounmpo",
+        "val": 11.9,
+        "all": [
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 11.9
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 8.4
+          },
+          {
+            "name": "Kyle Kuzma",
+            "val": 5.6
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 5.0
+          },
+          {
+            "name": "Jericho Sims",
+            "val": 4.9
+          },
+          {
+            "name": "Damian Lillard",
+            "val": 4.7
+          },
+          {
+            "name": "Kevin Porter Jr.",
+            "val": 3.9
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 3.7
+          },
+          {
+            "name": "Taurean Prince",
+            "val": 3.6
+          },
+          {
+            "name": "Andre Jackson Jr.",
+            "val": 2.7
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 2.7
+          },
+          {
+            "name": "A.J. Green",
+            "val": 2.4
+          },
+          {
+            "name": "Gary Trent Jr.",
+            "val": 2.3
+          },
+          {
+            "name": "Ryan Rollins",
+            "val": 1.9
+          },
+          {
+            "name": "Delon Wright",
+            "val": 1.8
+          },
+          {
+            "name": "Pete Nance",
+            "val": 1.8
+          },
+          {
+            "name": "Chris Livingston",
+            "val": 1.7
+          },
+          {
+            "name": "MarJon Beauchamp",
+            "val": 1.2
+          },
+          {
+            "name": "Tyler Smith",
+            "val": 1.1
+          },
+          {
+            "name": "Jamaree Bouyea",
+            "val": 1.0
+          },
+          {
+            "name": "AJ Johnson",
+            "val": 1.0
+          },
+          {
+            "name": "Liam Robbins",
+            "val": 0.9
+          },
+          {
+            "name": "Stanley Umude",
+            "val": 0.8
+          }
+        ]
+      },
+      "ast": {
+        "name": "Damian Lillard",
+        "val": 7.1,
+        "all": [
+          {
+            "name": "Damian Lillard",
+            "val": 7.1
+          },
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 6.5
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 4.4
+          },
+          {
+            "name": "Kevin Porter Jr.",
+            "val": 3.7
+          },
+          {
+            "name": "Kyle Kuzma",
+            "val": 2.2
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 2.1
+          },
+          {
+            "name": "Jamaree Bouyea",
+            "val": 2.0
+          },
+          {
+            "name": "Taurean Prince",
+            "val": 1.9
+          },
+          {
+            "name": "Ryan Rollins",
+            "val": 1.9
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 1.8
+          },
+          {
+            "name": "Delon Wright",
+            "val": 1.8
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 1.7
+          },
+          {
+            "name": "A.J. Green",
+            "val": 1.5
+          },
+          {
+            "name": "Andre Jackson Jr.",
+            "val": 1.2
+          },
+          {
+            "name": "Gary Trent Jr.",
+            "val": 1.2
+          },
+          {
+            "name": "Pete Nance",
+            "val": 1.2
+          },
+          {
+            "name": "AJ Johnson",
+            "val": 1.0
+          },
+          {
+            "name": "Jericho Sims",
+            "val": 0.8
+          },
+          {
+            "name": "MarJon Beauchamp",
+            "val": 0.3
+          },
+          {
+            "name": "Tyler Smith",
+            "val": 0.2
+          },
+          {
+            "name": "Chris Livingston",
+            "val": 0.2
+          },
+          {
+            "name": "Liam Robbins",
+            "val": 0.2
+          },
+          {
+            "name": "Stanley Umude",
+            "val": 0.2
+          }
+        ]
+      },
+      "stl": {
+        "name": "Kevin Porter Jr.",
+        "val": 1.3,
+        "all": [
+          {
+            "name": "Kevin Porter Jr.",
+            "val": 1.3
+          },
+          {
+            "name": "Damian Lillard",
+            "val": 1.2
+          },
+          {
+            "name": "Taurean Prince",
+            "val": 1.0
+          },
+          {
+            "name": "Gary Trent Jr.",
+            "val": 1.0
+          },
+          {
+            "name": "Delon Wright",
+            "val": 0.9
+          },
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 0.9
+          },
+          {
+            "name": "Jamaree Bouyea",
+            "val": 0.8
+          },
+          {
+            "name": "Ryan Rollins",
+            "val": 0.8
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 0.7
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 0.7
+          },
+          {
+            "name": "Brook Lopez",
+            "val": 0.6
+          },
+          {
+            "name": "Andre Jackson Jr.",
+            "val": 0.5
+          },
+          {
+            "name": "Kyle Kuzma",
+            "val": 0.5
+          },
+          {
+            "name": "A.J. Green",
+            "val": 0.5
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 0.2
+          },
+          {
+            "name": "Chris Livingston",
+            "val": 0.2
+          },
+          {
+            "name": "Pete Nance",
+            "val": 0.2
+          },
+          {
+            "name": "Liam Robbins",
+            "val": 0.2
+          },
+          {
+            "name": "MarJon Beauchamp",
+            "val": 0.1
+          },
+          {
+            "name": "Jericho Sims",
+            "val": 0.1
+          },
+          {
+            "name": "Tyler Smith",
+            "val": 0.1
+          },
+          {
+            "name": "AJ Johnson",
+            "val": 0.1
+          },
+          {
+            "name": "Stanley Umude",
+            "val": 0.1
+          }
+        ]
+      },
+      "blk": {
+        "name": "Brook Lopez",
+        "val": 1.9,
+        "all": [
+          {
+            "name": "Brook Lopez",
+            "val": 1.9
+          },
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 1.2
+          },
+          {
+            "name": "Jericho Sims",
+            "val": 0.6
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 0.5
+          },
+          {
+            "name": "Kyle Kuzma",
+            "val": 0.4
+          },
+          {
+            "name": "Jamaree Bouyea",
+            "val": 0.4
+          },
+          {
+            "name": "Delon Wright",
+            "val": 0.3
+          },
+          {
+            "name": "Pete Nance",
+            "val": 0.3
+          },
+          {
+            "name": "Ryan Rollins",
+            "val": 0.3
+          },
+          {
+            "name": "Pat Connaughton",
+            "val": 0.3
+          },
+          {
+            "name": "Stanley Umude",
+            "val": 0.3
+          },
+          {
+            "name": "Andre Jackson Jr.",
+            "val": 0.2
+          },
+          {
+            "name": "Khris Middleton",
+            "val": 0.2
+          },
+          {
+            "name": "Taurean Prince",
+            "val": 0.2
+          },
+          {
+            "name": "Tyler Smith",
+            "val": 0.2
+          },
+          {
+            "name": "Liam Robbins",
+            "val": 0.2
+          },
+          {
+            "name": "Damian Lillard",
+            "val": 0.2
+          },
+          {
+            "name": "Kevin Porter Jr.",
+            "val": 0.1
+          },
+          {
+            "name": "A.J. Green",
+            "val": 0.1
+          },
+          {
+            "name": "Gary Trent Jr.",
+            "val": 0.1
+          },
+          {
+            "name": "AJ Johnson",
+            "val": 0.0
+          },
+          {
+            "name": "Chris Livingston",
+            "val": 0.0
+          },
+          {
+            "name": "MarJon Beauchamp",
+            "val": 0.0
+          }
+        ]
+      }
+    },
+    "avail": [
+      {
+        "name": "Brook Lopez",
+        "g": 80
+      },
+      {
+        "name": "Taurean Prince",
+        "g": 80
+      },
+      {
+        "name": "Gary Trent Jr.",
+        "g": 74
+      },
+      {
+        "name": "A.J. Green",
+        "g": 73
+      },
+      {
+        "name": "Giannis Antetokounmpo",
+        "g": 67
+      },
+      {
+        "name": "Andre Jackson Jr.",
+        "g": 67
+      },
+      {
+        "name": "Damian Lillard",
+        "g": 58
+      },
+      {
+        "name": "Ryan Rollins",
+        "g": 56
+      },
+      {
+        "name": "Bobby Portis",
+        "g": 49
+      },
+      {
+        "name": "Pat Connaughton",
+        "g": 41
+      },
+      {
+        "name": "Kyle Kuzma",
+        "g": 33
+      },
+      {
+        "name": "Kevin Porter Jr.",
+        "g": 30
+      },
+      {
+        "name": "Delon Wright",
+        "g": 26
+      },
+      {
+        "name": "MarJon Beauchamp",
+        "g": 26
+      },
+      {
+        "name": "Tyler Smith",
+        "g": 23
+      },
+      {
+        "name": "Khris Middleton",
+        "g": 23
+      },
+      {
+        "name": "Stanley Umude",
+        "g": 22
+      },
+      {
+        "name": "Chris Livingston",
+        "g": 21
+      },
+      {
+        "name": "Jericho Sims",
+        "g": 14
+      },
+      {
+        "name": "Liam Robbins",
+        "g": 13
+      },
+      {
+        "name": "AJ Johnson",
+        "g": 7
+      },
+      {
+        "name": "Pete Nance",
+        "g": 6
+      },
+      {
+        "name": "Jamaree Bouyea",
+        "g": 5
+      }
+    ]
+  },
+  "2025-26": {
+    "w": 32,
+    "l": 50,
+    "topW": {
+      "pts": 123,
+      "opp": 99,
+      "against": "Dallas Mavericks"
+    },
+    "worstL": {
+      "pts": 82,
+      "opp": 127,
+      "against": "Brooklyn Nets"
+    },
+    "conf_rank": 11,
+    "result_str": "WWLWWLWLWLWLWLLLLLLLWLWLLWLLLWLWWLWWLWLLLWLLLLLWWWLWWWLWWLLLLWLLLLWLLWLLLLWLLWLLWL",
+    "opponents": [
+      "Washington Wizards",
+      "Toronto Raptors",
+      "Cleveland Cavaliers",
+      "New York Knicks",
+      "Golden State Warriors",
+      "Sacramento Kings",
+      "Indiana Pacers",
+      "Toronto Raptors",
+      "Chicago Bulls",
+      "Houston Rockets",
+      "Dallas Mavericks",
+      "Charlotte Hornets",
+      "Charlotte Hornets",
+      "Los Angeles Lakers",
+      "Cleveland Cavaliers",
+      "Philadelphia 76ers",
+      "Detroit Pistons",
+      "Portland Trail Blazers",
+      "Miami Heat",
+      "New York Knicks",
+      "Brooklyn Nets",
+      "Washington Wizards",
+      "Detroit Pistons",
+      "Philadelphia 76ers",
+      "Detroit Pistons",
+      "Boston Celtics",
+      "Brooklyn Nets",
+      "Toronto Raptors",
+      "Minnesota Timberwolves",
+      "Indiana Pacers",
+      "Memphis Grizzlies",
+      "Chicago Bulls",
+      "Charlotte Hornets",
+      "Washington Wizards",
+      "Charlotte Hornets",
+      "Sacramento Kings",
+      "Golden State Warriors",
+      "Los Angeles Lakers",
+      "Denver Nuggets",
+      "Minnesota Timberwolves",
+      "San Antonio Spurs",
+      "Atlanta Hawks",
+      "Oklahoma City Thunder",
+      "Denver Nuggets",
+      "Philadelphia 76ers",
+      "Washington Wizards",
+      "Boston Celtics",
+      "Chicago Bulls",
+      "New Orleans Pelicans",
+      "Indiana Pacers",
+      "Orlando Magic",
+      "Orlando Magic",
+      "Oklahoma City Thunder",
+      "New Orleans Pelicans",
+      "Toronto Raptors",
+      "Miami Heat",
+      "Cleveland Cavaliers",
+      "New York Knicks",
+      "Chicago Bulls",
+      "Boston Celtics",
+      "Atlanta Hawks",
+      "Utah Jazz",
+      "Orlando Magic",
+      "Phoenix Suns",
+      "Miami Heat",
+      "Atlanta Hawks",
+      "Indiana Pacers",
+      "Cleveland Cavaliers",
+      "Utah Jazz",
+      "Phoenix Suns",
+      "Los Angeles Clippers",
+      "Portland Trail Blazers",
+      "San Antonio Spurs",
+      "Los Angeles Clippers",
+      "Dallas Mavericks",
+      "Houston Rockets",
+      "Boston Celtics",
+      "Memphis Grizzlies",
+      "Brooklyn Nets",
+      "Detroit Pistons",
+      "Brooklyn Nets",
+      "Philadelphia 76ers"
+    ],
+    "pts_for": [
+      133,
+      122,
+      113,
+      121,
+      120,
+      133,
+      117,
+      100,
+      126,
+      115,
+      116,
+      100,
+      147,
+      95,
+      106,
+      114,
+      116,
+      103,
+      103,
+      109,
+      116,
+      126,
+      113,
+      101,
+      112,
+      116,
+      82,
+      105,
+      100,
+      111,
+      104,
+      112,
+      123,
+      113,
+      122,
+      115,
+      113,
+      105,
+      104,
+      106,
+      101,
+      112,
+      102,
+      100,
+      122,
+      99,
+      79,
+      131,
+      141,
+      105,
+      99,
+      116,
+      110,
+      139,
+      94,
+      128,
+      118,
+      98,
+      97,
+      81,
+      113,
+      113,
+      91,
+      114,
+      105,
+      99,
+      134,
+      116,
+      96,
+      108,
+      96,
+      99,
+      95,
+      113,
+      123,
+      113,
+      101,
+      131,
+      90,
+      111,
+      125,
+      106
+    ],
+    "margins": [
+      13,
+      6,
+      -5,
+      10,
+      10,
+      -2,
+      2,
+      -28,
+      16,
+      -7,
+      2,
+      -11,
+      13,
+      -24,
+      -12,
+      -9,
+      -13,
+      -12,
+      -3,
+      -9,
+      17,
+      -3,
+      4,
+      -15,
+      -12,
+      15,
+      -45,
+      -6,
+      -3,
+      17,
+      -21,
+      9,
+      10,
+      -1,
+      1,
+      17,
+      -7,
+      4,
+      -4,
+      -33,
+      -18,
+      2,
+      -20,
+      -2,
+      -17,
+      -10,
+      -28,
+      16,
+      4,
+      6,
+      -19,
+      8,
+      17,
+      21,
+      -28,
+      11,
+      2,
+      -29,
+      -23,
+      -27,
+      -18,
+      14,
+      -39,
+      -15,
+      -7,
+      -23,
+      11,
+      -7,
+      -32,
+      3,
+      -33,
+      -31,
+      -32,
+      -14,
+      24,
+      -6,
+      -32,
+      16,
+      -6,
+      -26,
+      17,
+      -20
+    ],
+    "leaders": {
+      "pts": {
+        "name": "Giannis Antetokounmpo",
+        "val": 27.6,
+        "all": [
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 27.6
+          },
+          {
+            "name": "Kevin Porter Jr.",
+            "val": 17.4
+          },
+          {
+            "name": "Ryan Rollins",
+            "val": 17.3
+          },
+          {
+            "name": "Cormac Ryan",
+            "val": 14.3
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 13.7
+          },
+          {
+            "name": "Kyle Kuzma",
+            "val": 13.0
+          },
+          {
+            "name": "Myles Turner",
+            "val": 11.9
+          },
+          {
+            "name": "Ousmane Dieng",
+            "val": 11.0
+          },
+          {
+            "name": "Cam Thomas",
+            "val": 10.7
+          },
+          {
+            "name": "A.J. Green",
+            "val": 10.4
+          },
+          {
+            "name": "Taurean Prince",
+            "val": 9.2
+          },
+          {
+            "name": "Gary Trent Jr.",
+            "val": 8.1
+          },
+          {
+            "name": "Cole Anthony",
+            "val": 6.7
+          },
+          {
+            "name": "Pete Nance",
+            "val": 5.4
+          },
+          {
+            "name": "Jericho Sims",
+            "val": 5.0
+          },
+          {
+            "name": "Alex Antetokounmpo",
+            "val": 3.2
+          },
+          {
+            "name": "Mark Sears",
+            "val": 3.1
+          },
+          {
+            "name": "Gary Harris",
+            "val": 2.7
+          },
+          {
+            "name": "Amir Coffey",
+            "val": 2.4
+          },
+          {
+            "name": "Andre Jackson Jr.",
+            "val": 2.4
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 1.4
+          }
+        ]
+      },
+      "reb": {
+        "name": "Giannis Antetokounmpo",
+        "val": 9.8,
+        "all": [
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 9.8
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 6.4
+          },
+          {
+            "name": "Jericho Sims",
+            "val": 5.5
+          },
+          {
+            "name": "Myles Turner",
+            "val": 5.3
+          },
+          {
+            "name": "Kevin Porter Jr.",
+            "val": 5.2
+          },
+          {
+            "name": "Ousmane Dieng",
+            "val": 4.6
+          },
+          {
+            "name": "Ryan Rollins",
+            "val": 4.6
+          },
+          {
+            "name": "Kyle Kuzma",
+            "val": 4.5
+          },
+          {
+            "name": "Taurean Prince",
+            "val": 3.1
+          },
+          {
+            "name": "A.J. Green",
+            "val": 2.7
+          },
+          {
+            "name": "Pete Nance",
+            "val": 2.7
+          },
+          {
+            "name": "Cormac Ryan",
+            "val": 2.5
+          },
+          {
+            "name": "Cole Anthony",
+            "val": 2.5
+          },
+          {
+            "name": "Cam Thomas",
+            "val": 1.6
+          },
+          {
+            "name": "Andre Jackson Jr.",
+            "val": 1.5
+          },
+          {
+            "name": "Gary Harris",
+            "val": 1.3
+          },
+          {
+            "name": "Gary Trent Jr.",
+            "val": 1.0
+          },
+          {
+            "name": "Alex Antetokounmpo",
+            "val": 1.0
+          },
+          {
+            "name": "Amir Coffey",
+            "val": 0.9
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 0.9
+          },
+          {
+            "name": "Mark Sears",
+            "val": 0.3
+          }
+        ]
+      },
+      "ast": {
+        "name": "Kevin Porter Jr.",
+        "val": 7.4,
+        "all": [
+          {
+            "name": "Kevin Porter Jr.",
+            "val": 7.4
+          },
+          {
+            "name": "Ryan Rollins",
+            "val": 5.6
+          },
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 5.4
+          },
+          {
+            "name": "Ousmane Dieng",
+            "val": 3.6
+          },
+          {
+            "name": "Cole Anthony",
+            "val": 3.5
+          },
+          {
+            "name": "Kyle Kuzma",
+            "val": 2.7
+          },
+          {
+            "name": "A.J. Green",
+            "val": 1.9
+          },
+          {
+            "name": "Cam Thomas",
+            "val": 1.9
+          },
+          {
+            "name": "Taurean Prince",
+            "val": 1.8
+          },
+          {
+            "name": "Cormac Ryan",
+            "val": 1.7
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 1.6
+          },
+          {
+            "name": "Jericho Sims",
+            "val": 1.6
+          },
+          {
+            "name": "Myles Turner",
+            "val": 1.5
+          },
+          {
+            "name": "Gary Trent Jr.",
+            "val": 1.2
+          },
+          {
+            "name": "Gary Harris",
+            "val": 1.1
+          },
+          {
+            "name": "Pete Nance",
+            "val": 1.0
+          },
+          {
+            "name": "Andre Jackson Jr.",
+            "val": 0.9
+          },
+          {
+            "name": "Amir Coffey",
+            "val": 0.4
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 0.4
+          },
+          {
+            "name": "Mark Sears",
+            "val": 0.3
+          },
+          {
+            "name": "Alex Antetokounmpo",
+            "val": 0.2
+          }
+        ]
+      },
+      "stl": {
+        "name": "Kevin Porter Jr.",
+        "val": 2.2,
+        "all": [
+          {
+            "name": "Kevin Porter Jr.",
+            "val": 2.2
+          },
+          {
+            "name": "Ryan Rollins",
+            "val": 1.5
+          },
+          {
+            "name": "Cormac Ryan",
+            "val": 1.0
+          },
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 0.9
+          },
+          {
+            "name": "Ousmane Dieng",
+            "val": 0.8
+          },
+          {
+            "name": "Myles Turner",
+            "val": 0.7
+          },
+          {
+            "name": "Kyle Kuzma",
+            "val": 0.7
+          },
+          {
+            "name": "Cole Anthony",
+            "val": 0.6
+          },
+          {
+            "name": "Gary Harris",
+            "val": 0.6
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 0.6
+          },
+          {
+            "name": "Taurean Prince",
+            "val": 0.6
+          },
+          {
+            "name": "Gary Trent Jr.",
+            "val": 0.5
+          },
+          {
+            "name": "A.J. Green",
+            "val": 0.5
+          },
+          {
+            "name": "Andre Jackson Jr.",
+            "val": 0.4
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 0.4
+          },
+          {
+            "name": "Cam Thomas",
+            "val": 0.3
+          },
+          {
+            "name": "Pete Nance",
+            "val": 0.3
+          },
+          {
+            "name": "Jericho Sims",
+            "val": 0.3
+          },
+          {
+            "name": "Amir Coffey",
+            "val": 0.1
+          },
+          {
+            "name": "Mark Sears",
+            "val": 0.0
+          },
+          {
+            "name": "Alex Antetokounmpo",
+            "val": 0.0
+          }
+        ]
+      },
+      "blk": {
+        "name": "Myles Turner",
+        "val": 1.6,
+        "all": [
+          {
+            "name": "Myles Turner",
+            "val": 1.6
+          },
+          {
+            "name": "Giannis Antetokounmpo",
+            "val": 0.7
+          },
+          {
+            "name": "Kevin Porter Jr.",
+            "val": 0.5
+          },
+          {
+            "name": "Kyle Kuzma",
+            "val": 0.4
+          },
+          {
+            "name": "Ryan Rollins",
+            "val": 0.4
+          },
+          {
+            "name": "Pete Nance",
+            "val": 0.3
+          },
+          {
+            "name": "Ousmane Dieng",
+            "val": 0.3
+          },
+          {
+            "name": "Cormac Ryan",
+            "val": 0.3
+          },
+          {
+            "name": "Cole Anthony",
+            "val": 0.3
+          },
+          {
+            "name": "Jericho Sims",
+            "val": 0.3
+          },
+          {
+            "name": "Thanasis Antetokounmpo",
+            "val": 0.2
+          },
+          {
+            "name": "Gary Harris",
+            "val": 0.2
+          },
+          {
+            "name": "Alex Antetokounmpo",
+            "val": 0.2
+          },
+          {
+            "name": "Taurean Prince",
+            "val": 0.2
+          },
+          {
+            "name": "Bobby Portis",
+            "val": 0.2
+          },
+          {
+            "name": "Cam Thomas",
+            "val": 0.1
+          },
+          {
+            "name": "Amir Coffey",
+            "val": 0.1
+          },
+          {
+            "name": "Andre Jackson Jr.",
+            "val": 0.1
+          },
+          {
+            "name": "A.J. Green",
+            "val": 0.1
+          },
+          {
+            "name": "Mark Sears",
+            "val": 0.0
+          },
+          {
+            "name": "Gary Trent Jr.",
+            "val": 0.0
+          }
+        ]
+      }
+    },
+    "avail": [
+      {
+        "name": "A.J. Green",
+        "g": 78
+      },
+      {
+        "name": "Ryan Rollins",
+        "g": 74
+      },
+      {
+        "name": "Myles Turner",
+        "g": 71
+      },
+      {
+        "name": "Kyle Kuzma",
+        "g": 69
+      },
+      {
+        "name": "Bobby Portis",
+        "g": 67
+      },
+      {
+        "name": "Jericho Sims",
+        "g": 67
+      },
+      {
+        "name": "Gary Trent Jr.",
+        "g": 65
+      },
+      {
+        "name": "Andre Jackson Jr.",
+        "g": 48
+      },
+      {
+        "name": "Gary Harris",
+        "g": 48
+      },
+      {
+        "name": "Pete Nance",
+        "g": 47
+      },
+      {
+        "name": "Kevin Porter Jr.",
+        "g": 38
+      },
+      {
+        "name": "Giannis Antetokounmpo",
+        "g": 36
+      },
+      {
+        "name": "Cole Anthony",
+        "g": 35
+      },
+      {
+        "name": "Thanasis Antetokounmpo",
+        "g": 34
+      },
+      {
+        "name": "Ousmane Dieng",
+        "g": 30
+      },
+      {
+        "name": "Amir Coffey",
+        "g": 30
+      },
+      {
+        "name": "Taurean Prince",
+        "g": 26
+      },
+      {
+        "name": "Cam Thomas",
+        "g": 18
+      },
+      {
+        "name": "Cormac Ryan",
+        "g": 11
+      },
+      {
+        "name": "Mark Sears",
+        "g": 7
+      },
+      {
+        "name": "Alex Antetokounmpo",
+        "g": 6
+      }
+    ]
+  }
+}
