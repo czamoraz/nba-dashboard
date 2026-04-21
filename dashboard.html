@@ -57,10 +57,29 @@
   <!-- ── Tooltip global ────────────────────────────────────────── -->
   <div id="tooltip" role="tooltip" aria-live="polite"></div>
 
+  <!-- ── Loader hasta que el equipo esté listo ─────────────────── -->
+  <div id="dashLoader" style="
+    position:fixed;inset:0;
+    background:var(--bg);
+    display:flex;flex-direction:column;
+    align-items:center;justify-content:center;
+    gap:.75rem;z-index:9999;
+    color:var(--text-muted);font-size:.9rem;
+    font-family:var(--font-body);">
+    <div id="dashSpinner" style="
+      width:32px;height:32px;
+      border:3px solid var(--border);
+      border-top-color:var(--team-primary);
+      border-radius:50%;
+      animation:dashSpin .7s linear infinite;"></div>
+    Cargando…
+  </div>
+  <style>@keyframes dashSpin { to { transform:rotate(360deg); } }</style>
+
   <!-- ══════════════════════════════════════════════════════════════
        CONTENIDO PRINCIPAL
        ══════════════════════════════════════════════════════════════ -->
-  <div class="dash">
+  <div class="dash" style="opacity:0;transition:opacity .25s ease">
 
     <!-- Top bar -->
     <header class="top-bar">

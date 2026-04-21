@@ -135,6 +135,11 @@
     });
 
     renderSeason(AppState.currentSeason, false);
+
+    const loader = document.getElementById("dashLoader");
+    if (loader) loader.remove();
+    const dash = document.querySelector(".dash");
+    if (dash) dash.style.opacity = "1";
   }
 
   if (document.readyState === "loading") {
