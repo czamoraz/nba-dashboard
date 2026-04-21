@@ -50,12 +50,9 @@ jobs:
           echo "Equipos a actualizar: $TEAMS"
           echo "──────────────────────────────────────"
 
-          for team in $TEAMS; do
-            echo ""
-            echo "▶ Actualizando $team..."
-            python update_current_season.py --team "$team" || \
-              echo "⚠️  Falló para $team (nba_api puede estar caído), continuando..."
-          done
+          # Pasa todos los equipos en una sola llamada: los standings se descargan
+          # una sola vez en lugar de 30 veces.
+          python update_current_season.py --team $TEAMS
 
       - name: Commit y push si hubo cambios
         run: |
