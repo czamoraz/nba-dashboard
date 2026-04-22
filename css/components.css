@@ -180,6 +180,24 @@
   .leaders-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
+@media (max-width: 480px) {
+  .leaders-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+
+  .leader-card  { padding: .65rem .5rem; }
+  .leader-val   { font-size: 1.6rem; }
+  .leader-name  { font-size: 10px; }
+
+  /* Panel lateral → full-screen en móvil */
+  .detail-panel { width: 100vw; }
+
+  /* Modal disponibilidad ya usa 92vw, solo ajustamos padding */
+  .avail-modal-header { padding: .85rem 1rem .75rem; }
+  .avail-modal-body   { padding: .75rem 1rem; }
+
+  /* Ocultar partículas en móvil */
+  #particle-canvas { display: none; }
+}
+
 /* ── Availability bars ───────────────────────────────────────── */
 .avail-list {
   display: flex;

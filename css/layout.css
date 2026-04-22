@@ -119,3 +119,15 @@
   .bottom-row  { grid-template-columns: 1fr; }
   .logo h1     { font-size: 2rem; }
 }
+
+@media (max-width: 480px) {
+  .dash        { padding: 1rem 0.75rem 2rem; }
+  .metrics     { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .bottom-row  { grid-template-columns: 1fr; }
+  .logo h1     { font-size: 1.6rem; }
+  .top-bar     { gap: 8px; padding-bottom: 1rem; margin-bottom: 1.25rem; }
+  .top-bar-right { gap: 8px; }
+  .season-tabs { gap: 4px; }
+  .stab        { padding: 5px 10px; font-size: 11px; }
+  .section     { margin-bottom: 1.25rem; }
+}
