@@ -4228,11 +4228,11 @@
             "val": 7.1
           },
           {
-            "name": "Aaron Gordon",
+            "name": "Christian Braun",
             "val": 2.7
           },
           {
-            "name": "Christian Braun",
+            "name": "Aaron Gordon",
             "val": 2.7
           },
           {
@@ -4244,11 +4244,11 @@
             "val": 2.3
           },
           {
-            "name": "Bruce Brown",
+            "name": "Peyton Watson",
             "val": 2.1
           },
           {
-            "name": "Peyton Watson",
+            "name": "Bruce Brown",
             "val": 2.1
           },
           {
@@ -4280,11 +4280,11 @@
             "val": 0.8
           },
           {
-            "name": "David Roddy",
+            "name": "Hunter Tyson",
             "val": 0.8
           },
           {
-            "name": "Hunter Tyson",
+            "name": "David Roddy",
             "val": 0.8
           },
           {
@@ -4350,11 +4350,11 @@
             "val": 0.4
           },
           {
-            "name": "Zeke Nnaji",
+            "name": "Jalen Pickett",
             "val": 0.3
           },
           {
-            "name": "Jalen Pickett",
+            "name": "Zeke Nnaji",
             "val": 0.3
           },
           {
@@ -4396,19 +4396,19 @@
             "val": 0.6
           },
           {
-            "name": "Spencer Jones",
-            "val": 0.5
-          },
-          {
             "name": "Zeke Nnaji",
             "val": 0.5
           },
           {
-            "name": "Jamal Murray",
-            "val": 0.4
+            "name": "Spencer Jones",
+            "val": 0.5
           },
           {
             "name": "Cameron Johnson",
+            "val": 0.4
+          },
+          {
+            "name": "Jamal Murray",
             "val": 0.4
           },
           {
@@ -4420,10 +4420,6 @@
             "val": 0.3
           },
           {
-            "name": "DaRon Holmes",
-            "val": 0.2
-          },
-          {
             "name": "Bruce Brown",
             "val": 0.2
           },
@@ -4432,8 +4428,8 @@
             "val": 0.2
           },
           {
-            "name": "Jalen Pickett",
-            "val": 0.1
+            "name": "DaRon Holmes",
+            "val": 0.2
           },
           {
             "name": "Julian Strawther",
@@ -4441,6 +4437,10 @@
           },
           {
             "name": "Tim Hardaway Jr.",
+            "val": 0.1
+          },
+          {
+            "name": "Jalen Pickett",
             "val": 0.1
           },
           {
@@ -4492,11 +4492,11 @@
         "g": 57
       },
       {
-        "name": "Cameron Johnson",
+        "name": "Peyton Watson",
         "g": 54
       },
       {
-        "name": "Peyton Watson",
+        "name": "Cameron Johnson",
         "g": 54
       },
       {

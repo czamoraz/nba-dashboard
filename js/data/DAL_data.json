@@ -4588,11 +4588,11 @@
             "val": 3.9
           },
           {
-            "name": "Caleb Martin",
+            "name": "AJ Johnson",
             "val": 3.9
           },
           {
-            "name": "AJ Johnson",
+            "name": "Caleb Martin",
             "val": 3.9
           },
           {
@@ -4768,19 +4768,19 @@
             "val": 1.1
           },
           {
-            "name": "Dwight Powell",
-            "val": 1.1
-          },
-          {
             "name": "AJ Johnson",
             "val": 1.1
           },
           {
-            "name": "Jaden Hardy",
-            "val": 0.9
+            "name": "Dwight Powell",
+            "val": 1.1
           },
           {
             "name": "Miles Kelly",
+            "val": 0.9
+          },
+          {
+            "name": "Jaden Hardy",
             "val": 0.9
           },
           {
@@ -4810,11 +4810,11 @@
             "val": 1.2
           },
           {
-            "name": "Naji Marshall",
+            "name": "Anthony Davis",
             "val": 1.1
           },
           {
-            "name": "Anthony Davis",
+            "name": "Naji Marshall",
             "val": 1.1
           },
           {
@@ -4842,15 +4842,7 @@
             "val": 0.6
           },
           {
-            "name": "Tyler Smith",
-            "val": 0.5
-          },
-          {
-            "name": "Moussa Cisse",
-            "val": 0.5
-          },
-          {
-            "name": "Dwight Powell",
+            "name": "Klay Thompson",
             "val": 0.5
           },
           {
@@ -4862,11 +4854,19 @@
             "val": 0.5
           },
           {
+            "name": "Moussa Cisse",
+            "val": 0.5
+          },
+          {
+            "name": "Dwight Powell",
+            "val": 0.5
+          },
+          {
             "name": "Khris Middleton",
             "val": 0.5
           },
           {
-            "name": "Klay Thompson",
+            "name": "Tyler Smith",
             "val": 0.5
           },
           {
@@ -4874,11 +4874,11 @@
             "val": 0.4
           },
           {
-            "name": "Ryan Nembhard",
+            "name": "Marvin Bagley III",
             "val": 0.4
           },
           {
-            "name": "Marvin Bagley III",
+            "name": "Ryan Nembhard",
             "val": 0.4
           },
           {
@@ -4936,19 +4936,7 @@
             "val": 0.4
           },
           {
-            "name": "Dwight Powell",
-            "val": 0.3
-          },
-          {
             "name": "Caleb Martin",
-            "val": 0.3
-          },
-          {
-            "name": "John Poulakidas",
-            "val": 0.3
-          },
-          {
-            "name": "Klay Thompson",
             "val": 0.3
           },
           {
@@ -4956,19 +4944,23 @@
             "val": 0.3
           },
           {
-            "name": "D'Angelo Russell",
-            "val": 0.1
+            "name": "Klay Thompson",
+            "val": 0.3
+          },
+          {
+            "name": "John Poulakidas",
+            "val": 0.3
+          },
+          {
+            "name": "Dwight Powell",
+            "val": 0.3
           },
           {
             "name": "Naji Marshall",
             "val": 0.1
           },
           {
-            "name": "Jaden Hardy",
-            "val": 0.1
-          },
-          {
-            "name": "AJ Johnson",
+            "name": "D'Angelo Russell",
             "val": 0.1
           },
           {
@@ -4976,7 +4968,15 @@
             "val": 0.1
           },
           {
-            "name": "Ryan Nembhard",
+            "name": "AJ Johnson",
+            "val": 0.1
+          },
+          {
+            "name": "Jaden Hardy",
+            "val": 0.1
+          },
+          {
+            "name": "Khris Middleton",
             "val": 0.0
           },
           {
@@ -4984,7 +4984,7 @@
             "val": 0.0
           },
           {
-            "name": "Khris Middleton",
+            "name": "Ryan Nembhard",
             "val": 0.0
           },
           {

@@ -4508,19 +4508,19 @@
             "val": 14.0
           },
           {
-            "name": "Cedric Coward",
-            "val": 13.6
-          },
-          {
             "name": "Zach Edey",
             "val": 13.6
           },
           {
-            "name": "Jaylen Wells",
-            "val": 12.5
+            "name": "Cedric Coward",
+            "val": 13.6
           },
           {
             "name": "GG Jackson II",
+            "val": 12.5
+          },
+          {
+            "name": "Jaylen Wells",
             "val": 12.5
           },
           {
@@ -4548,19 +4548,19 @@
             "val": 10.6
           },
           {
-            "name": "Adama-Alpha Bal",
-            "val": 10.4
-          },
-          {
             "name": "Lucas Williamson",
             "val": 10.4
           },
           {
-            "name": "Olivier-Maxence Prosper",
-            "val": 10.0
+            "name": "Adama-Alpha Bal",
+            "val": 10.4
           },
           {
             "name": "Toby Okani",
+            "val": 10.0
+          },
+          {
+            "name": "Olivier-Maxence Prosper",
             "val": 10.0
           },
           {
@@ -4580,11 +4580,11 @@
             "val": 8.4
           },
           {
-            "name": "Vince Williams Jr.",
+            "name": "DeJon Jarreau",
             "val": 8.0
           },
           {
-            "name": "DeJon Jarreau",
+            "name": "Vince Williams Jr.",
             "val": 8.0
           },
           {
@@ -4682,15 +4682,15 @@
             "val": 4.0
           },
           {
-            "name": "Christian Koloko",
-            "val": 4.0
-          },
-          {
             "name": "Vince Williams Jr.",
             "val": 4.0
           },
           {
-            "name": "Olivier-Maxence Prosper",
+            "name": "Christian Koloko",
+            "val": 4.0
+          },
+          {
+            "name": "Toby Okani",
             "val": 3.5
           },
           {
@@ -4698,7 +4698,7 @@
             "val": 3.5
           },
           {
-            "name": "Toby Okani",
+            "name": "Olivier-Maxence Prosper",
             "val": 3.5
           },
           {
@@ -4710,15 +4710,15 @@
             "val": 3.2
           },
           {
+            "name": "John Konchar",
+            "val": 3.1
+          },
+          {
             "name": "Javon Small",
             "val": 3.1
           },
           {
             "name": "Adama-Alpha Bal",
-            "val": 3.1
-          },
-          {
-            "name": "John Konchar",
             "val": 3.1
           },
           {
@@ -4768,11 +4768,11 @@
             "val": 8.1
           },
           {
-            "name": "Walter Clayton",
+            "name": "Ty Jerome",
             "val": 5.7
           },
           {
-            "name": "Ty Jerome",
+            "name": "Walter Clayton",
             "val": 5.7
           },
           {
@@ -4860,19 +4860,19 @@
             "val": 1.1
           },
           {
-            "name": "Charles Bassey",
-            "val": 1.0
-          },
-          {
-            "name": "Olivier-Maxence Prosper",
-            "val": 1.0
-          },
-          {
             "name": "Toby Okani",
             "val": 1.0
           },
           {
             "name": "Tyler Burton",
+            "val": 1.0
+          },
+          {
+            "name": "Charles Bassey",
+            "val": 1.0
+          },
+          {
+            "name": "Olivier-Maxence Prosper",
             "val": 1.0
           },
           {
@@ -4914,11 +4914,11 @@
             "val": 1.6
           },
           {
-            "name": "Lawson Lovering",
+            "name": "Kyle Anderson",
             "val": 1.5
           },
           {
-            "name": "Kyle Anderson",
+            "name": "Lawson Lovering",
             "val": 1.5
           },
           {
@@ -4930,16 +4930,12 @@
             "val": 1.2
           },
           {
-            "name": "Adama-Alpha Bal",
-            "val": 1.1
-          },
-          {
             "name": "Ty Jerome",
             "val": 1.1
           },
           {
-            "name": "Brandon Clarke",
-            "val": 1.0
+            "name": "Adama-Alpha Bal",
+            "val": 1.1
           },
           {
             "name": "Ja Morant",
@@ -4950,11 +4946,15 @@
             "val": 1.0
           },
           {
+            "name": "Brandon Clarke",
+            "val": 1.0
+          },
+          {
             "name": "John Konchar",
             "val": 1.0
           },
           {
-            "name": "Santi Aldama",
+            "name": "DeJon Jarreau",
             "val": 0.9
           },
           {
@@ -4966,15 +4966,19 @@
             "val": 0.9
           },
           {
+            "name": "Santi Aldama",
+            "val": 0.9
+          },
+          {
             "name": "Christian Koloko",
             "val": 0.9
           },
           {
-            "name": "DeJon Jarreau",
-            "val": 0.9
+            "name": "Vince Williams Jr.",
+            "val": 0.8
           },
           {
-            "name": "Vince Williams Jr.",
+            "name": "Olivier-Maxence Prosper",
             "val": 0.8
           },
           {
@@ -4986,15 +4990,11 @@
             "val": 0.8
           },
           {
-            "name": "Olivier-Maxence Prosper",
-            "val": 0.8
-          },
-          {
             "name": "Walter Clayton",
             "val": 0.8
           },
           {
-            "name": "Cam Spencer",
+            "name": "Toby Okani",
             "val": 0.7
           },
           {
@@ -5002,15 +5002,11 @@
             "val": 0.7
           },
           {
-            "name": "Toby Okani",
+            "name": "Cam Spencer",
             "val": 0.7
           },
           {
             "name": "Jock Landale",
-            "val": 0.6
-          },
-          {
-            "name": "GG Jackson II",
             "val": 0.6
           },
           {
@@ -5019,6 +5015,10 @@
           },
           {
             "name": "Zach Edey",
+            "val": 0.6
+          },
+          {
+            "name": "GG Jackson II",
             "val": 0.6
           },
           {
@@ -5056,11 +5056,11 @@
             "val": 1.0
           },
           {
-            "name": "GG Jackson II",
+            "name": "Taylor Hendricks",
             "val": 0.8
           },
           {
-            "name": "Taylor Hendricks",
+            "name": "GG Jackson II",
             "val": 0.8
           },
           {
@@ -5076,11 +5076,11 @@
             "val": 0.5
           },
           {
-            "name": "Lawson Lovering",
+            "name": "Jock Landale",
             "val": 0.5
           },
           {
-            "name": "Charles Bassey",
+            "name": "Lawson Lovering",
             "val": 0.5
           },
           {
@@ -5088,19 +5088,15 @@
             "val": 0.5
           },
           {
-            "name": "Jock Landale",
+            "name": "Charles Bassey",
             "val": 0.5
-          },
-          {
-            "name": "Scotty Pippen Jr.",
-            "val": 0.4
           },
           {
             "name": "Vince Williams Jr.",
             "val": 0.4
           },
           {
-            "name": "John Konchar",
+            "name": "Scotty Pippen Jr.",
             "val": 0.4
           },
           {
@@ -5112,16 +5108,8 @@
             "val": 0.4
           },
           {
-            "name": "Tyler Burton",
-            "val": 0.3
-          },
-          {
-            "name": "Ja Morant",
-            "val": 0.3
-          },
-          {
-            "name": "Walter Clayton",
-            "val": 0.3
+            "name": "John Konchar",
+            "val": 0.4
           },
           {
             "name": "Ty Jerome",
@@ -5130,6 +5118,22 @@
           {
             "name": "PJ Hall",
             "val": 0.3
+          },
+          {
+            "name": "Ja Morant",
+            "val": 0.3
+          },
+          {
+            "name": "Tyler Burton",
+            "val": 0.3
+          },
+          {
+            "name": "Walter Clayton",
+            "val": 0.3
+          },
+          {
+            "name": "Cam Spencer",
+            "val": 0.2
           },
           {
             "name": "Kentavious Caldwell-Pope",
@@ -5144,15 +5148,7 @@
             "val": 0.2
           },
           {
-            "name": "Cam Spencer",
-            "val": 0.2
-          },
-          {
             "name": "Jaylen Wells",
-            "val": 0.1
-          },
-          {
-            "name": "Adama-Alpha Bal",
             "val": 0.1
           },
           {
@@ -5161,6 +5157,10 @@
           },
           {
             "name": "Taj Gibson",
+            "val": 0.1
+          },
+          {
+            "name": "Adama-Alpha Bal",
             "val": 0.1
           },
           {
@@ -5252,15 +5252,15 @@
         "g": 12
       },
       {
-        "name": "Christian Koloko",
-        "g": 11
-      },
-      {
         "name": "Zach Edey",
         "g": 11
       },
       {
         "name": "DeJon Jarreau",
+        "g": 11
+      },
+      {
+        "name": "Christian Koloko",
         "g": 11
       },
       {
@@ -5276,19 +5276,19 @@
         "g": 8
       },
       {
-        "name": "PJ Hall",
-        "g": 7
-      },
-      {
         "name": "Lucas Williamson",
         "g": 7
       },
       {
-        "name": "Dariq Whitehead",
-        "g": 6
+        "name": "PJ Hall",
+        "g": 7
       },
       {
         "name": "Toby Okani",
+        "g": 6
+      },
+      {
+        "name": "Dariq Whitehead",
         "g": 6
       },
       {
@@ -5296,11 +5296,11 @@
         "g": 4
       },
       {
-        "name": "Charles Bassey",
+        "name": "Lawson Lovering",
         "g": 2
       },
       {
-        "name": "Lawson Lovering",
+        "name": "Charles Bassey",
         "g": 2
       },
       {

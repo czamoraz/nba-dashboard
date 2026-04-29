@@ -4056,11 +4056,11 @@
             "val": 8.2
           },
           {
-            "name": "Buddy Hield",
+            "name": "Nate Williams",
             "val": 8.0
           },
           {
-            "name": "Nate Williams",
+            "name": "Buddy Hield",
             "val": 8.0
           },
           {
@@ -4138,11 +4138,11 @@
             "val": 3.9
           },
           {
-            "name": "Gary Payton II",
+            "name": "Stephen Curry",
             "val": 3.6
           },
           {
-            "name": "Stephen Curry",
+            "name": "Gary Payton II",
             "val": 3.6
           },
           {
@@ -4174,11 +4174,11 @@
             "val": 2.4
           },
           {
-            "name": "Nate Williams",
+            "name": "Malevy Leons",
             "val": 2.1
           },
           {
-            "name": "Malevy Leons",
+            "name": "Nate Williams",
             "val": 2.1
           },
           {
@@ -4228,11 +4228,11 @@
             "val": 2.5
           },
           {
-            "name": "Kristaps Porziņģis",
+            "name": "Gui Santos",
             "val": 2.3
           },
           {
-            "name": "Gui Santos",
+            "name": "Kristaps Porziņģis",
             "val": 2.3
           },
           {
@@ -4256,15 +4256,15 @@
             "val": 1.3
           },
           {
+            "name": "Charles Bassey",
+            "val": 1.0
+          },
+          {
             "name": "Nate Williams",
             "val": 1.0
           },
           {
             "name": "LJ Cryer",
-            "val": 1.0
-          },
-          {
-            "name": "Charles Bassey",
             "val": 1.0
           },
           {
@@ -4314,6 +4314,10 @@
             "val": 1.0
           },
           {
+            "name": "Gui Santos",
+            "val": 0.9
+          },
+          {
             "name": "Draymond Green",
             "val": 0.9
           },
@@ -4322,35 +4326,31 @@
             "val": 0.9
           },
           {
-            "name": "Gui Santos",
-            "val": 0.9
-          },
-          {
             "name": "Buddy Hield",
             "val": 0.8
-          },
-          {
-            "name": "Pat Spencer",
-            "val": 0.7
           },
           {
             "name": "Al Horford",
             "val": 0.7
           },
           {
-            "name": "Kristaps Porziņģis",
-            "val": 0.6
+            "name": "Pat Spencer",
+            "val": 0.7
           },
           {
             "name": "Malevy Leons",
             "val": 0.6
           },
           {
-            "name": "Charles Bassey",
+            "name": "Kristaps Porziņģis",
+            "val": 0.6
+          },
+          {
+            "name": "Jonathan Kuminga",
             "val": 0.4
           },
           {
-            "name": "Quinten Post",
+            "name": "Charles Bassey",
             "val": 0.4
           },
           {
@@ -4358,7 +4358,7 @@
             "val": 0.4
           },
           {
-            "name": "Jonathan Kuminga",
+            "name": "Quinten Post",
             "val": 0.4
           },
           {
@@ -4396,11 +4396,11 @@
             "val": 1.1
           },
           {
-            "name": "Draymond Green",
+            "name": "Moses Moody",
             "val": 0.6
           },
           {
-            "name": "Moses Moody",
+            "name": "Draymond Green",
             "val": 0.6
           },
           {
@@ -4424,7 +4424,7 @@
             "val": 0.4
           },
           {
-            "name": "Jonathan Kuminga",
+            "name": "Gary Payton II",
             "val": 0.3
           },
           {
@@ -4432,7 +4432,7 @@
             "val": 0.3
           },
           {
-            "name": "Gary Payton II",
+            "name": "Jonathan Kuminga",
             "val": 0.3
           },
           {
@@ -4440,11 +4440,11 @@
             "val": 0.2
           },
           {
-            "name": "Buddy Hield",
+            "name": "Brandin Podziemski",
             "val": 0.2
           },
           {
-            "name": "Brandin Podziemski",
+            "name": "Buddy Hield",
             "val": 0.2
           },
           {
@@ -4452,11 +4452,11 @@
             "val": 0.1
           },
           {
-            "name": "Omer Yurtseven",
+            "name": "Will Richard",
             "val": 0.1
           },
           {
-            "name": "Will Richard",
+            "name": "Omer Yurtseven",
             "val": 0.1
           },
           {
@@ -4488,11 +4488,11 @@
         "g": 69
       },
       {
-        "name": "Draymond Green",
+        "name": "Gui Santos",
         "g": 68
       },
       {
-        "name": "Gui Santos",
+        "name": "Draymond Green",
         "g": 68
       },
       {

@@ -4570,15 +4570,15 @@
             "val": 1.0
           },
           {
+            "name": "Mitchell Robinson",
+            "val": 0.9
+          },
+          {
             "name": "Karl-Anthony Towns",
             "val": 0.9
           },
           {
             "name": "Miles McBride",
-            "val": 0.9
-          },
-          {
-            "name": "Mitchell Robinson",
             "val": 0.9
           },
           {
@@ -4590,15 +4590,7 @@
             "val": 0.6
           },
           {
-            "name": "Kevin McCullar Jr.",
-            "val": 0.4
-          },
-          {
-            "name": "Dillon Jones",
-            "val": 0.4
-          },
-          {
-            "name": "Jeremy Sochan",
+            "name": "Jordan Clarkson",
             "val": 0.4
           },
           {
@@ -4606,15 +4598,23 @@
             "val": 0.4
           },
           {
-            "name": "Jordan Clarkson",
+            "name": "Jeremy Sochan",
             "val": 0.4
           },
           {
-            "name": "Ariel Hukporti",
-            "val": 0.2
+            "name": "Dillon Jones",
+            "val": 0.4
+          },
+          {
+            "name": "Kevin McCullar Jr.",
+            "val": 0.4
           },
           {
             "name": "Mohamed Diawara",
+            "val": 0.2
+          },
+          {
+            "name": "Ariel Hukporti",
             "val": 0.2
           },
           {
@@ -4652,16 +4652,20 @@
             "val": 0.7
           },
           {
-            "name": "Ariel Hukporti",
+            "name": "Karl-Anthony Towns",
             "val": 0.5
           },
           {
-            "name": "Karl-Anthony Towns",
+            "name": "Ariel Hukporti",
             "val": 0.5
           },
           {
             "name": "Josh Hart",
             "val": 0.3
+          },
+          {
+            "name": "Trey Jemison",
+            "val": 0.2
           },
           {
             "name": "Miles McBride",
@@ -4672,11 +4676,23 @@
             "val": 0.2
           },
           {
-            "name": "Trey Jemison",
-            "val": 0.2
+            "name": "Jalen Brunson",
+            "val": 0.1
           },
           {
-            "name": "Jalen Brunson",
+            "name": "Jordan Clarkson",
+            "val": 0.1
+          },
+          {
+            "name": "Jose Alvarado",
+            "val": 0.1
+          },
+          {
+            "name": "Mohamed Diawara",
+            "val": 0.1
+          },
+          {
+            "name": "Tyler Kolek",
             "val": 0.1
           },
           {
@@ -4685,22 +4701,6 @@
           },
           {
             "name": "Guerschon Yabusele",
-            "val": 0.1
-          },
-          {
-            "name": "Tyler Kolek",
-            "val": 0.1
-          },
-          {
-            "name": "Mohamed Diawara",
-            "val": 0.1
-          },
-          {
-            "name": "Jose Alvarado",
-            "val": 0.1
-          },
-          {
-            "name": "Jordan Clarkson",
             "val": 0.1
           },
           {

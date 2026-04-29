@@ -4392,11 +4392,11 @@
             "val": 6.2
           },
           {
-            "name": "Dean Wade",
+            "name": "Nae'Qwan Tomlin",
             "val": 5.8
           },
           {
-            "name": "Nae'Qwan Tomlin",
+            "name": "Dean Wade",
             "val": 5.8
           },
           {
@@ -4494,11 +4494,11 @@
             "val": 2.9
           },
           {
-            "name": "Keon Ellis",
+            "name": "Olivier Sarr",
             "val": 2.8
           },
           {
-            "name": "Olivier Sarr",
+            "name": "Keon Ellis",
             "val": 2.8
           },
           {
@@ -4616,15 +4616,15 @@
             "val": 1.0
           },
           {
+            "name": "Nae'Qwan Tomlin",
+            "val": 0.8
+          },
+          {
             "name": "Tristan Enaruna",
             "val": 0.8
           },
           {
             "name": "Luke Travers",
-            "val": 0.8
-          },
-          {
-            "name": "Nae'Qwan Tomlin",
             "val": 0.8
           },
           {
@@ -4654,11 +4654,11 @@
             "val": 1.5
           },
           {
-            "name": "Lonzo Ball",
+            "name": "Keon Ellis",
             "val": 1.3
           },
           {
-            "name": "Keon Ellis",
+            "name": "Lonzo Ball",
             "val": 1.3
           },
           {
@@ -4670,14 +4670,6 @@
             "val": 0.9
           },
           {
-            "name": "Dennis Schröder",
-            "val": 0.8
-          },
-          {
-            "name": "James Harden",
-            "val": 0.8
-          },
-          {
             "name": "Jaylon Tyson",
             "val": 0.8
           },
@@ -4686,8 +4678,12 @@
             "val": 0.8
           },
           {
-            "name": "De'Andre Hunter",
-            "val": 0.7
+            "name": "James Harden",
+            "val": 0.8
+          },
+          {
+            "name": "Dennis Schröder",
+            "val": 0.8
           },
           {
             "name": "Dean Wade",
@@ -4698,19 +4694,11 @@
             "val": 0.7
           },
           {
+            "name": "De'Andre Hunter",
+            "val": 0.7
+          },
+          {
             "name": "Sam Merrill",
-            "val": 0.6
-          },
-          {
-            "name": "Luke Travers",
-            "val": 0.6
-          },
-          {
-            "name": "Tristan Enaruna",
-            "val": 0.6
-          },
-          {
-            "name": "Larry Nance Jr.",
             "val": 0.6
           },
           {
@@ -4718,19 +4706,31 @@
             "val": 0.6
           },
           {
-            "name": "Tyrese Proctor",
-            "val": 0.5
+            "name": "Larry Nance Jr.",
+            "val": 0.6
+          },
+          {
+            "name": "Tristan Enaruna",
+            "val": 0.6
+          },
+          {
+            "name": "Luke Travers",
+            "val": 0.6
           },
           {
             "name": "Olivier Sarr",
             "val": 0.5
           },
           {
-            "name": "Thomas Bryant",
-            "val": 0.3
+            "name": "Tyrese Proctor",
+            "val": 0.5
           },
           {
             "name": "Max Strus",
+            "val": 0.3
+          },
+          {
+            "name": "Thomas Bryant",
             "val": 0.3
           },
           {
@@ -4772,11 +4772,11 @@
             "val": 0.6
           },
           {
-            "name": "James Harden",
+            "name": "Nae'Qwan Tomlin",
             "val": 0.5
           },
           {
-            "name": "Nae'Qwan Tomlin",
+            "name": "James Harden",
             "val": 0.5
           },
           {
@@ -4792,6 +4792,10 @@
             "val": 0.4
           },
           {
+            "name": "Lonzo Ball",
+            "val": 0.3
+          },
+          {
             "name": "Donovan Mitchell",
             "val": 0.3
           },
@@ -4800,19 +4804,15 @@
             "val": 0.3
           },
           {
-            "name": "Lonzo Ball",
-            "val": 0.3
-          },
-          {
             "name": "Dennis Schröder",
             "val": 0.2
           },
           {
-            "name": "Larry Nance Jr.",
+            "name": "Riley Minix",
             "val": 0.2
           },
           {
-            "name": "Riley Minix",
+            "name": "Larry Nance Jr.",
             "val": 0.2
           },
           {
@@ -4832,11 +4832,11 @@
             "val": 0.0
           },
           {
-            "name": "Tyrese Proctor",
+            "name": "Tristan Enaruna",
             "val": 0.0
           },
           {
-            "name": "Tristan Enaruna",
+            "name": "Tyrese Proctor",
             "val": 0.0
           },
           {
@@ -4864,11 +4864,11 @@
         "g": 65
       },
       {
-        "name": "Craig Porter Jr.",
+        "name": "Nae'Qwan Tomlin",
         "g": 64
       },
       {
-        "name": "Nae'Qwan Tomlin",
+        "name": "Craig Porter Jr.",
         "g": 64
       },
       {
@@ -4912,11 +4912,11 @@
         "g": 29
       },
       {
-        "name": "James Harden",
+        "name": "Darius Garland",
         "g": 26
       },
       {
-        "name": "Darius Garland",
+        "name": "James Harden",
         "g": 26
       },
       {

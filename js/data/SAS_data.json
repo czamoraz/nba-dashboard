@@ -4590,19 +4590,19 @@
             "val": 0.6
           },
           {
-            "name": "David Jones García",
-            "val": 0.5
-          },
-          {
             "name": "Luke Kornet",
             "val": 0.5
           },
           {
-            "name": "Stanley Umude",
+            "name": "Jordan McLaughlin",
             "val": 0.5
           },
           {
-            "name": "Jordan McLaughlin",
+            "name": "David Jones García",
+            "val": 0.5
+          },
+          {
+            "name": "Stanley Umude",
             "val": 0.5
           },
           {
@@ -4618,7 +4618,7 @@
             "val": 0.3
           },
           {
-            "name": "Bismack Biyombo",
+            "name": "Carter Bryant",
             "val": 0.2
           },
           {
@@ -4626,7 +4626,7 @@
             "val": 0.2
           },
           {
-            "name": "Carter Bryant",
+            "name": "Bismack Biyombo",
             "val": 0.2
           },
           {
@@ -4656,11 +4656,11 @@
             "val": 0.4
           },
           {
-            "name": "De'Aaron Fox",
+            "name": "Stephon Castle",
             "val": 0.3
           },
           {
-            "name": "Dylan Harper",
+            "name": "De'Aaron Fox",
             "val": 0.3
           },
           {
@@ -4668,15 +4668,15 @@
             "val": 0.3
           },
           {
-            "name": "Stephon Castle",
+            "name": "Dylan Harper",
             "val": 0.3
           },
           {
-            "name": "Harrison Barnes",
+            "name": "Jeremy Sochan",
             "val": 0.2
           },
           {
-            "name": "Jeremy Sochan",
+            "name": "Harrison Barnes",
             "val": 0.2
           },
           {
@@ -4696,11 +4696,11 @@
             "val": 0.1
           },
           {
-            "name": "Mason Plumlee",
+            "name": "Lindy Waters III",
             "val": 0.0
           },
           {
-            "name": "Lindy Waters III",
+            "name": "Mason Plumlee",
             "val": 0.0
           },
           {
@@ -4724,11 +4724,11 @@
     },
     "avail": [
       {
-        "name": "Julian Champagnie",
+        "name": "Keldon Johnson",
         "g": 82
       },
       {
-        "name": "Keldon Johnson",
+        "name": "Julian Champagnie",
         "g": 82
       },
       {

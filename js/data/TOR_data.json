@@ -4648,11 +4648,11 @@
             "val": 1.5
           },
           {
-            "name": "Markelle Fultz",
+            "name": "Garrett Temple",
             "val": 0.8
           },
           {
-            "name": "Garrett Temple",
+            "name": "Markelle Fultz",
             "val": 0.8
           },
           {
@@ -4706,11 +4706,11 @@
             "val": 2.3
           },
           {
-            "name": "Trayce Jackson-Davis",
+            "name": "Gradey Dick",
             "val": 1.9
           },
           {
-            "name": "Gradey Dick",
+            "name": "Trayce Jackson-Davis",
             "val": 1.9
           },
           {
@@ -4718,11 +4718,11 @@
             "val": 1.8
           },
           {
-            "name": "Jonathan Mogbo",
+            "name": "Jamal Shead",
             "val": 1.7
           },
           {
-            "name": "Jamal Shead",
+            "name": "Jonathan Mogbo",
             "val": 1.7
           },
           {
@@ -4752,15 +4752,15 @@
         ]
       },
       "ast": {
-        "name": "Immanuel Quickley",
+        "name": "Scottie Barnes",
         "val": 5.9,
         "all": [
           {
-            "name": "Immanuel Quickley",
+            "name": "Scottie Barnes",
             "val": 5.9
           },
           {
-            "name": "Scottie Barnes",
+            "name": "Immanuel Quickley",
             "val": 5.9
           },
           {
@@ -4800,11 +4800,11 @@
             "val": 1.0
           },
           {
-            "name": "Gradey Dick",
+            "name": "Ochai Agbaji",
             "val": 0.7
           },
           {
-            "name": "Ochai Agbaji",
+            "name": "Gradey Dick",
             "val": 0.7
           },
           {
@@ -4820,11 +4820,11 @@
             "val": 0.4
           },
           {
-            "name": "Trayce Jackson-Davis",
+            "name": "Garrett Temple",
             "val": 0.4
           },
           {
-            "name": "Garrett Temple",
+            "name": "Trayce Jackson-Davis",
             "val": 0.4
           },
           {
@@ -4858,19 +4858,19 @@
             "val": 0.9
           },
           {
-            "name": "Jamal Shead",
-            "val": 0.9
-          },
-          {
             "name": "Collin Murray-Boyles",
             "val": 0.9
           },
           {
-            "name": "Brandon Ingram",
-            "val": 0.8
+            "name": "Jamal Shead",
+            "val": 0.9
           },
           {
             "name": "Sandro Mamukelashvili",
+            "val": 0.8
+          },
+          {
+            "name": "Brandon Ingram",
             "val": 0.8
           },
           {
@@ -4906,11 +4906,11 @@
             "val": 0.3
           },
           {
-            "name": "Trayce Jackson-Davis",
+            "name": "Garrett Temple",
             "val": 0.2
           },
           {
-            "name": "Garrett Temple",
+            "name": "Trayce Jackson-Davis",
             "val": 0.2
           },
           {
@@ -4936,11 +4936,11 @@
             "val": 0.9
           },
           {
-            "name": "Brandon Ingram",
+            "name": "Jakob Poeltl",
             "val": 0.7
           },
           {
-            "name": "Jakob Poeltl",
+            "name": "Brandon Ingram",
             "val": 0.7
           },
           {
@@ -4952,6 +4952,10 @@
             "val": 0.5
           },
           {
+            "name": "Trayce Jackson-Davis",
+            "val": 0.3
+          },
+          {
             "name": "RJ Barrett",
             "val": 0.3
           },
@@ -4960,8 +4964,8 @@
             "val": 0.3
           },
           {
-            "name": "Trayce Jackson-Davis",
-            "val": 0.3
+            "name": "Alijah Martin",
+            "val": 0.2
           },
           {
             "name": "Jamal Shead",
@@ -4972,15 +4976,11 @@
             "val": 0.2
           },
           {
-            "name": "A.J. Lawson",
-            "val": 0.2
-          },
-          {
-            "name": "Alijah Martin",
-            "val": 0.2
-          },
-          {
             "name": "Jonathan Mogbo",
+            "val": 0.2
+          },
+          {
+            "name": "A.J. Lawson",
             "val": 0.2
           },
           {
@@ -4988,12 +4988,16 @@
             "val": 0.1
           },
           {
+            "name": "Gradey Dick",
+            "val": 0.1
+          },
+          {
             "name": "Garrett Temple",
             "val": 0.1
           },
           {
-            "name": "Gradey Dick",
-            "val": 0.1
+            "name": "Chucky Hepburn",
+            "val": 0.0
           },
           {
             "name": "Jamison Battle",
@@ -5001,10 +5005,6 @@
           },
           {
             "name": "Markelle Fultz",
-            "val": 0.0
-          },
-          {
-            "name": "Chucky Hepburn",
             "val": 0.0
           }
         ]
@@ -5044,11 +5044,11 @@
         "g": 61
       },
       {
-        "name": "Collin Murray-Boyles",
+        "name": "RJ Barrett",
         "g": 57
       },
       {
-        "name": "RJ Barrett",
+        "name": "Collin Murray-Boyles",
         "g": 57
       },
       {

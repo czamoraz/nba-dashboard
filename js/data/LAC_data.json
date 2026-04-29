@@ -4506,11 +4506,11 @@
             "val": 2.5
           },
           {
-            "name": "Kobe Sanders",
+            "name": "Darius Garland",
             "val": 2.3
           },
           {
-            "name": "Darius Garland",
+            "name": "Kobe Sanders",
             "val": 2.3
           },
           {
@@ -4592,11 +4592,11 @@
             "val": 2.3
           },
           {
-            "name": "Bogdan Bogdanović",
+            "name": "Ivica Zubac",
             "val": 2.2
           },
           {
-            "name": "Ivica Zubac",
+            "name": "Bogdan Bogdanović",
             "val": 2.2
           },
           {
@@ -4706,11 +4706,11 @@
             "val": 0.8
           },
           {
-            "name": "Kobe Sanders",
+            "name": "Chris Paul",
             "val": 0.7
           },
           {
-            "name": "Chris Paul",
+            "name": "Kobe Sanders",
             "val": 0.7
           },
           {
@@ -4718,11 +4718,11 @@
             "val": 0.6
           },
           {
-            "name": "Nicolas Batum",
+            "name": "Brook Lopez",
             "val": 0.6
           },
           {
-            "name": "Brook Lopez",
+            "name": "Nicolas Batum",
             "val": 0.6
           },
           {
@@ -4734,10 +4734,6 @@
             "val": 0.5
           },
           {
-            "name": "Bogdan Bogdanović",
-            "val": 0.4
-          },
-          {
             "name": "Ivica Zubac",
             "val": 0.4
           },
@@ -4746,11 +4742,15 @@
             "val": 0.4
           },
           {
-            "name": "Cam Christie",
-            "val": 0.3
+            "name": "Bogdan Bogdanović",
+            "val": 0.4
           },
           {
             "name": "Kobe Brown",
+            "val": 0.3
+          },
+          {
+            "name": "Cam Christie",
             "val": 0.3
           },
           {
@@ -4808,16 +4808,12 @@
             "val": 0.7
           },
           {
-            "name": "James Harden",
-            "val": 0.4
-          },
-          {
             "name": "Kawhi Leonard",
             "val": 0.4
           },
           {
-            "name": "Nicolas Batum",
-            "val": 0.3
+            "name": "James Harden",
+            "val": 0.4
           },
           {
             "name": "Darius Garland",
@@ -4828,6 +4824,14 @@
             "val": 0.3
           },
           {
+            "name": "Nicolas Batum",
+            "val": 0.3
+          },
+          {
+            "name": "Kris Dunn",
+            "val": 0.2
+          },
+          {
             "name": "Jordan Miller",
             "val": 0.2
           },
@@ -4836,19 +4840,15 @@
             "val": 0.2
           },
           {
-            "name": "Kris Dunn",
-            "val": 0.2
-          },
-          {
-            "name": "Kobe Brown",
-            "val": 0.1
-          },
-          {
             "name": "Cam Christie",
             "val": 0.1
           },
           {
             "name": "Bogdan Bogdanović",
+            "val": 0.1
+          },
+          {
+            "name": "Kobe Brown",
             "val": 0.1
           },
           {

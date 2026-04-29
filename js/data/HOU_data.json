@@ -4418,11 +4418,11 @@
             "val": 1.5
           },
           {
-            "name": "Alperen Şengün",
+            "name": "Tari Eason",
             "val": 1.2
           },
           {
-            "name": "Tari Eason",
+            "name": "Alperen Şengün",
             "val": 1.2
           },
           {
@@ -4430,11 +4430,11 @@
             "val": 1.0
           },
           {
-            "name": "Kevin Durant",
+            "name": "Josh Okogie",
             "val": 0.8
           },
           {
-            "name": "Josh Okogie",
+            "name": "Kevin Durant",
             "val": 0.8
           },
           {
@@ -4520,19 +4520,19 @@
             "val": 0.2
           },
           {
-            "name": "JD Davison",
-            "val": 0.2
-          },
-          {
             "name": "Isaiah Crawford",
             "val": 0.2
           },
           {
-            "name": "Aaron Holiday",
-            "val": 0.1
+            "name": "JD Davison",
+            "val": 0.2
           },
           {
             "name": "Jae'Sean Tate",
+            "val": 0.1
+          },
+          {
+            "name": "Aaron Holiday",
             "val": 0.1
           },
           {
@@ -4556,11 +4556,11 @@
         "g": 79
       },
       {
-        "name": "Kevin Durant",
+        "name": "Josh Okogie",
         "g": 78
       },
       {
-        "name": "Josh Okogie",
+        "name": "Kevin Durant",
         "g": 78
       },
       {

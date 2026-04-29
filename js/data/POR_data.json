@@ -4408,11 +4408,11 @@
             "val": 6.7
           },
           {
-            "name": "Matisse Thybulle",
+            "name": "Kris Murray",
             "val": 5.8
           },
           {
-            "name": "Kris Murray",
+            "name": "Matisse Thybulle",
             "val": 5.8
           },
           {
@@ -4556,11 +4556,11 @@
             "val": 2.6
           },
           {
-            "name": "Toumani Camara",
+            "name": "Caleb Love",
             "val": 2.5
           },
           {
-            "name": "Caleb Love",
+            "name": "Toumani Camara",
             "val": 2.5
           },
           {
@@ -4654,16 +4654,12 @@
             "val": 0.8
           },
           {
-            "name": "Sidy Cissoko",
-            "val": 0.7
-          },
-          {
             "name": "Jerami Grant",
             "val": 0.7
           },
           {
-            "name": "Caleb Love",
-            "val": 0.6
+            "name": "Sidy Cissoko",
+            "val": 0.7
           },
           {
             "name": "Donovan Clingan",
@@ -4671,6 +4667,10 @@
           },
           {
             "name": "Robert Williams",
+            "val": 0.6
+          },
+          {
+            "name": "Caleb Love",
             "val": 0.6
           },
           {
@@ -4720,11 +4720,11 @@
             "val": 1.5
           },
           {
-            "name": "Jerami Grant",
+            "name": "Deni Avdija",
             "val": 0.6
           },
           {
-            "name": "Deni Avdija",
+            "name": "Jerami Grant",
             "val": 0.6
           },
           {
@@ -4740,7 +4740,7 @@
             "val": 0.4
           },
           {
-            "name": "Vít Krejčí",
+            "name": "Sidy Cissoko",
             "val": 0.3
           },
           {
@@ -4748,12 +4748,16 @@
             "val": 0.3
           },
           {
-            "name": "Sidy Cissoko",
+            "name": "Vít Krejčí",
             "val": 0.3
           },
           {
             "name": "Scoot Henderson",
             "val": 0.3
+          },
+          {
+            "name": "Jayson Kent",
+            "val": 0.2
           },
           {
             "name": "Blake Wesley",
@@ -4764,11 +4768,7 @@
             "val": 0.2
           },
           {
-            "name": "Jayson Kent",
-            "val": 0.2
-          },
-          {
-            "name": "Caleb Love",
+            "name": "Shaedon Sharpe",
             "val": 0.1
           },
           {
@@ -4776,7 +4776,7 @@
             "val": 0.1
           },
           {
-            "name": "Shaedon Sharpe",
+            "name": "Caleb Love",
             "val": 0.1
           },
           {
@@ -4852,11 +4852,11 @@
         "g": 31
       },
       {
-        "name": "Scoot Henderson",
+        "name": "Matisse Thybulle",
         "g": 30
       },
       {
-        "name": "Matisse Thybulle",
+        "name": "Scoot Henderson",
         "g": 30
       },
       {

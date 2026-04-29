@@ -4586,15 +4586,15 @@
             "val": 4.9
           },
           {
+            "name": "Johnny Furphy",
+            "val": 4.4
+          },
+          {
             "name": "Jalen Slawson",
             "val": 4.4
           },
           {
             "name": "Obi Toppin",
-            "val": 4.4
-          },
-          {
-            "name": "Johnny Furphy",
             "val": 4.4
           },
           {
@@ -4626,11 +4626,11 @@
             "val": 2.3
           },
           {
-            "name": "T.J. McConnell",
+            "name": "Ethan Thompson",
             "val": 2.2
           },
           {
-            "name": "Ethan Thompson",
+            "name": "T.J. McConnell",
             "val": 2.2
           },
           {
@@ -4696,19 +4696,19 @@
             "val": 2.5
           },
           {
-            "name": "Bennedict Mathurin",
-            "val": 2.3
-          },
-          {
             "name": "Obi Toppin",
             "val": 2.3
           },
           {
-            "name": "RayJ Dennis",
-            "val": 2.0
+            "name": "Bennedict Mathurin",
+            "val": 2.3
           },
           {
             "name": "Kobe Brown",
+            "val": 2.0
+          },
+          {
+            "name": "RayJ Dennis",
             "val": 2.0
           },
           {
@@ -4728,11 +4728,11 @@
             "val": 1.8
           },
           {
-            "name": "Micah Potter",
+            "name": "Jay Huff",
             "val": 1.5
           },
           {
-            "name": "Jay Huff",
+            "name": "Micah Potter",
             "val": 1.5
           },
           {
@@ -4794,11 +4794,11 @@
             "val": 1.1
           },
           {
-            "name": "Cody Martin",
+            "name": "T.J. McConnell",
             "val": 1.0
           },
           {
-            "name": "T.J. McConnell",
+            "name": "Cody Martin",
             "val": 1.0
           },
           {
@@ -4810,19 +4810,27 @@
             "val": 0.8
           },
           {
-            "name": "Taelon Peter",
-            "val": 0.7
-          },
-          {
             "name": "Isaiah Jackson",
             "val": 0.7
           },
           {
-            "name": "Johnny Furphy",
+            "name": "Taelon Peter",
+            "val": 0.7
+          },
+          {
+            "name": "Aaron Nesmith",
             "val": 0.6
           },
           {
             "name": "Bennedict Mathurin",
+            "val": 0.6
+          },
+          {
+            "name": "Ben Sheppard",
+            "val": 0.6
+          },
+          {
+            "name": "Johnny Furphy",
             "val": 0.6
           },
           {
@@ -4834,19 +4842,7 @@
             "val": 0.6
           },
           {
-            "name": "Ben Sheppard",
-            "val": 0.6
-          },
-          {
-            "name": "Aaron Nesmith",
-            "val": 0.6
-          },
-          {
             "name": "Micah Potter",
-            "val": 0.5
-          },
-          {
-            "name": "Obi Toppin",
             "val": 0.5
           },
           {
@@ -4854,19 +4850,23 @@
             "val": 0.5
           },
           {
-            "name": "Kam Jones",
-            "val": 0.5
-          },
-          {
             "name": "Kobe Brown",
             "val": 0.5
           },
           {
-            "name": "Jeremiah Robinson-Earl",
-            "val": 0.4
+            "name": "Obi Toppin",
+            "val": 0.5
+          },
+          {
+            "name": "Kam Jones",
+            "val": 0.5
           },
           {
             "name": "Ivica Zubac",
+            "val": 0.4
+          },
+          {
+            "name": "Jeremiah Robinson-Earl",
             "val": 0.4
           },
           {
@@ -4874,11 +4874,11 @@
             "val": 0.4
           },
           {
-            "name": "RayJ Dennis",
+            "name": "Tony Bradley",
             "val": 0.2
           },
           {
-            "name": "Tony Bradley",
+            "name": "RayJ Dennis",
             "val": 0.2
           },
           {
@@ -4904,11 +4904,11 @@
             "val": 1.1
           },
           {
-            "name": "Isaiah Jackson",
+            "name": "Ivica Zubac",
             "val": 0.8
           },
           {
-            "name": "Ivica Zubac",
+            "name": "Isaiah Jackson",
             "val": 0.8
           },
           {
@@ -4920,19 +4920,15 @@
             "val": 0.5
           },
           {
-            "name": "Pascal Siakam",
-            "val": 0.4
-          },
-          {
             "name": "Kobe Brown",
             "val": 0.4
           },
           {
-            "name": "Jarace Walker",
-            "val": 0.3
+            "name": "Pascal Siakam",
+            "val": 0.4
           },
           {
-            "name": "Mac McClung",
+            "name": "James Wiseman",
             "val": 0.3
           },
           {
@@ -4940,7 +4936,7 @@
             "val": 0.3
           },
           {
-            "name": "Micah Potter",
+            "name": "Jarace Walker",
             "val": 0.3
           },
           {
@@ -4948,8 +4944,16 @@
             "val": 0.3
           },
           {
-            "name": "James Wiseman",
+            "name": "Mac McClung",
             "val": 0.3
+          },
+          {
+            "name": "Micah Potter",
+            "val": 0.3
+          },
+          {
+            "name": "Monte Morris",
+            "val": 0.2
           },
           {
             "name": "Tony Bradley",
@@ -4957,10 +4961,6 @@
           },
           {
             "name": "Garrison Mathews",
-            "val": 0.2
-          },
-          {
-            "name": "Monte Morris",
             "val": 0.2
           },
           {
@@ -4972,18 +4972,6 @@
             "val": 0.2
           },
           {
-            "name": "Jeremiah Robinson-Earl",
-            "val": 0.1
-          },
-          {
-            "name": "Bennedict Mathurin",
-            "val": 0.1
-          },
-          {
-            "name": "Taelon Peter",
-            "val": 0.1
-          },
-          {
             "name": "Ben Sheppard",
             "val": 0.1
           },
@@ -4992,7 +4980,19 @@
             "val": 0.1
           },
           {
+            "name": "Bennedict Mathurin",
+            "val": 0.1
+          },
+          {
+            "name": "Jeremiah Robinson-Earl",
+            "val": 0.1
+          },
+          {
             "name": "Quenton Jackson",
+            "val": 0.1
+          },
+          {
+            "name": "Taelon Peter",
             "val": 0.1
           },
           {
@@ -5048,11 +5048,11 @@
         "g": 38
       },
       {
-        "name": "Taelon Peter",
+        "name": "Tony Bradley",
         "g": 38
       },
       {
-        "name": "Tony Bradley",
+        "name": "Taelon Peter",
         "g": 38
       },
       {

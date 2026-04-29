@@ -4264,11 +4264,11 @@
             "val": 3.2
           },
           {
-            "name": "CJ Huntley",
+            "name": "Khaman Maluach",
             "val": 3.0
           },
           {
-            "name": "Khaman Maluach",
+            "name": "CJ Huntley",
             "val": 3.0
           },
           {
@@ -4314,11 +4314,11 @@
             "val": 3.9
           },
           {
-            "name": "Jalen Green",
+            "name": "Dillon Brooks",
             "val": 3.6
           },
           {
-            "name": "Dillon Brooks",
+            "name": "Jalen Green",
             "val": 3.6
           },
           {
@@ -4400,11 +4400,11 @@
             "val": 2.2
           },
           {
-            "name": "Jamaree Bouyea",
+            "name": "Dillon Brooks",
             "val": 1.8
           },
           {
-            "name": "Dillon Brooks",
+            "name": "Jamaree Bouyea",
             "val": 1.8
           },
           {
@@ -4412,7 +4412,7 @@
             "val": 1.5
           },
           {
-            "name": "Haywood Highsmith",
+            "name": "Mark Williams",
             "val": 1.0
           },
           {
@@ -4420,7 +4420,7 @@
             "val": 1.0
           },
           {
-            "name": "Mark Williams",
+            "name": "Haywood Highsmith",
             "val": 1.0
           },
           {
@@ -4482,11 +4482,11 @@
             "val": 1.0
           },
           {
-            "name": "Mark Williams",
+            "name": "Oso Ighodaro",
             "val": 0.9
           },
           {
-            "name": "Oso Ighodaro",
+            "name": "Mark Williams",
             "val": 0.9
           },
           {
@@ -4506,15 +4506,15 @@
             "val": 0.6
           },
           {
-            "name": "Isaiah Livers",
-            "val": 0.4
-          },
-          {
             "name": "Amir Coffey",
             "val": 0.4
           },
           {
             "name": "Rasheer Fleming",
+            "val": 0.4
+          },
+          {
+            "name": "Isaiah Livers",
             "val": 0.4
           },
           {
@@ -4560,10 +4560,6 @@
             "val": 0.5
           },
           {
-            "name": "Royce O'Neale",
-            "val": 0.4
-          },
-          {
             "name": "Ryan Dunn",
             "val": 0.4
           },
@@ -4572,11 +4568,11 @@
             "val": 0.4
           },
           {
-            "name": "Devin Booker",
-            "val": 0.3
+            "name": "Royce O'Neale",
+            "val": 0.4
           },
           {
-            "name": "Grayson Allen",
+            "name": "Devin Booker",
             "val": 0.3
           },
           {
@@ -4588,6 +4584,14 @@
             "val": 0.3
           },
           {
+            "name": "Grayson Allen",
+            "val": 0.3
+          },
+          {
+            "name": "Dillon Brooks",
+            "val": 0.2
+          },
+          {
             "name": "Collin Gillespie",
             "val": 0.2
           },
@@ -4596,27 +4600,23 @@
             "val": 0.2
           },
           {
-            "name": "Dillon Brooks",
-            "val": 0.2
-          },
-          {
             "name": "Isaiah Livers",
             "val": 0.2
-          },
-          {
-            "name": "Nigel Hayes-Davis",
-            "val": 0.1
           },
           {
             "name": "Amir Coffey",
             "val": 0.1
           },
           {
-            "name": "CJ Huntley",
-            "val": 0.0
+            "name": "Nigel Hayes-Davis",
+            "val": 0.1
           },
           {
             "name": "Haywood Highsmith",
+            "val": 0.0
+          },
+          {
+            "name": "CJ Huntley",
             "val": 0.0
           },
           {
@@ -4640,11 +4640,11 @@
         "g": 78
       },
       {
-        "name": "Jordan Goodwin",
+        "name": "Ryan Dunn",
         "g": 70
       },
       {
-        "name": "Ryan Dunn",
+        "name": "Jordan Goodwin",
         "g": 70
       },
       {
@@ -4668,11 +4668,11 @@
         "g": 51
       },
       {
-        "name": "Jamaree Bouyea",
+        "name": "Khaman Maluach",
         "g": 46
       },
       {
-        "name": "Khaman Maluach",
+        "name": "Jamaree Bouyea",
         "g": 46
       },
       {

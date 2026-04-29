@@ -4378,11 +4378,11 @@
             "val": 5.7
           },
           {
-            "name": "Kevon Looney",
+            "name": "Saddiq Bey",
             "val": 5.6
           },
           {
-            "name": "Saddiq Bey",
+            "name": "Kevon Looney",
             "val": 5.6
           },
           {
@@ -4390,11 +4390,11 @@
             "val": 5.4
           },
           {
-            "name": "Jeremiah Fears",
+            "name": "Karlo Matković",
             "val": 3.7
           },
           {
-            "name": "Karlo Matković",
+            "name": "Jeremiah Fears",
             "val": 3.7
           },
           {
@@ -4456,11 +4456,11 @@
             "val": 3.2
           },
           {
-            "name": "Jordan Poole",
+            "name": "Jose Alvarado",
             "val": 3.1
           },
           {
-            "name": "Jose Alvarado",
+            "name": "Jordan Poole",
             "val": 3.1
           },
           {
@@ -4488,11 +4488,11 @@
             "val": 1.3
           },
           {
-            "name": "Micah Peavy",
+            "name": "Trey Alexander",
             "val": 1.0
           },
           {
-            "name": "Trey Alexander",
+            "name": "Micah Peavy",
             "val": 1.0
           },
           {
@@ -4534,11 +4534,11 @@
             "val": 1.2
           },
           {
-            "name": "Derik Queen",
+            "name": "Zion Williamson",
             "val": 1.0
           },
           {
-            "name": "Zion Williamson",
+            "name": "Derik Queen",
             "val": 1.0
           },
           {
@@ -4566,11 +4566,11 @@
             "val": 0.6
           },
           {
-            "name": "Karlo Matković",
+            "name": "Kevon Looney",
             "val": 0.4
           },
           {
-            "name": "Kevon Looney",
+            "name": "Karlo Matković",
             "val": 0.4
           },
           {
@@ -4578,11 +4578,11 @@
             "val": 0.3
           },
           {
-            "name": "DeAndre Jordan",
+            "name": "Jordan Hawkins",
             "val": 0.3
           },
           {
-            "name": "Jordan Hawkins",
+            "name": "DeAndre Jordan",
             "val": 0.3
           },
           {
@@ -4604,16 +4604,20 @@
             "val": 1.5
           },
           {
-            "name": "Karlo Matković",
+            "name": "Derik Queen",
             "val": 0.9
           },
           {
-            "name": "Derik Queen",
+            "name": "Karlo Matković",
             "val": 0.9
           },
           {
             "name": "DeAndre Jordan",
             "val": 0.8
+          },
+          {
+            "name": "Kevon Looney",
+            "val": 0.5
           },
           {
             "name": "Zion Williamson",
@@ -4624,15 +4628,11 @@
             "val": 0.5
           },
           {
-            "name": "Kevon Looney",
-            "val": 0.5
-          },
-          {
-            "name": "Trey Murphy III",
+            "name": "Hunter Dickinson",
             "val": 0.4
           },
           {
-            "name": "Hunter Dickinson",
+            "name": "Trey Murphy III",
             "val": 0.4
           },
           {
@@ -4644,11 +4644,7 @@
             "val": 0.4
           },
           {
-            "name": "Bryce McGowens",
-            "val": 0.2
-          },
-          {
-            "name": "Dejounte Murray",
+            "name": "Trey Alexander",
             "val": 0.2
           },
           {
@@ -4656,7 +4652,11 @@
             "val": 0.2
           },
           {
-            "name": "Trey Alexander",
+            "name": "Dejounte Murray",
+            "val": 0.2
+          },
+          {
+            "name": "Bryce McGowens",
             "val": 0.2
           },
           {
@@ -4664,11 +4664,11 @@
             "val": 0.1
           },
           {
-            "name": "Micah Peavy",
+            "name": "Jose Alvarado",
             "val": 0.1
           },
           {
-            "name": "Jose Alvarado",
+            "name": "Micah Peavy",
             "val": 0.1
           },
           {
@@ -4692,11 +4692,11 @@
         "g": 72
       },
       {
-        "name": "Trey Murphy III",
+        "name": "Yves Missi",
         "g": 66
       },
       {
-        "name": "Yves Missi",
+        "name": "Trey Murphy III",
         "g": 66
       },
       {

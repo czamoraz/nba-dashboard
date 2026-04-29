@@ -4618,11 +4618,11 @@
             "val": 2.3
           },
           {
-            "name": "Jaren Jackson Jr.",
+            "name": "John Konchar",
             "val": 2.0
           },
           {
-            "name": "John Konchar",
+            "name": "Jaren Jackson Jr.",
             "val": 2.0
           },
           {
@@ -4638,11 +4638,11 @@
             "val": 1.3
           },
           {
-            "name": "Kyle Anderson",
+            "name": "Elijah Harkless",
             "val": 1.2
           },
           {
-            "name": "Elijah Harkless",
+            "name": "Kyle Anderson",
             "val": 1.2
           },
           {
@@ -4654,11 +4654,11 @@
             "val": 1.1
           },
           {
-            "name": "Lauri Markkanen",
+            "name": "Hayden Gray",
             "val": 1.0
           },
           {
-            "name": "Hayden Gray",
+            "name": "Lauri Markkanen",
             "val": 1.0
           },
           {
@@ -4670,11 +4670,11 @@
             "val": 0.9
           },
           {
-            "name": "Cody Williams",
+            "name": "Ace Bailey",
             "val": 0.8
           },
           {
-            "name": "Ace Bailey",
+            "name": "Cody Williams",
             "val": 0.8
           },
           {
@@ -4698,11 +4698,11 @@
             "val": 0.4
           },
           {
-            "name": "Kevin Love",
+            "name": "Taylor Hendricks",
             "val": 0.4
           },
           {
-            "name": "Taylor Hendricks",
+            "name": "Kevin Love",
             "val": 0.4
           },
           {
@@ -4724,15 +4724,15 @@
             "val": 1.8
           },
           {
-            "name": "Mo Bamba",
-            "val": 1.0
-          },
-          {
             "name": "John Konchar",
             "val": 1.0
           },
           {
             "name": "Hayden Gray",
+            "val": 1.0
+          },
+          {
+            "name": "Mo Bamba",
             "val": 1.0
           },
           {
@@ -4744,15 +4744,15 @@
             "val": 0.7
           },
           {
-            "name": "Lauri Markkanen",
-            "val": 0.5
-          },
-          {
             "name": "Kyle Anderson",
             "val": 0.5
           },
           {
             "name": "Jusuf Nurkić",
+            "val": 0.5
+          },
+          {
+            "name": "Lauri Markkanen",
             "val": 0.5
           },
           {
@@ -4762,6 +4762,18 @@
           {
             "name": "Cody Williams",
             "val": 0.4
+          },
+          {
+            "name": "Keyonte George",
+            "val": 0.3
+          },
+          {
+            "name": "Bez Mbeng",
+            "val": 0.3
+          },
+          {
+            "name": "Vince Williams Jr.",
+            "val": 0.3
           },
           {
             "name": "Walter Clayton",
@@ -4776,16 +4788,12 @@
             "val": 0.3
           },
           {
-            "name": "Bez Mbeng",
-            "val": 0.3
+            "name": "Kennedy Chandler",
+            "val": 0.2
           },
           {
-            "name": "Keyonte George",
-            "val": 0.3
-          },
-          {
-            "name": "Vince Williams Jr.",
-            "val": 0.3
+            "name": "Oscar Tshiebwe",
+            "val": 0.2
           },
           {
             "name": "Brice Sensabaugh",
@@ -4796,19 +4804,11 @@
             "val": 0.2
           },
           {
-            "name": "Kennedy Chandler",
+            "name": "Taylor Hendricks",
             "val": 0.2
           },
           {
             "name": "Kevin Love",
-            "val": 0.2
-          },
-          {
-            "name": "Oscar Tshiebwe",
-            "val": 0.2
-          },
-          {
-            "name": "Taylor Hendricks",
             "val": 0.2
           },
           {

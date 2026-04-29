@@ -4830,11 +4830,11 @@
             "val": 1.6
           },
           {
-            "name": "Marcus Sasser",
+            "name": "Wendell Moore Jr.",
             "val": 1.0
           },
           {
-            "name": "Wendell Moore Jr.",
+            "name": "Marcus Sasser",
             "val": 1.0
           },
           {
@@ -4884,11 +4884,11 @@
             "val": 2.0
           },
           {
-            "name": "Marcus Sasser",
+            "name": "Colby Jones",
             "val": 2.0
           },
           {
-            "name": "Colby Jones",
+            "name": "Marcus Sasser",
             "val": 2.0
           },
           {
@@ -4958,7 +4958,7 @@
             "val": 1.1
           },
           {
-            "name": "Daniss Jenkins",
+            "name": "Caris LeVert",
             "val": 0.9
           },
           {
@@ -4966,7 +4966,7 @@
             "val": 0.9
           },
           {
-            "name": "Caris LeVert",
+            "name": "Daniss Jenkins",
             "val": 0.9
           },
           {
@@ -5048,11 +5048,11 @@
             "val": 0.7
           },
           {
-            "name": "Tobias Harris",
+            "name": "Tolu Smith",
             "val": 0.4
           },
           {
-            "name": "Tolu Smith",
+            "name": "Tobias Harris",
             "val": 0.4
           },
           {
@@ -5060,11 +5060,7 @@
             "val": 0.4
           },
           {
-            "name": "Wendell Moore Jr.",
-            "val": 0.3
-          },
-          {
-            "name": "Javonte Green",
+            "name": "Duncan Robinson",
             "val": 0.3
           },
           {
@@ -5076,7 +5072,11 @@
             "val": 0.3
           },
           {
-            "name": "Duncan Robinson",
+            "name": "Wendell Moore Jr.",
+            "val": 0.3
+          },
+          {
+            "name": "Javonte Green",
             "val": 0.3
           },
           {

@@ -4384,11 +4384,11 @@
             "val": 6.1
           },
           {
-            "name": "Tidjane Salaün",
+            "name": "KJ Simpson",
             "val": 6.0
           },
           {
-            "name": "KJ Simpson",
+            "name": "Tidjane Salaün",
             "val": 6.0
           },
           {
@@ -4576,11 +4576,11 @@
             "val": 0.8
           },
           {
-            "name": "Josh Green",
+            "name": "Liam McNeeley",
             "val": 0.8
           },
           {
-            "name": "Liam McNeeley",
+            "name": "Josh Green",
             "val": 0.8
           },
           {
@@ -4638,10 +4638,6 @@
             "val": 0.7
           },
           {
-            "name": "Sion James",
-            "val": 0.6
-          },
-          {
             "name": "Miles Bridges",
             "val": 0.6
           },
@@ -4650,19 +4646,23 @@
             "val": 0.6
           },
           {
-            "name": "Ryan Kalkbrenner",
-            "val": 0.5
+            "name": "Sion James",
+            "val": 0.6
           },
           {
             "name": "Grant Williams",
             "val": 0.5
           },
           {
-            "name": "Tre Mann",
+            "name": "Ryan Kalkbrenner",
             "val": 0.5
           },
           {
             "name": "Drew Peterson",
+            "val": 0.5
+          },
+          {
+            "name": "Tre Mann",
             "val": 0.5
           },
           {
@@ -4674,11 +4674,11 @@
             "val": 0.4
           },
           {
-            "name": "PJ Hall",
+            "name": "Pat Connaughton",
             "val": 0.3
           },
           {
-            "name": "Pat Connaughton",
+            "name": "PJ Hall",
             "val": 0.3
           },
           {
@@ -4732,15 +4732,7 @@
             "val": 0.2
           },
           {
-            "name": "Drew Peterson",
-            "val": 0.2
-          },
-          {
-            "name": "Tidjane Salaün",
-            "val": 0.2
-          },
-          {
-            "name": "Xavier Tillman Sr.",
+            "name": "LaMelo Ball",
             "val": 0.2
           },
           {
@@ -4752,11 +4744,19 @@
             "val": 0.2
           },
           {
-            "name": "LaMelo Ball",
+            "name": "Xavier Tillman Sr.",
             "val": 0.2
           },
           {
-            "name": "Coby White",
+            "name": "Drew Peterson",
+            "val": 0.2
+          },
+          {
+            "name": "Tidjane Salaün",
+            "val": 0.2
+          },
+          {
+            "name": "Liam McNeeley",
             "val": 0.1
           },
           {
@@ -4764,12 +4764,16 @@
             "val": 0.1
           },
           {
+            "name": "Coby White",
+            "val": 0.1
+          },
+          {
             "name": "Tre Mann",
             "val": 0.1
           },
           {
-            "name": "Liam McNeeley",
-            "val": 0.1
+            "name": "KJ Simpson",
+            "val": 0.0
           },
           {
             "name": "Mason Plumlee",
@@ -4781,10 +4785,6 @@
           },
           {
             "name": "Antonio Reeves",
-            "val": 0.0
-          },
-          {
-            "name": "KJ Simpson",
             "val": 0.0
           }
         ]
@@ -4828,11 +4828,11 @@
         "g": 53
       },
       {
-        "name": "Collin Sexton",
+        "name": "Pat Connaughton",
         "g": 42
       },
       {
-        "name": "Pat Connaughton",
+        "name": "Collin Sexton",
         "g": 42
       },
       {
@@ -4856,11 +4856,11 @@
         "g": 16
       },
       {
-        "name": "Mason Plumlee",
+        "name": "KJ Simpson",
         "g": 14
       },
       {
-        "name": "KJ Simpson",
+        "name": "Mason Plumlee",
         "g": 14
       },
       {

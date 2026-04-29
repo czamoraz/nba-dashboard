@@ -4358,19 +4358,19 @@
             "val": 5.0
           },
           {
-            "name": "Andrew Wiggins",
-            "val": 4.8
-          },
-          {
             "name": "Tyler Herro",
             "val": 4.8
           },
           {
-            "name": "Norman Powell",
-            "val": 3.5
+            "name": "Andrew Wiggins",
+            "val": 4.8
           },
           {
             "name": "Pelle Larsson",
+            "val": 3.5
+          },
+          {
+            "name": "Norman Powell",
             "val": 3.5
           },
           {
@@ -4444,11 +4444,11 @@
             "val": 2.7
           },
           {
-            "name": "Dru Smith",
+            "name": "Kasparas Jakučionis",
             "val": 2.6
           },
           {
-            "name": "Kasparas Jakučionis",
+            "name": "Dru Smith",
             "val": 2.6
           },
           {
@@ -4518,7 +4518,7 @@
             "val": 0.8
           },
           {
-            "name": "Jaime Jaquez Jr.",
+            "name": "Tyler Herro",
             "val": 0.7
           },
           {
@@ -4526,7 +4526,7 @@
             "val": 0.7
           },
           {
-            "name": "Tyler Herro",
+            "name": "Jaime Jaquez Jr.",
             "val": 0.7
           },
           {
@@ -4592,10 +4592,6 @@
             "val": 0.3
           },
           {
-            "name": "Jaime Jaquez Jr.",
-            "val": 0.3
-          },
-          {
             "name": "Vladislav Goldin",
             "val": 0.3
           },
@@ -4604,11 +4600,11 @@
             "val": 0.3
           },
           {
-            "name": "Norman Powell",
-            "val": 0.2
+            "name": "Jaime Jaquez Jr.",
+            "val": 0.3
           },
           {
-            "name": "Davion Mitchell",
+            "name": "Myron Gardner",
             "val": 0.2
           },
           {
@@ -4616,7 +4612,11 @@
             "val": 0.2
           },
           {
-            "name": "Myron Gardner",
+            "name": "Norman Powell",
+            "val": 0.2
+          },
+          {
+            "name": "Davion Mitchell",
             "val": 0.2
           },
           {
@@ -4652,10 +4652,6 @@
         "g": 73
       },
       {
-        "name": "Simone Fontecchio",
-        "g": 70
-      },
-      {
         "name": "Davion Mitchell",
         "g": 70
       },
@@ -4665,6 +4661,10 @@
       },
       {
         "name": "Dru Smith",
+        "g": 70
+      },
+      {
+        "name": "Simone Fontecchio",
         "g": 70
       },
       {

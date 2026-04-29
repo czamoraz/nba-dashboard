@@ -4468,11 +4468,11 @@
             "val": 1.5
           },
           {
-            "name": "Josh Minott",
+            "name": "Luka Garza",
             "val": 1.0
           },
           {
-            "name": "Luka Garza",
+            "name": "Josh Minott",
             "val": 1.0
           },
           {
@@ -4538,16 +4538,12 @@
             "val": 0.7
           },
           {
-            "name": "Jordan Walsh",
-            "val": 0.7
-          },
-          {
             "name": "Josh Minott",
             "val": 0.7
           },
           {
-            "name": "Chris Boucher",
-            "val": 0.6
+            "name": "Jordan Walsh",
+            "val": 0.7
           },
           {
             "name": "Anfernee Simons",
@@ -4555,6 +4551,10 @@
           },
           {
             "name": "Hugo González",
+            "val": 0.6
+          },
+          {
+            "name": "Chris Boucher",
             "val": 0.6
           },
           {
@@ -4566,7 +4566,7 @@
             "val": 0.5
           },
           {
-            "name": "Xavier Tillman Sr.",
+            "name": "Nikola Vučević",
             "val": 0.4
           },
           {
@@ -4574,7 +4574,7 @@
             "val": 0.4
           },
           {
-            "name": "Nikola Vučević",
+            "name": "Xavier Tillman Sr.",
             "val": 0.4
           },
           {
@@ -4644,16 +4644,12 @@
             "val": 0.4
           },
           {
-            "name": "Josh Minott",
-            "val": 0.4
-          },
-          {
             "name": "Luka Garza",
             "val": 0.4
           },
           {
-            "name": "Hugo González",
-            "val": 0.3
+            "name": "Josh Minott",
+            "val": 0.4
           },
           {
             "name": "Ron Harper Jr.",
@@ -4664,8 +4660,16 @@
             "val": 0.3
           },
           {
+            "name": "Hugo González",
+            "val": 0.3
+          },
+          {
             "name": "Jayson Tatum",
             "val": 0.2
+          },
+          {
+            "name": "Payton Pritchard",
+            "val": 0.1
           },
           {
             "name": "Baylor Scheierman",
@@ -4677,10 +4681,6 @@
           },
           {
             "name": "Xavier Tillman Sr.",
-            "val": 0.1
-          },
-          {
-            "name": "Payton Pritchard",
             "val": 0.1
           },
           {
@@ -4704,11 +4704,11 @@
         "g": 78
       },
       {
-        "name": "Baylor Scheierman",
+        "name": "Derrick White",
         "g": 77
       },
       {
-        "name": "Derrick White",
+        "name": "Baylor Scheierman",
         "g": 77
       },
       {
@@ -4748,11 +4748,11 @@
         "g": 22
       },
       {
-        "name": "Nikola Vučević",
+        "name": "Jayson Tatum",
         "g": 16
       },
       {
-        "name": "Jayson Tatum",
+        "name": "Nikola Vučević",
         "g": 16
       },
       {
